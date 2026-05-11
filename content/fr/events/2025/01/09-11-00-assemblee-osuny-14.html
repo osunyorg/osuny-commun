@@ -1,0 +1,542 @@
+---
+title: >-
+  Assemblée Osuny #14
+
+subtitle: >-
+  Réunion mensuelle ouverte
+
+
+url: "/agenda/2025/assemblee-osuny-14/"
+slug: "assemblee-osuny-14"
+meta:
+  hugo:
+    permalink: "/agenda/2025/assemblee-osuny-14/"
+    path: "/events/2025/01/09-11-00-assemblee-osuny-14"
+    file: "content/fr/events/2025/01/09-11-00-assemblee-osuny-14.html"
+    slug: "assemblee-osuny-14"
+  dates:
+    created_at: 2025-03-14T10:01:50+01:00
+    updated_at: 2026-05-11T16:08:37+02:00
+search:
+  id: "a70f535c-24bb-4585-b9bd-18aec5ad609c"
+  about_id: "6efed351-6abd-45dd-a476-8d572443940a"
+  url: "/agenda/2025/assemblee-osuny-14/"
+  kind: "Communication::Website::Agenda::Event::TimeSlot::Localization"
+  lang: "fr"
+  title: >-
+    Assemblée Osuny #14 Réunion mensuelle ouverte
+
+  body: >-
+    <p>  <br>Nous organisons une réunion mensuelle ouverte, le premier jeudi de chaque mois, dans le but de rassembler toute la communauté Osuny. Cet événement est un moment d'échange et de discussions, pendant lequel l'équipe noesya présente les avancées fonctionnelles. Cet événement est ouvert, vous êtes libre de venir quand vous le souhaitez, il n'y a aucune obligation d'être présent·e chaque mois, c'est à votre convenance. Nous souhaitons co-construire l'ordre du jour de cette réunion mensuelle avec vous, donc nous sommes à l'écoute de vos remarques et/ou questions. Accéder à la vidéoconférence Jitsi</p>  <p> Médiathèque  <br>   <br>Réflexions sur la médiathèque https://developers.osuny.org/docs/admin/composants/media-library/ De nombreux utilisateurs, particulièrement ceux habitués à Wordpress, la réclamaient. Bien que son absence ne soit pas toujours problématique, certains cas d'usage la rendent pertinente, notamment pour les collections de photos appartenant à une organisation. L'objectif est de permettre un accès à ses propres photos via la médiathèque. Dans le back-office, un nouvel onglet Médiathèque permettra de modifier le nom, le texte alternatif, et de gérer des collections pour l'envoi de séries d'images avec des catégories. Le fonctionnement évolue : en plus du bouton d'import d'image existant, un nouveau bouton permet d'importer une collection, offrant des fonctionnalités de DAM (digital asset management) pour une photothèque simple. Cette fonction n'est pour l'instant disponible qu'en back-office. Pour l' INSEAMM , projet qui finance la médiathèque dans Osuny, le périmètre initial était de permettre de créer une collection de photos fonctionnelle, avec une gestion des droits prévue ultérieurement. La collection de photos est actuellement la fonctionnalité principale. Concernant le poids des images, Arnaud précise que celui-ci est visible dans la fiche média. Osuny gère l'optimisation des images dès le départ, utilisant une balise HTML (source set) avec six formats, des versions retina et non retina, ainsi que des breakpoints. La question du nettoyage soulève des interrogations. Les fichiers sont stockés sur Scaleway, et une sécurité est déjà en place pour préserver les données. L'objectif est surtout d'éviter que les utilisateurs n'uploadent des images inutilement, c'est donc principalement une question pratique. Concernant l'approche, similaire à Wordpress : faut-il que l'ajout d'une image l'affiche automatiquement dans la bibliothèque de médias, ou doit-on passer par celle-ci pour ajouter une image ? Les deux options seront disponibles, mais les images devront obligatoirement intégrer une collection. Lors de l'ajout d'une image, il faudra la classer et l'organiser, évitant ainsi l'accumulation désordonnée d'images comme sur Wordpress. Remarque de Yuna : cette approche s'inscrit dans une démarche d'éco-conception, évitant les uploads multiples d'images. Osuny fonctionne beaucoup par référencement, privilégiant la non-duplication des images. Bien que le système ne détecte pas encore les doublons, la médiathèque permettra de réutiliser les images sans nouvel upload, apportant une solution partielle. L'objectif est de trouver un équilibre entre un système natif robuste et un système développé en interne. Notre approche n'est pas d'imposer ou de donner une apparence éco-conçue. Pour Justin Peyo, de l'IUT Bordeaux Montaigne, cette fonctionnalité l'intéresse depuis le début et lui manque beaucoup. Il n'attend pas quelque chose de semblable à Wordpress, car certaines fonctionnalités ne sont pas souhaitables et ne correspondent pas à la philosophie d'Osuny. Pouvoir accéder à une bibliothèque d'images pour un article est indispensable pour un établissement. À l'échelle universitaire, avec de nombreux contributeurs qui ne sont ni communicants ni techniciens, c'est particulièrement important. Sans avoir toutes les ressources sous la main et face à des images parfois inadaptées, disposer d'une solution clé en main est essentiel.  Pour Laura Fernandez, de l'IUT de Bordeaux, l'intérêt est d'avoir une visualisation globale de toutes les images et de leur emplacement sur les différentes pages, afin d'éviter l'utilisation répétée d'une même image. Sébastien explique que cette fonctionnalité sera disponible. Question du poids des images Laura demande s'il est prévu de développer un outil pour compresser les images supérieures à 5 Mo. L'issue est ouverte, mais Arnaud souhaite savoir qui d'autre a ce besoin.(  https://github.com/osunyorg/admin/issues/2437)   Développer un système pour des JPGs volumineux faciliterait la vie, mais ne devrait-on pas plutôt éviter le téléchargement de fichiers trop lourds dès le départ ? Laura précise «  C'est la formation qui m'envoie une image, je n'ai pas le choix dans l'image.  » Justin : «  En pensant aux contributeurs, je vois des personnes qui prennent une photo sans savoir si elle est lourde ni comment la réduire. Par exemple, un enseignant qui dit "J'ai des images de 30 Mo".  » Justin suggère d'avoir une petite marge avec un outil qui redimensionne modérément. Arnaud propose plutôt de rediriger vers des outils externes, pour encourager l'implication des utilisateurs. Actuellement, nous utilisons KeyCDN. Une solution libre serait idéale. Une discussion est en cours avec Deux fleurs. La question est de savoir jusqu'où aller. Laura comprend la position, mais souligne l'importance du service rendu à l'utilisateur. Certaines personnes ne savent pas comment procéder. Elle peut s'en sortir mais s'inquiète pour d'autres utilisateurs, comme les départements. Arnaud fait l'analogie avec les images sous droits : le problème est l'utilisation d'images prises au hasard. Pour Olivier de Rennes Métropole : «  De nombreux sites web utilisent des images énormes permettant le zoom, ce qui n'est ni sobre ni logique. Nous avons besoin d'accompagnement et d'éducation. Les décisions doivent aller dans ce sens. Je ne suis pas favorable à trop ouvrir les possibilités.  » Anthony : «  Sur Praticable, une pop-up s'affichait lors de l'import d'images trop volumineuses, expliquant le problème et redirigeant vers le guide d'écoconception de designers éthiques. Nous avions aussi le plugin de redimensionnement et de recadrage de Kirby. Le recadrage était particulièrement utile . ». Yuna propose de rajouter un texte d'aide pédagogique lors du téléchargement d'une image trop lourde, avec un lien vers un outil externe.  Pour Laura : «  C'est une bonne idée, mais mes interlocuteurs sont très pressés.  » Pour Estelle, attention  : «  Il y a deux cas : ceux qui ne savent pas faire et ceux qui ne prendront pas le temps. Il faut maintenir certaines contraintes. Je doute que les gens consultent le tutoriel.  » Pour la décision, pour Yuna, il faut s'interroger sur la "promesse" d'Osuny. «  La réduction des tailles d'images à la source relève-t-elle de sa responsabilité ? » Pour  Arnaud, la médiathèque pourrait apporter une solution — attendons les retours d'usage de Justin et Laura. </p>  <p> Releases Front  <br>   <br>https://github.com/osunyorg/theme/releases/tag/v7.2.16 https://github.com/osunyorg/theme/releases/tag/v7.2.15 https://github.com/osunyorg/theme/releases/tag/v7.2.14 https://github.com/osunyorg/theme/releases/tag/v7.2.13 https://github.com/osunyorg/theme/releases/tag/v7.2.12 https://github.com/osunyorg/theme/releases/tag/v7.2.11 https://github.com/osunyorg/theme/releases/tag/v7.2.10 https://github.com/osunyorg/theme/releases/tag/v7.2.9 https://github.com/osunyorg/theme/releases/tag/v7.2.8 https://github.com/osunyorg/theme/releases/tag/v7.2.7 https://github.com/osunyorg/theme/releases/tag/v7.2.6 https://github.com/osunyorg/theme/releases/tag/v7.2.5 https://github.com/osunyorg/theme/releases/tag/v7.2.4 https://github.com/osunyorg/theme/releases/tag/v7.2.3 https://github.com/osunyorg/theme/releases/tag/v7.2.2 https://github.com/osunyorg/theme/releases/tag/v7.2.1 https://github.com/osunyorg/theme/releases/tag/v7.2.0   Audit accessibilité Nous avons fini l'audit du thème avec  Témésis , le socle front atteignant 100 % d'accessibilité. Il faut rester vigilant, car l'accessibilité peut être compromise lors du développement et de la contribution de contenus. Estelle Solleillant, cheffe de projet numérique Rennes Métropole, félicite l'équipe et s'interroge sur l'articulation avec la suite de l'audit des contenus. Arnaud indique que l'objectif est d'établir une méthodologie d'audit Osuny avec Temesis et  Numerik-ea . La documentation developers a été mise à jour en conséquence :  https://developers.osuny.org/docs/audit/ . Nous devons y intégrer l'ensemble des documents, la grille d'audit et la méthodologie. Parmi les 106 critères du RGAA, certains sont déjà validés, les autres restent à tester. Nous prévoyons d'utiliser les cas  Comnum  et la  Criée  pour documenter notre processus, en identifiant les critères automatiquement validés et ceux nécessitant un audit. Estelle demande si cela implique que les audits des autres sites Osuny doivent être réalisés avec Temesis et Numerikea. Arnaud précise que la démarche sera sous licence Creative Commons et non privative. Estelle souligne que de nombreux critères nécessitent une révision, chaque site ayant ses spécificités. Arnaud ajoute que l'audit dépend beaucoup du contexte et de l'interprétation personnelle — deux auditeurs n'aboutiront pas nécessairement au même résultat. Modifications et améliorations Nous avons apporté des améliorations liées à l'accessibilité, notamment sur les blocs vidéo, le son et le nettoyage des balises. La question de l'automatisation de la non-régression se pose également. Nous disposons d'outils back-end, mais peu d'outils front-end. Sébastien a développé un outil interne qui signale automatiquement les invalidités W3C lors des modifications. Ce système d'alertes automatisées est nécessaire vu le volume important de changements. Un autre chantier concerne la non-régression visuelle : comment s'assurer qu'une mise à jour du thème ne dégrade pas l'apparence des menus ou du footer ? L'objectif est de créer un outil de vérification pour éviter les corrections successives et maintenir tous les sites sous contrôle. Nous avons également abordé l'interdiction du tracking YouTube et Vimeo. Des paramètres sont désormais ajoutés par défaut pour les deux plateformes, bien que leur respect ne soit pas garanti. La standardisation du « upper menu » est en cours. Le site de Communication Publique (3 sites) est en phase de finalisation. Le « upper menu » s'étend aux sous-domaines, avec des utilisations variables selon les cas. Concernant le front-end et le back-end : les catégories et taxonomies ont été unifiées. Les catégories peuvent évoluer en taxonomies et inclure différents types. Cette approche, utilisée dans  CIDS , permet des regroupements efficaces. <br>Estelle s'interroge sur la différence entre taxonomie et tag. <br>Arnaud explique qu'Osuny n'utilise pas de tags, mais des catégories qu'il faut d'abord créer. L'organisation peut inclure des arborescences, mais tout reste dans les catégories. Les types d'articles ou sujets suivent la même logique. Un sujet peut être défini comme une taxonomie plutôt qu'une catégorie, formant une section distincte pour la gestion des contenus et des filtres. On obtient ainsi une partie « Sujet » séparée, avec des thématiques dans une catégorie et des types de documents à part. Cette fonctionnalité est disponible partout en back-end, et nous finalisons l'harmonisation.</p>  <p> Releases Back  <br>   <br>https://github.com/osunyorg/admin/releases/tag/v3.1.0 Les sites de Rennes vont être développés en collaboration avec  Ecedi . Une documentation a été générée listant tous les points d'accès de l'API, permettant aux développeurs utilisant Osuny de comprendre son utilisation. Cette collaboration avec Ecedi implique l'utilisation de l'API dans différents systèmes d'information, ouvrant la voie à la création de plugins et de gems pour diverses applications. Cas spécifiques : nous utilisons des partials pour la création des pages. Pour les surcouches HTML, certaines parties ont été réécrites pour des sites spécifiques. Nous pouvons ainsi les retester et effectuer les ajustements nécessaires. Ces modifications nous permettent de suivre les changements du code HTML et de maintenir le contrôle sur les mises à jour, en vérifiant la compatibilité des modifications et en nous assurant qu'aucun site n'est endommagé. Bloc vidéo : deux erreurs d'accessibilité ont été identifiées : l'absence de titre et de transcription. La transcription est obligatoire. Pour le titre, s'il n'est pas renseigné, le système récupère automatiquement le titre de la vidéo depuis la plateforme. Nous avons unifié et réorganisé l'ensemble. Pour les blocs avec titre ou description optionnelle, qui présentaient de nombreux cas particuliers avec duplication de code, nous avons précalculé tous ces blocs en back-end pour simplifier le front-end. Cela facilite la maintenance du thème. Sur le  showcase  : nous avons ajouté un classement par année. Chaque objet dispose désormais de sa propre page, permettant le partage direct d'une page d'un site.</p>  <p> Nouveaux sites  <br>   <br>Le site Parole Publique est en ligne, mais le site Communication Publique n'est pas encore disponible. En cours de finalisation : le site Bonne Pioche.</p>  <p> Questions et remarques  <br>   <br>Auteur, Autrice par défaut AfaLab  souhaitait savoir s'il était possible de définir un auteur ou une autrice par défaut, car dans leur cas ce devrait toujours être "African Future Lab" (ce qui n'est pas possible actuellement). Pour l'instant, quand on crée un article, c'est la personne liée au compte utilisateur qui devient automatiquement l'auteur (ce qui est logique). Nous pourrions envisager une option au niveau du site web pour définir un auteur par défaut qui remplacerait le créateur. Si aucun auteur n'est défini, nous pouvons éviter le renvoi vers une page. La question des normes SEO se pose : devrait-on indiquer un auteur pour le référencement même en l'absence d'auteur réel ? Yuna évoque le cas d'un ancien collaborateur ou d'une personne travaillant pour une organisation qui souhaiterait avoir un profil professionnel plutôt qu'une présence individuelle. Estelle : «  Dans  Comnum , mon nom apparaissait partout alors que je ne le souhaitais pas forcément. Je sélectionnais une page vide ou indiquais "article à 4 mains".  »  Arnaud précise que nous avons la possibilité d'avoir plusieurs auteurs comme ici avec En Communs :  https://www.encommuns.net/articles/2024-09-03-solastalgie-des-communs-quatre-poemes-de-john-clare-sur-la-tragedie-des-enclosures/ .  Pour Arnaud, mettre un faux auteur n'est pas une solution préférable à l'absence d'auteur. Estelle suggère la possibilité de créer un pseudonyme. Emmy soulève la question des pigistes sans profils créés et insiste sur l'importance d'afficher leurs noms. Dans Osuny, la solution permettra de supprimer le compte utilisateur tout en conservant le nom de la personne sur les articles. Dans le BO, avoir un nom différent pour « Actualités »  Sacha André souligne que le terme « Actualités » ne reflète pas la multifonctionnalité de cet outil. Par exemple, sur le site du philosophe « Lucien Sève » qu'il est en train de réaliser avec Osuny, nous utilisons le bloc actualité pour les publications  sur  et  de  Lucien Sève. Sur un site d'art, les actualités pourraient servir à publier chaque œuvre par catégorie (peinture, sculpture, etc.). Une confusion peut survenir entre l'agenda et les articles divers, notamment en raison de la proximité sémantique avec « Événements ». Sacha propose de remplacer « Actualités » par « Écrit », « sujet » ou « billet » (évitant délibérément « Article » pour se différencier de WordPress). Son idée serait de permettre la modification du terme « Actualités » lors de la création du site, durant la phase de conception. Arnaud précise qu'effectivement, sur le site de Lucien Sève, les actualités s'appellent « Publications ». Il suggère de pouvoir modifier le nom des objets dans le back-office, permettant ainsi à l'onglet Actualités d'avoir un nom différent. Pour Anthony, les Organisations/personnes constituent un socle commun central, comme les Actualités et le portfolio. La question se pose : jusqu'où faut-il travailler la sémantique ? Yuna trouve cette réflexion pertinente malgré la complexité technique. Arnaud rappelle l'approche de la roadmap : à l'instar des custom types de WordPress, on peut ajouter des champs selon les besoins du site. Bien que la qualité sémantique d'Osuny soit bonne, la question des limites de personnalisation se pose. Yuna suggère une solution hybride : des objets bien structurés et des objets entièrement personnalisables. Pour le nommage, elle propose d'offrir un choix limité de termes (listes, agenda, planning) correspondant aux usages les plus courants. Pour l'instant, seul l'affichage front-end sera modifié, conservant « Actualités » dans le back-end. Il serait pertinent de proposer des termes correspondant aux thématiques les plus demandées. Anthony rejoint l'avis de Yuna : le socle repose sur des pages, l'agenda et le portfolio étant des templates. Le choix des templates se fait pour leurs fonctionnalités plutôt que leur désignation, ce qui peut créer des confusions chez les clients. Arnaud explique qu'Osuny privilégie une approche sémantique : on choisit un objet pour son essence avant de le nommer, contrairement à une approche basée sur le design. Yuna note que la diversification des besoins nécessitera d'adapter l'outil, comme le fait régulièrement Anthony. Ce dernier suggère d'améliorer la présentation de la partie projet. Selon Arnaud, il est essentiel de partir de l'essence de l'objet tout en améliorant sa présentation visuelle. Il considère que beaucoup d'adaptations design sont temporaires et constituent des points sensibles. Anthony approuve la proposition de Yuna concernant la modification des noms de rubriques. Il suggère d'intégrer des options communes, comme les catégories, au même endroit où l'on coche les fonctionnalités, et de les appliquer aux pages. Yuna souligne l'importance du changement de terminologie pour les équipes de rédaction qui utilisent leur propre vocabulaire. Arnaud recentre la discussion sur le trio Actualités/Agenda/Portfolio. Il propose une solution pratique : utiliser dans le back-office le nom choisi pour la page (par exemple, si elle est nommée « News »). Yuna approuve cette solution transitoire en attendant une personnalisation plus complète. Anthony ajoute qu'il explique souvent l'utilisation du portfolio pour présenter des éléments, tout en notant que le terme « projets » varie selon les organisations, comme « actualités ». Il suggère la possibilité de renommer en « Expérimentations », par exemple, tout en précisant l'utilisation du template projet avec ses fonctionnalités. La solution rapide est donc d'adopter le nom de la page pour les trois éléments (Actualités/Agenda/Portfolio). Rendre les titres d’onglets « Actualités » « Catégories » « Auteur.rice.s » plus lisible / identifiable Pour Sacha, le léger changement de teinte n'est pas suffisamment identifiable comme élément cliquable. Il faudrait peut-être ajouter un contour, une bordure inférieure ou une ombre ? Proposition rapide d’Anthony pour mettre les titres dans des onglets :  https://www.figma.com/design/tQh3oLfNwSt8aoVDuUjQt0/Th%C3%A8me-Osuny?node-id=19180-8&t=N4jbjLM04QJQgP9B-4 . Ne devrions-nous pas souligner « Catégories » et « Auteurs » ? En termes d'accessibilité, ce n'est pas optimal. Arnaud propose un filet en dessous rendrait l'élément visiblement cliquable. Yuna propose un aplat noir pour indiquer que c'est actif. L’idée est de voir avec Denis Fongue et discuter du filet en dessous avec lui.</p>  <p> Autres informations  <br>   <br>Nous avons avancé sur le système d'événements, on attend encore le site de la Gaîté Lyrique pour présenter. Questions autour de la gestion de l'intégration d'admin et du suivi de design de l'admin. Quelques jours dans l'année sont prévus pour le suivi des designers afin de ranger, phaser et prioriser ce qui est vraiment urgent ou ce qui peut attendre. Par exemple, le système de recherche et le système d'accueil, redesignés par Denis Fongue depuis longtemps. </p>  <p> Nous avons terminé les missions liées à la subvention et allons demander le solde. On finance le travail de développement, mais nous ne finançons pas nous-mêmes le travail de design. À quel moment y aura-t-il assez de fonds dans le commun pour dégager du temps de Denis ou d'Anthony pour le design ?  Nous avons eu une discussion avec Vincent Bachelet concernant le don défiscalisé — est-ce possible ? Cette question revient régulièrement. La défiscalisation pourrait multiplier les contributions, ce qui serait très intéressant si c'est faisable. Vincent étudie les possibilités, mais il ne faut pas que noesya soit seul : il faut des piliers pour construire l'assemblage juridique. Il faudrait au minimum deux autres organisations pour créer un véhicule juridique, une association d'intérêt général, une fondation d'intérêt général, dont l'un accepterait les dons. Cela ne remet pas en cause la SCIC, mais il faut un autre véhicule juridique, car les dons ne sont pas possibles dans la SCIC, pour assurer la pérennité du commun. C'est plus proche du trust anglais : avoir une organisation sans but lucratif et de l'autre côté des organisations qui ont pour but de travailler sur le commun.</p>  <p> Replay  <br>  </p>  <p>https://vimeo.com/1045343614?share=copy#t=0 <br>Replay Assemblée Osuny#14</p>
+
+date: "2025-01-09T11:00:00+01:00"
+dates:
+  status: "archive"
+  archive: true
+  event:
+    kind: simple
+    is_child: false
+  computed:
+    short: >-
+      9 janvier 2025
+    long: >-
+      Jeudi 9 janvier 2025
+    two_lines:
+      short: >-
+        9 janvier 2025
+      long: >-
+        Jeudi 9 janvier 2025
+  from:
+    day: "2025-01-09"
+  to:
+    day: "2025-01-09"
+  add_to_calendar:
+    google: "https://www.google.com/calendar/render?action=TEMPLATE&text=Assembl%C3%A9e%20Osuny%20%2314%20R%C3%A9union%20mensuelle%20ouverte&dates=20250109/20250110&ctz=Europe/Paris&details=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F"
+    yahoo: "https://calendar.yahoo.com/?v=60&TITLE=Assembl%C3%A9e%20Osuny%20%2314%20R%C3%A9union%20mensuelle%20ouverte&ST=20250109&ET=20250109&DUR=allday&DESC=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F"
+    office: "https://outlook.office.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2314%20R%C3%A9union%20mensuelle%20ouverte&startdt=2025-01-09&enddt=2025-01-10&allday=true&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F"
+    outlook: "https://outlook.live.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2314%20R%C3%A9union%20mensuelle%20ouverte&startdt=2025-01-09&enddt=2025-01-10&allday=true&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F"
+    ical: "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//AddToCalendar//RubyGem//EN%0ABEGIN:VEVENT%0ADTSTAMP:20260511T140829Z%0ADTSTART;VALUE=DATE:20250109%0ADTEND;VALUE=DATE:20250110%0ASUMMARY:Assembl%C3%A9e%20Osuny%20%2314%20R%C3%A9union%20mensuelle%20ouverte%0AURL:https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F%0ADESCRIPTION:\n\nhttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F%0AUID:-https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F%0AEND:VEVENT%0AEND:VCALENDAR"
+
+
+
+image:
+  id: "502f9e71-d7ee-45ea-9650-46aae7421ed9"
+  alt: ""
+  credit: >-
+    <p>Violenn Simon</p>
+
+
+
+breadcrumbs:
+  - title: >-
+      Accueil
+    path: "/"
+  - title: >-
+      Agenda
+    path: "/agenda/"
+  - title: >-
+      Assemblée Osuny #14
+
+design:
+  full_width: false
+  toc:
+    present: true
+    offcanvas: false
+
+current_time_slot:
+  permalink: "/agenda/2025/assemblee-osuny-14/"
+  path: "/events/2025/01/09-11-00-assemblee-osuny-14"
+  slug: "assemblee-osuny-14"
+  file: "content/fr/events/2025/01/09-11-00-assemblee-osuny-14.html"
+  start:
+    date: "2025-01-09"
+    time: "11:00"
+    datetime: "2025-01-09T11:00:00+01:00"
+  end:
+    date: "2025-01-09"
+    time: "13:00"
+    datetime: "2025-01-09T13:00:00+01:00"
+  status: "archive"
+
+  add_to_calendar:
+    google: "https://www.google.com/calendar/render?action=TEMPLATE&text=Assembl%C3%A9e%20Osuny%20%2314%20R%C3%A9union%20mensuelle%20ouverte&dates=20250109T110000/20250109T130000&ctz=Europe/Paris&details=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F"
+    yahoo: "https://calendar.yahoo.com/?v=60&TITLE=Assembl%C3%A9e%20Osuny%20%2314%20R%C3%A9union%20mensuelle%20ouverte&ST=20250109T100000Z&DUR=0200&DESC=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F"
+    office: "https://outlook.office.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2314%20R%C3%A9union%20mensuelle%20ouverte&startdt=2025-01-09T10:00:00Z&enddt=2025-01-09T12:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F"
+    outlook: "https://outlook.live.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2314%20R%C3%A9union%20mensuelle%20ouverte&startdt=2025-01-09T10:00:00Z&enddt=2025-01-09T12:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F"
+    ical: "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//AddToCalendar//RubyGem//EN%0ABEGIN:VEVENT%0ADTSTAMP:20260511T140833Z%0ADTSTART:20250109T100000Z%0ADTEND:20250109T120000Z%0ASUMMARY:Assembl%C3%A9e%20Osuny%20%2314%20R%C3%A9union%20mensuelle%20ouverte%0AURL:https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F%0ADESCRIPTION:\n\nhttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F%0AUID:-https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F%0AEND:VEVENT%0AEND:VCALENDAR"
+
+
+time_slots:
+  - permalink: "/agenda/2025/assemblee-osuny-14/"
+    path: "/events/2025/01/09-11-00-assemblee-osuny-14"
+    slug: "assemblee-osuny-14"
+    file: "content/fr/events/2025/01/09-11-00-assemblee-osuny-14.html"
+    start:
+      date: "2025-01-09"
+      time: "11:00"
+      datetime: "2025-01-09T11:00:00+01:00"
+    end:
+      date: "2025-01-09"
+      time: "13:00"
+      datetime: "2025-01-09T13:00:00+01:00"
+    status: "archive"
+
+    add_to_calendar:
+      google: "https://www.google.com/calendar/render?action=TEMPLATE&text=Assembl%C3%A9e%20Osuny%20%2314%20R%C3%A9union%20mensuelle%20ouverte&dates=20250109T110000/20250109T130000&ctz=Europe/Paris&details=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F"
+      yahoo: "https://calendar.yahoo.com/?v=60&TITLE=Assembl%C3%A9e%20Osuny%20%2314%20R%C3%A9union%20mensuelle%20ouverte&ST=20250109T100000Z&DUR=0200&DESC=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F"
+      office: "https://outlook.office.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2314%20R%C3%A9union%20mensuelle%20ouverte&startdt=2025-01-09T10:00:00Z&enddt=2025-01-09T12:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F"
+      outlook: "https://outlook.live.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2314%20R%C3%A9union%20mensuelle%20ouverte&startdt=2025-01-09T10:00:00Z&enddt=2025-01-09T12:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F"
+      ical: "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//AddToCalendar//RubyGem//EN%0ABEGIN:VEVENT%0ADTSTAMP:20260511T140833Z%0ADTSTART:20250109T100000Z%0ADTEND:20250109T120000Z%0ASUMMARY:Assembl%C3%A9e%20Osuny%20%2314%20R%C3%A9union%20mensuelle%20ouverte%0AURL:https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F%0ADESCRIPTION:\n\nhttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F%0AUID:-https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-14%2F%0AEND:VEVENT%0AEND:VCALENDAR"
+
+
+translationKey: communication-website-agenda-event-c23fb61a-1acd-4d2e-a999-e2bbf6dead5a
+
+
+meta_description: >-
+  Assemblée Osuny #14
+
+
+header_cta:
+
+contents_reading_time:
+  seconds: 934
+  text: >-
+    16 minutes
+contents:
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 2
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Nous organisons une réunion mensuelle ouverte, le premier jeudi de chaque mois, dans le but de rassembler toute la communauté Osuny. Cet événement est un moment d'échange et de discussions, pendant lequel l'équipe noesya présente les avancées fonctionnelles. Cet événement est ouvert, vous êtes libre de venir quand vous le souhaitez, il n'y a aucune obligation d'être présent·e chaque mois, c'est à votre convenance. Nous souhaitons co-construire l'ordre du jour de cette réunion mensuelle avec vous, donc nous sommes à l'écoute de vos remarques et/ou questions.</p><p><a href="https://jitsi.my.noesya.coop/OsunyCommunaute" target="_blank" rel="noreferrer">Accéder à la vidéoconférence Jitsi <span class="sr-only">(lien externe)</span></a></p>
+
+
+
+
+
+
+  - kind: block
+    template: persons
+
+
+    ranks:
+      base: 2
+      children: 2
+    top:
+      active: false
+
+    data:
+
+      layout: grid
+      options:
+        image: true
+        summary: true
+        link: false
+        contact: false
+
+      persons:
+        - permalink: "/personnes/magali-angles/"
+          path: "/persons/magali-angles"
+          slug: "magali-angles"
+          file: "content/fr/persons/magali-angles.html"
+
+        - permalink: "/personnes/pierre-andre-boissinot/"
+          path: "/persons/pierre-andre-boissinot"
+          slug: "pierre-andre-boissinot"
+          file: "content/fr/persons/pierre-andre-boissinot.html"
+
+        - permalink: "/personnes/olivier-ertz/"
+          path: "/persons/olivier-ertz"
+          slug: "olivier-ertz"
+          file: "content/fr/persons/olivier-ertz.html"
+
+        - permalink: "/personnes/laura-fernandez/"
+          path: "/persons/laura-fernandez"
+          slug: "laura-fernandez"
+          file: "content/fr/persons/laura-fernandez.html"
+
+        - permalink: "/personnes/anthony-ferretti/"
+          path: "/persons/anthony-ferretti"
+          slug: "anthony-ferretti"
+          file: "content/fr/persons/anthony-ferretti.html"
+
+        - permalink: "/personnes/sebastien-gaya/"
+          path: "/persons/sebastien-gaya"
+          slug: "sebastien-gaya"
+          file: "content/fr/persons/sebastien-gaya.html"
+
+        - permalink: "/personnes/arnaud-levy/"
+          path: "/persons/arnaud-levy"
+          slug: "arnaud-levy"
+          file: "content/fr/persons/arnaud-levy.html"
+
+        - permalink: "/personnes/emmie-niard/"
+          path: "/persons/emmie-niard"
+          slug: "emmie-niard"
+          file: "content/fr/persons/emmie-niard.html"
+
+        - permalink: "/personnes/yuna-orsini/"
+          path: "/persons/yuna-orsini"
+          slug: "yuna-orsini"
+          file: "content/fr/persons/yuna-orsini.html"
+
+        - permalink: "/personnes/justin-puyo/"
+          path: "/persons/justin-puyo"
+          slug: "justin-puyo"
+          file: "content/fr/persons/justin-puyo.html"
+
+        - permalink: "/personnes/marion-rebier/"
+          path: "/persons/marion-rebier"
+          slug: "marion-rebier"
+          file: "content/fr/persons/marion-rebier.html"
+
+        - permalink: "/personnes/olivia-simonet/"
+          path: "/persons/olivia-simonet"
+          slug: "olivia-simonet"
+          file: "content/fr/persons/olivia-simonet.html"
+
+        - permalink: "/personnes/estelle-soleillant/"
+          path: "/persons/estelle-soleillant"
+          slug: "estelle-soleillant"
+          file: "content/fr/persons/estelle-soleillant.html"
+
+      quantity: 13
+
+
+  - kind: block
+    template: title
+    title: >-
+      Médiathèque
+    slug: >-
+      mediatheque
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Médiathèque
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><b>Réflexions sur la médiathèque</b></p><p><a href="https://developers.osuny.org/docs/admin/composants/media-library/" target="_blank" rel="noreferrer">https://developers.osuny.org/docs/admin/composants/media-library/ <span class="sr-only">(lien externe)</span></a><br>De nombreux utilisateurs, particulièrement ceux habitués à Wordpress, la réclamaient. Bien que son absence ne soit pas toujours problématique, certains cas d'usage la rendent pertinente, notamment pour les collections de photos appartenant à une organisation. L'objectif est de permettre un accès à ses propres photos via la médiathèque.<br>Dans le back-office, un nouvel onglet Médiathèque permettra de modifier le nom, le texte alternatif, et de gérer des collections pour l'envoi de séries d'images avec des catégories. Le fonctionnement évolue : en plus du bouton d'import d'image existant, un nouveau bouton permet d'importer une collection, offrant des fonctionnalités de DAM (digital asset management) pour une photothèque simple. Cette fonction n'est pour l'instant disponible qu'en back-office.<br>Pour l'<a href="http://esadmm.fr%20%E2%80%BA%20accueil-2023" target="_blank" rel="noreferrer">INSEAMM <span class="sr-only">(lien externe)</span></a>, projet qui finance la médiathèque dans Osuny, le périmètre initial était de permettre de créer une collection de photos fonctionnelle, avec une gestion des droits prévue ultérieurement. La collection de photos est actuellement la fonctionnalité principale. Concernant le poids des images, Arnaud précise que celui-ci est visible dans la fiche média. Osuny gère l'optimisation des images dès le départ, utilisant une balise HTML (source set) avec six formats, des versions retina et non retina, ainsi que des breakpoints.</p><p>La question du nettoyage soulève des interrogations. Les fichiers sont stockés sur Scaleway, et une sécurité est déjà en place pour préserver les données. L'objectif est surtout d'éviter que les utilisateurs n'uploadent des images inutilement, c'est donc principalement une question pratique.<br>Concernant l'approche, similaire à Wordpress : faut-il que l'ajout d'une image l'affiche automatiquement dans la bibliothèque de médias, ou doit-on passer par celle-ci pour ajouter une image ?<br>Les deux options seront disponibles, mais les images devront obligatoirement intégrer une collection. Lors de l'ajout d'une image, il faudra la classer et l'organiser, évitant ainsi l'accumulation désordonnée d'images comme sur Wordpress.</p><p>Remarque de Yuna : cette approche s'inscrit dans une démarche d'éco-conception, évitant les uploads multiples d'images. Osuny fonctionne beaucoup par référencement, privilégiant la non-duplication des images. Bien que le système ne détecte pas encore les doublons, la médiathèque permettra de réutiliser les images sans nouvel upload, apportant une solution partielle. L'objectif est de trouver un équilibre entre un système natif robuste et un système développé en interne. Notre approche n'est pas d'imposer ou de donner une apparence éco-conçue.</p><p>Pour Justin Peyo, de l'IUT Bordeaux Montaigne, cette fonctionnalité l'intéresse depuis le début et lui manque beaucoup. Il n'attend pas quelque chose de semblable à Wordpress, car certaines fonctionnalités ne sont pas souhaitables et ne correspondent pas à la philosophie d'Osuny. Pouvoir accéder à une bibliothèque d'images pour un article est indispensable pour un établissement. À l'échelle universitaire, avec de nombreux contributeurs qui ne sont ni communicants ni techniciens, c'est particulièrement important. Sans avoir toutes les ressources sous la main et face à des images parfois inadaptées, disposer d'une solution clé en main est essentiel. <br>Pour Laura Fernandez, de l'IUT de Bordeaux, l'intérêt est d'avoir une visualisation globale de toutes les images et de leur emplacement sur les différentes pages, afin d'éviter l'utilisation répétée d'une même image. Sébastien explique que cette fonctionnalité sera disponible.</p><p><b>Question du poids des images<br></b></p><p>Laura demande s'il est prévu de développer un outil pour compresser les images supérieures à 5 Mo. L'issue est ouverte, mais Arnaud souhaite savoir qui d'autre a ce besoin.( <a href="https://github.com/osunyorg/admin/issues/2437)" target="_blank" rel="noreferrer">https://github.com/osunyorg/admin/issues/2437) <span class="sr-only">(lien externe)</span></a> </p><p>Développer un système pour des JPGs volumineux faciliterait la vie, mais ne devrait-on pas plutôt éviter le téléchargement de fichiers trop lourds dès le départ ? Laura précise « <i>C'est la formation qui m'envoie une image, je n'ai pas le choix dans l'image.</i> » Justin : « <i>En pensant aux contributeurs, je vois des personnes qui prennent une photo sans savoir si elle est lourde ni comment la réduire. Par exemple, un enseignant qui dit "J'ai des images de 30 Mo".</i> » Justin suggère d'avoir une petite marge avec un outil qui redimensionne modérément. Arnaud propose plutôt de rediriger vers des outils externes, pour encourager l'implication des utilisateurs. Actuellement, nous utilisons KeyCDN. Une solution libre serait idéale. Une discussion est en cours avec Deux fleurs. La question est de savoir jusqu'où aller.</p><p>Laura comprend la position, mais souligne l'importance du service rendu à l'utilisateur. Certaines personnes ne savent pas comment procéder. Elle peut s'en sortir mais s'inquiète pour d'autres utilisateurs, comme les départements. Arnaud fait l'analogie avec les images sous droits : le problème est l'utilisation d'images prises au hasard. Pour Olivier de Rennes Métropole : «<i> De nombreux sites web utilisent des images énormes permettant le zoom, ce qui n'est ni sobre ni logique. Nous avons besoin d'accompagnement et d'éducation. Les décisions doivent aller dans ce sens. Je ne suis pas favorable à trop ouvrir les possibilités.</i> » Anthony : « <i>Sur Praticable, une pop-up s'affichait lors de l'import d'images trop volumineuses, expliquant le problème et redirigeant vers le guide d'écoconception de designers éthiques. Nous avions aussi le plugin de redimensionnement et de recadrage de Kirby. Le recadrage était particulièrement utile</i>. ». Yuna propose de rajouter un texte d'aide pédagogique lors du téléchargement d'une image trop lourde, avec un lien vers un outil externe.  Pour Laura : « <i>C'est une bonne idée, mais mes interlocuteurs sont très pressés. </i>»</p><p>Pour Estelle, attention  : « <i>Il y a deux cas : ceux qui ne savent pas faire et ceux qui ne prendront pas le temps. Il faut maintenir certaines contraintes. Je doute que les gens consultent le tutoriel. </i>» Pour la décision, pour Yuna, il faut s'interroger sur la "promesse" d'Osuny. « <i>La réduction des tailles d'images à la source relève-t-elle de sa responsabilité ? » Pour </i>Arnaud, la médiathèque pourrait apporter une solution — attendons les retours d'usage de Justin et Laura.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Releases Front
+    slug: >-
+      releases-front
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Releases Front
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><a href="https://github.com/osunyorg/theme/releases/tag/v7.2.16" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/tag/v7.2.16 <span class="sr-only">(lien externe)</span></a><br><a href="https://github.com/osunyorg/theme/releases/tag/v7.2.15" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/tag/v7.2.15 <span class="sr-only">(lien externe)</span></a><br><a href="https://github.com/osunyorg/theme/releases/tag/v7.2.14" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/tag/v7.2.14 <span class="sr-only">(lien externe)</span></a><br><a href="https://github.com/osunyorg/theme/releases/tag/v7.2.13" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/tag/v7.2.13 <span class="sr-only">(lien externe)</span></a><br><a href="https://github.com/osunyorg/theme/releases/tag/v7.2.12" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/tag/v7.2.12 <span class="sr-only">(lien externe)</span></a><br><a href="https://github.com/osunyorg/theme/releases/tag/v7.2.11" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/tag/v7.2.11 <span class="sr-only">(lien externe)</span></a><br><a href="https://github.com/osunyorg/theme/releases/tag/v7.2.10" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/tag/v7.2.10 <span class="sr-only">(lien externe)</span></a><br><a href="https://github.com/osunyorg/theme/releases/tag/v7.2.9" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/tag/v7.2.9 <span class="sr-only">(lien externe)</span></a><br><a href="https://github.com/osunyorg/theme/releases/tag/v7.2.8" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/tag/v7.2.8 <span class="sr-only">(lien externe)</span></a><br><a href="https://github.com/osunyorg/theme/releases/tag/v7.2.7" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/tag/v7.2.7 <span class="sr-only">(lien externe)</span></a><br><a href="https://github.com/osunyorg/theme/releases/tag/v7.2.6" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/tag/v7.2.6 <span class="sr-only">(lien externe)</span></a><br><a href="https://github.com/osunyorg/theme/releases/tag/v7.2.5" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/tag/v7.2.5 <span class="sr-only">(lien externe)</span></a><br><a href="https://github.com/osunyorg/theme/releases/tag/v7.2.4" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/tag/v7.2.4 <span class="sr-only">(lien externe)</span></a><br><a href="https://github.com/osunyorg/theme/releases/tag/v7.2.3" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/tag/v7.2.3 <span class="sr-only">(lien externe)</span></a><br><a href="https://github.com/osunyorg/theme/releases/tag/v7.2.2" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/tag/v7.2.2 <span class="sr-only">(lien externe)</span></a><br><a href="https://github.com/osunyorg/theme/releases/tag/v7.2.1" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/tag/v7.2.1 <span class="sr-only">(lien externe)</span></a><a href="https://github.com/osunyorg/theme/releases/tag/v7.2.0" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/tag/v7.2.0 <span class="sr-only">(lien externe)</span></a> </p><p><b>Audit accessibilité</b></p><p>Nous avons fini l'audit du thème avec <a href="https://www.temesis.com/" target="_blank" rel="noreferrer">Témésis <span class="sr-only">(lien externe)</span></a>, le socle front atteignant 100 % d'accessibilité. Il faut rester vigilant, car l'accessibilité peut être compromise lors du développement et de la contribution de contenus. Estelle Solleillant, cheffe de projet numérique Rennes Métropole, félicite l'équipe et s'interroge sur l'articulation avec la suite de l'audit des contenus. Arnaud indique que l'objectif est d'établir une méthodologie d'audit Osuny avec Temesis et <a href="https://www.numerik-ea.fr/" target="_blank" rel="noreferrer">Numerik-ea <span class="sr-only">(lien externe)</span></a>. La documentation developers a été mise à jour en conséquence : <a href="https://developers.osuny.org/docs/audit/">https://developers.osuny.org/docs/audit/</a>. Nous devons y intégrer l'ensemble des documents, la grille d'audit et la méthodologie. Parmi les 106 critères du RGAA, certains sont déjà validés, les autres restent à tester. Nous prévoyons d'utiliser les cas <a href="https://comnum.rennes.fr/" target="_blank" rel="noreferrer">Comnum <span class="sr-only">(lien externe)</span></a> et la <a href="https://www.la-criee.org/fr/" target="_blank" rel="noreferrer">Criée <span class="sr-only">(lien externe)</span></a> pour documenter notre processus, en identifiant les critères automatiquement validés et ceux nécessitant un audit.<br>Estelle demande si cela implique que les audits des autres sites Osuny doivent être réalisés avec Temesis et Numerikea. Arnaud précise que la démarche sera sous licence Creative Commons et non privative. Estelle souligne que de nombreux critères nécessitent une révision, chaque site ayant ses spécificités. Arnaud ajoute que l'audit dépend beaucoup du contexte et de l'interprétation personnelle — deux auditeurs n'aboutiront pas nécessairement au même résultat.</p><p><strong>Modifications et améliorations</strong></p><p>Nous avons apporté des améliorations liées à l'accessibilité, notamment sur les blocs vidéo, le son et le nettoyage des balises.</p><p>La question de l'automatisation de la non-régression se pose également. Nous disposons d'outils back-end, mais peu d'outils front-end. Sébastien a développé un outil interne qui signale automatiquement les invalidités W3C lors des modifications. Ce système d'alertes automatisées est nécessaire vu le volume important de changements. Un autre chantier concerne la non-régression visuelle : comment s'assurer qu'une mise à jour du thème ne dégrade pas l'apparence des menus ou du footer ? L'objectif est de créer un outil de vérification pour éviter les corrections successives et maintenir tous les sites sous contrôle.</p><p>Nous avons également abordé l'interdiction du tracking YouTube et Vimeo. Des paramètres sont désormais ajoutés par défaut pour les deux plateformes, bien que leur respect ne soit pas garanti.</p><p>La standardisation du « upper menu » est en cours. Le site de Communication Publique (3 sites) est en phase de finalisation. Le « upper menu » s'étend aux sous-domaines, avec des utilisations variables selon les cas.</p><p>Concernant le front-end et le back-end : les catégories et taxonomies ont été unifiées. Les catégories peuvent évoluer en taxonomies et inclure différents types. Cette approche, utilisée dans <a href="https://cids.ch/" target="_blank" rel="noreferrer">CIDS <span class="sr-only">(lien externe)</span></a>, permet des regroupements efficaces. Estelle s'interroge sur la différence entre taxonomie et tag. Arnaud explique qu'Osuny n'utilise pas de tags, mais des catégories qu'il faut d'abord créer. L'organisation peut inclure des arborescences, mais tout reste dans les catégories. Les types d'articles ou sujets suivent la même logique. Un sujet peut être défini comme une taxonomie plutôt qu'une catégorie, formant une section distincte pour la gestion des contenus et des filtres. On obtient ainsi une partie « Sujet » séparée, avec des thématiques dans une catégorie et des types de documents à part. Cette fonctionnalité est disponible partout en back-end, et nous finalisons l'harmonisation.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Releases Back
+    slug: >-
+      releases-back
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Releases Back
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><a href="https://github.com/osunyorg/admin/releases/tag/v3.1.0">https://github.com/osunyorg/admin/releases/tag/v3.1.0</a></p><p>Les sites de Rennes vont être développés en collaboration avec <a href="https://www.ecedi.fr/" target="_blank" rel="noreferrer">Ecedi <span class="sr-only">(lien externe)</span></a>. Une documentation a été générée listant tous les points d'accès de l'API, permettant aux développeurs utilisant Osuny de comprendre son utilisation. Cette collaboration avec Ecedi implique l'utilisation de l'API dans différents systèmes d'information, ouvrant la voie à la création de plugins et de gems pour diverses applications.</p><p>Cas spécifiques : nous utilisons des partials pour la création des pages. Pour les surcouches HTML, certaines parties ont été réécrites pour des sites spécifiques. Nous pouvons ainsi les retester et effectuer les ajustements nécessaires. Ces modifications nous permettent de suivre les changements du code HTML et de maintenir le contrôle sur les mises à jour, en vérifiant la compatibilité des modifications et en nous assurant qu'aucun site n'est endommagé.</p><p>Bloc vidéo : deux erreurs d'accessibilité ont été identifiées : l'absence de titre et de transcription. La transcription est obligatoire. Pour le titre, s'il n'est pas renseigné, le système récupère automatiquement le titre de la vidéo depuis la plateforme. Nous avons unifié et réorganisé l'ensemble.</p><p>Pour les blocs avec titre ou description optionnelle, qui présentaient de nombreux cas particuliers avec duplication de code, nous avons précalculé tous ces blocs en back-end pour simplifier le front-end. Cela facilite la maintenance du thème.</p><p>Sur le <a href="https://showcase.osuny.org/" target="_blank" rel="noreferrer">showcase <span class="sr-only">(lien externe)</span></a> : nous avons ajouté un classement par année. Chaque objet dispose désormais de sa propre page, permettant le partage direct d'une page d'un site.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Nouveaux sites
+    slug: >-
+      nouveaux-sites
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Nouveaux sites
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Le site Parole Publique est en ligne, mais le site Communication Publique n'est pas encore disponible.<br>En cours de finalisation : le site Bonne Pioche.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Questions et remarques
+    slug: >-
+      questions-et-remarques
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Questions et remarques
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><b>Auteur, Autrice par défaut</b></p><p><a href="https://www.afalab.org/" target="_blank" rel="noreferrer">AfaLab <span class="sr-only">(lien externe)</span></a> souhaitait savoir s'il était possible de définir un auteur ou une autrice par défaut, car dans leur cas ce devrait toujours être "African Future Lab" (ce qui n'est pas possible actuellement). Pour l'instant, quand on crée un article, c'est la personne liée au compte utilisateur qui devient automatiquement l'auteur (ce qui est logique). Nous pourrions envisager une option au niveau du site web pour définir un auteur par défaut qui remplacerait le créateur. Si aucun auteur n'est défini, nous pouvons éviter le renvoi vers une page. La question des normes SEO se pose : devrait-on indiquer un auteur pour le référencement même en l'absence d'auteur réel ? Yuna évoque le cas d'un ancien collaborateur ou d'une personne travaillant pour une organisation qui souhaiterait avoir un profil professionnel plutôt qu'une présence individuelle. Estelle : «<i> Dans <a href="https://comnum.rennes.fr/" target="_blank" rel="noreferrer">Comnum <span class="sr-only">(lien externe)</span></a>, mon nom apparaissait partout alors que je ne le souhaitais pas forcément. Je sélectionnais une page vide ou indiquais "article à 4 mains".</i> » </p><p>Arnaud précise que nous avons la possibilité d'avoir plusieurs auteurs comme ici avec En Communs : <a href="https://www.encommuns.net/articles/2024-09-03-solastalgie-des-communs-quatre-poemes-de-john-clare-sur-la-tragedie-des-enclosures/">https://www.encommuns.net/articles/2024-09-03-solastalgie-des-communs-quatre-poemes-de-john-clare-sur-la-tragedie-des-enclosures/</a>. </p><p>Pour Arnaud, mettre un faux auteur n'est pas une solution préférable à l'absence d'auteur. Estelle suggère la possibilité de créer un pseudonyme. Emmy soulève la question des pigistes sans profils créés et insiste sur l'importance d'afficher leurs noms. Dans Osuny, la solution permettra de supprimer le compte utilisateur tout en conservant le nom de la personne sur les articles.</p><p><b>Dans le BO, avoir un nom différent pour « Actualités » </b></p><p>Sacha André souligne que le terme « Actualités » ne reflète pas la multifonctionnalité de cet outil. Par exemple, sur le site du philosophe « Lucien Sève » qu'il est en train de réaliser avec Osuny, nous utilisons le bloc actualité pour les publications <em>sur</em> et <em>de</em> Lucien Sève. Sur un site d'art, les actualités pourraient servir à publier chaque œuvre par catégorie (peinture, sculpture, etc.). Une confusion peut survenir entre l'agenda et les articles divers, notamment en raison de la proximité sémantique avec « Événements ». Sacha propose de remplacer « Actualités » par « Écrit », « sujet » ou « billet » (évitant délibérément « Article » pour se différencier de WordPress). Son idée serait de permettre la modification du terme « Actualités » lors de la création du site, durant la phase de conception. Arnaud précise qu'effectivement, sur le site de Lucien Sève, les actualités s'appellent « Publications ». Il suggère de pouvoir modifier le nom des objets dans le back-office, permettant ainsi à l'onglet Actualités d'avoir un nom différent.</p><p>Pour Anthony, les Organisations/personnes constituent un socle commun central, comme les Actualités et le portfolio. La question se pose : jusqu'où faut-il travailler la sémantique ? Yuna trouve cette réflexion pertinente malgré la complexité technique. Arnaud rappelle l'approche de la roadmap : à l'instar des custom types de WordPress, on peut ajouter des champs selon les besoins du site. Bien que la qualité sémantique d'Osuny soit bonne, la question des limites de personnalisation se pose. Yuna suggère une solution hybride : des objets bien structurés et des objets entièrement personnalisables. Pour le nommage, elle propose d'offrir un choix limité de termes (listes, agenda, planning) correspondant aux usages les plus courants. Pour l'instant, seul l'affichage front-end sera modifié, conservant « Actualités » dans le back-end.<br>Il serait pertinent de proposer des termes correspondant aux thématiques les plus demandées. Anthony rejoint l'avis de Yuna : le socle repose sur des pages, l'agenda et le portfolio étant des templates. Le choix des templates se fait pour leurs fonctionnalités plutôt que leur désignation, ce qui peut créer des confusions chez les clients. Arnaud explique qu'Osuny privilégie une approche sémantique : on choisit un objet pour son essence avant de le nommer, contrairement à une approche basée sur le design. Yuna note que la diversification des besoins nécessitera d'adapter l'outil, comme le fait régulièrement Anthony. Ce dernier suggère d'améliorer la présentation de la partie projet.<br>Selon Arnaud, il est essentiel de partir de l'essence de l'objet tout en améliorant sa présentation visuelle. Il considère que beaucoup d'adaptations design sont temporaires et constituent des points sensibles. Anthony approuve la proposition de Yuna concernant la modification des noms de rubriques. Il suggère d'intégrer des options communes, comme les catégories, au même endroit où l'on coche les fonctionnalités, et de les appliquer aux pages. Yuna souligne l'importance du changement de terminologie pour les équipes de rédaction qui utilisent leur propre vocabulaire.<br>Arnaud recentre la discussion sur le trio Actualités/Agenda/Portfolio. Il propose une solution pratique : utiliser dans le back-office le nom choisi pour la page (par exemple, si elle est nommée « News »). Yuna approuve cette solution transitoire en attendant une personnalisation plus complète. Anthony ajoute qu'il explique souvent l'utilisation du portfolio pour présenter des éléments, tout en notant que le terme « projets » varie selon les organisations, comme « actualités ». Il suggère la possibilité de renommer en « Expérimentations », par exemple, tout en précisant l'utilisation du template projet avec ses fonctionnalités. La solution rapide est donc d'adopter le nom de la page pour les trois éléments (Actualités/Agenda/Portfolio).</p><p><b>Rendre les titres d’onglets « Actualités » « Catégories » « Auteur.rice.s » plus lisible / identifiable</b></p><p>Pour Sacha, le léger changement de teinte n'est pas suffisamment identifiable comme élément cliquable. Il faudrait peut-être ajouter un contour, une bordure inférieure ou une ombre ? Proposition rapide d’Anthony pour mettre les titres dans des onglets : <a href="https://www.figma.com/design/tQh3oLfNwSt8aoVDuUjQt0/Th%C3%A8me-Osuny?node-id=19180-8&t=N4jbjLM04QJQgP9B-4" target="_blank" rel="noreferrer">https://www.figma.com/design/tQh3oLfNwSt8aoVDuUjQt0/Th%C3%A8me-Osuny?node-id=19180-8&t=N4jbjLM04QJQgP9B-4 <span class="sr-only">(lien externe)</span></a>. Ne devrions-nous pas souligner « Catégories » et « Auteurs » ? En termes d'accessibilité, ce n'est pas optimal. Arnaud propose un filet en dessous rendrait l'élément visiblement cliquable. Yuna propose un aplat noir pour indiquer que c'est actif. L’idée est de voir avec Denis Fongue et discuter du filet en dessous avec lui.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Autres informations
+    slug: >-
+      autres-informations
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Autres informations
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Nous avons avancé sur le système d'événements, on attend encore le site de la Gaîté Lyrique pour présenter.</p><p>Questions autour de la gestion de l'intégration d'admin et du suivi de design de l'admin. Quelques jours dans l'année sont prévus pour le suivi des designers afin de ranger, phaser et prioriser ce qui est vraiment urgent ou ce qui peut attendre. Par exemple, le système de recherche et le système d'accueil, redesignés par Denis Fongue depuis longtemps.</p><p>   </p><p>Nous avons terminé les missions liées à la subvention et allons demander le solde. On finance le travail de développement, mais nous ne finançons pas nous-mêmes le travail de design. À quel moment y aura-t-il assez de fonds dans le commun pour dégager du temps de Denis ou d'Anthony pour le design ? </p><p>Nous avons eu une discussion avec Vincent Bachelet concernant le don défiscalisé — est-ce possible ? Cette question revient régulièrement. La défiscalisation pourrait multiplier les contributions, ce qui serait très intéressant si c'est faisable. Vincent étudie les possibilités, mais il ne faut pas que noesya soit seul : il faut des piliers pour construire l'assemblage juridique. Il faudrait au minimum deux autres organisations pour créer un véhicule juridique, une association d'intérêt général, une fondation d'intérêt général, dont l'un accepterait les dons. Cela ne remet pas en cause la SCIC, mais il faut un autre véhicule juridique, car les dons ne sont pas possibles dans la SCIC, pour assurer la pérennité du commun. C'est plus proche du trust anglais : avoir une organisation sans but lucratif et de l'autre côté des organisations qui ont pour but de travailler sur le commun.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Replay
+    slug: >-
+      replay
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Replay
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: video
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+
+      url: >-
+        https://vimeo.com/1045343614?share=copy#t=0
+      video_title: >-
+        Replay Assemblée Osuny#14
+      layout: player
+
+      video_iframe: >-
+        <iframe class="vimeo" loading="lazy" src="https://player.vimeo.com/video/1045343614?share=copy#t=0" referrerpolicy="strict-origin-when-cross-origin" title="Replay Assemblée Osuny#14"></iframe>
+      video: 
+        platform: "vimeo"
+        identifier: "1045343614?share=copy#t=0"
+        title: >-
+          Replay Assemblée Osuny#14
+        poster: >-
+          https://vumbnail.com/1045343614?share=copy#t=0.jpg
+        embed: >-
+          https://player.vimeo.com/video/1045343614?share=copy#t=0
+        embed_with_defaults: >-
+          https://player.vimeo.com/video/1045343614?share=copy#t=0?autoplay=1&quality=360p&dnt=1
+        iframe: >-
+          <iframe class="vimeo" loading="lazy" src="https://player.vimeo.com/video/1045343614?share=copy#t=0" referrerpolicy="strict-origin-when-cross-origin" title="Replay Assemblée Osuny#14"></iframe>
+
+
+
+---
