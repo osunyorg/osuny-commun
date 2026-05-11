@@ -1,0 +1,511 @@
+---
+title: >-
+  Assemblée Osuny #27
+
+subtitle: >-
+  Réunion mensuelle ouverte
+
+
+url: "/agenda/2026/assemblee-osuny-27/"
+slug: "assemblee-osuny-27"
+meta:
+  hugo:
+    permalink: "/agenda/2026/assemblee-osuny-27/"
+    path: "/events/2026/03/05-10-00-assemblee-osuny-27"
+    file: "content/fr/events/2026/03/05-10-00-assemblee-osuny-27.html"
+    slug: "assemblee-osuny-27"
+  dates:
+    created_at: 2026-01-20T10:32:50+01:00
+    updated_at: 2026-05-11T16:12:36+02:00
+search:
+  id: "71baf18a-9be1-4fd2-a12a-36d5d329cf02"
+  about_id: "46c6cce2-7271-4650-a2a9-2c4e412f2239"
+  url: "/agenda/2026/assemblee-osuny-27/"
+  kind: "Communication::Website::Agenda::Event::TimeSlot::Localization"
+  lang: "fr"
+  title: >-
+    Assemblée Osuny #27 Réunion mensuelle ouverte
+
+  body: >-
+    <p>  <br>Nous organisons une réunion mensuelle ouverte, le premier jeudi de chaque mois, dans le but de rassembler toute la communauté Osuny. Cet événement est un moment d'échange et de discussions, pendant lequel l'équipe noesya présente les avancées fonctionnelles. Cet événement est ouvert, vous êtes libre de venir quand vous le souhaitez, il n'y a aucune obligation d'être présent·e chaque mois, c'est à votre convenance. Nous souhaitons co-construire l'ordre du jour de cette réunion mensuelle avec vous, donc nous sommes à l'écoute de vos remarques et/ou questions. Accéder à la vidéoconférence</p>  <p> Présences </p>  <p> Releases Front  <br>   <br>Gros chantier de rangement en cours V8.1.3 https://github.com/osunyorg/theme/releases/tag/v8.1.3      – Soin de la configuration agenda     – Configuration des ajustements des avatars (espaces sur grand écran)     – Nouvelles mises en pages possibles dans les blocs liens     – Ajout des sous-titres aux pages     – Cas particulier sur les événements, les heures servent désormais à trier     – Problème lié au navigateur safari : les vidéos youtube ne se chargeaient plus, désormais un correctif a été fait mais le fonctionnement n'est pas parfait pour autant (il faut cliquer deux fois, une solution est en cours de recherche). – Nettoyage, améliorations du code. V8.1.4 https://github.com/osunyorg/theme/releases/tag/v8.1.4 – Ajout du lieu des expositions dans le bloc expo, avant c'était juste dans la page- correction d'interlignage du style de texte "meta" V8.1.5 https://github.com/osunyorg/theme/releases/tag/v8.1.5 – Par défaut, affichage des archives désactivées pour l'agenda - Correctifs – Nouvelle fonctionnalité : possibilité d'afficher la dernière mise à jour de la page information. V9.0 https://github.com/osunyorg/theme/releases/tag/v9.0.0 – Travail pour s'adapter à la nouvelle version d'Hugo – Correctifs. v9.1.0-hugo-0.154.5 à venir (beta) – Développement d'outils de qualité de code : nombre maximum de lignes par fichier, vérifier que des morceaux de templates ne soient pas utilisés, pour identifier et ranger le code qui peut être rangé. Les analyseurs statiques du code existent en ingénieurie logicielle et permettent de s'assurer d'un code de qualité. En back, des outils existent, en front, on a pas trouvé d'outils. Ainsi on a adapté les outils du back pour le front. – Rangement du code : découpage des fichiers trop lourds, renommage. Exemple : complexité cyclomatique, un outil qui permet d'analyser la complexité du code (voir livre coder proprement). Plus les algos sont compliqués, plus il y a de comportements imprévisibles : en back, la complexité maximum est à 5, en front on ne sait pas encore vraiment.  - Désormais, le front affichera la version hugo correspondante Nouveau contributeur : Sander, qui a fait un correctif de variable de style, merci à lui. Il s'occupe dorénavant de faire la version anglaise de Developers. – Note sur les pages imprimables : Cette fonction est toujours disponible mais est dorénavant en plugin, car tous les sites n'en ont pas besoin, et ça double le nombre de pages générées.</p>  <p> Releases Back  <br>   <br>V3.11 https://github.com/osunyorg/admin/releases/tag/v3.11.0 – Une erreur liée à l'importeur pexels a été corrigée. – Filtres pour les sites hébergés avec Deux fleurs. – Une nouvelle version de garage sera mise en ligne. Elle assurera notamment une compatibilité avec une version récente d'Hugo. – Il est enfin possible de supprimer un site. – Nettoyage et réparations. – Gros sujet sur la gestion des allias et des redirections. – Activation automatique de la mesure d'audience plausible.</p>  <p> Nouveautés sites  <br>   <br>Déjà-vu https://www.deja-vu-ass.fr Refonte d'un site pour le rendre plus en adéquation avec les besoins de l'association et ce qu'elle renvoie en termes d'image (refonte graphique) : un site simple épuré, facile d'utilisation. Un travail mené par Léonie dans le cadre de son stage. Ecocean https://www.ecocean.fr Du vert dans les rouages https://www.duvertdanslesrouages.fr Nouveau showcase https://showcase.osuny.org Importeur Medium Désormais, les pages de blog medium peuvent être importées. https://github.com/osunyorg/importers/tree/main/medium https://apres-la-biere.jeanloufourquet.osuny.site/</p>  <p> Discussions  <br>   <br>V10 du thème à venir Alex :  Il y aura des modifications fondamentales notamment au niveau des classes du CSS. Actuellement on classe de manière sémantique, et on va aller vers quelque chose de plus design system, p-donc des classes génériques, plus faciles à modifier. Par exemple, quand on va modifier la mise en page "liste" des blocs, on aura juste à viser une classe et pas une classe et les natures éditoriales.  ArnaudL :  On cherche à avoir le meilleur balisage possible, on a commencé avec le standard AAA, très exigeant mais qui faisait un CSS difficile à comprendre. On choisi de partir sur ce qu'on a appelé du AA, plus léger. On a fait l'erreur d'utiliser beaucoup d'extend, ce qui crée un CSS trop compliqué et trop lourd. On va donc ajouter des classes html pour alléger le CSS. On espère trouver un équilibre. On va gagner en cohérence avec cette version.On préviendra toute la communauté au moment du passage en v10 pour éviter tous les effets de bords. Alex :  C'est l'année de la robustesse pour le thème Sebastien Rufer :  Je vais préciser un point lié à la certification RGESN pour Rennes. Le RGESN est exigeant sur les preuves à avancer. Il y a peut être une réflexion à avoir de comment on justifie ces engagements vis-à-vis de l'écoconception, de l'accessibilité : comment tel ou tel engagement est justifié avec des vraies réponses par exemple au RGESN, avec des vrais éléments tangibles : des preuves trop complexes à appréhender. Il serait intéressant d'avoir un "pack clé en main" des différents engagements. ArnaudL :  Oui, il faudrait caler avec un socle d'audit  SebastienR :  Avoir des copiers-collers possibles pour directement remplir les conditions du RGESN. Un côté facilitant pourrait-être assuré  ArnaudL :  Comme on a fait avec le RGAA :  https://developers.osuny.org/docs/audit/accessibilite/audit-site/     Sebastien : Oui ArnaudL :  Dans le cas d'un prochain audit RGESN, on pourrait reprendre les éléments. Aboutir à un audit de socle RGESN SebastienR :  C'est même un point qui peut jouer dans le choix d'un CMS, ce n'est pas un départ à zéro. Le sujet est présent en collectivités. SebastienR :  On manque d'éléments tangibles pour expliquer le caractère éco-conçu, par exemple sur les maquettes qu'on voyait du futur site on ne sait pas si c'est un effet d'annonce. Il y a un gros enjeu sur Osuny sur ce sujet là, ce serait dommage d'avoir une mauvaise appréciation en appel d'offre, alors que vous cochez plus de cases que d'autres outils. Je me dis simplement que d'aborder sous l'angle du RGESN, on amène une matière qui va faciliter l'analyse de l'appel d'offre.</p>  <p> Nouvelle identité et nouveaux sites Osuny  <br>   <br>Pour rappel, des pistes ont été présentées durant l'assemblée #24 ( https://www.osuny.org/agenda/2025/assemblee-osuny-24/ ) L'objectif est à la fois de simplifier et d'affirmer l'identité du commun Osuny. Le choix s'est porté sur du "no branding", autrement dit, qui s'éloigne des registres marchands. Lors de l'assemblée 24 a été relevé le risque de faire une identité trop froide, ainsi que puzzle, complexe et élitiste. Takumi a travaillé sur ces différents points. Takumi :  la dernière fois j'ai exploré des choses sur la sobriété pour s'éloigner des choses convenues, du code de la startup et du marketing, d'où le choix radical de monotypographie. Avec le matériel typographique déjà existant dans Osuny j'ai ensuite construit quelque chose qui permette de clarifier l'objectif du site. Il s'agit d'une part de parler du produit et d'autre part de parler du commun. Dans un premier temps, j'ai travaillé pour le produit : iconographie et typo. L'idée est d'avoir une typo simple pour la "marque", en récupérant "l'inclusive sans" qui sera toujours à travers le site, et d'utiliser le nom de manière très sobre. Plusieurs possibilités :         - Adelphe en titre principal et inclusive en texte.  - Inclusive en titrage : plus fonctionnel et moins maniéré     Concernant l'iconographie : on a des secteurs d'activité et des engagements, il semble intéressant de reprendre le travail de Violenn qui permet de parler d'un produit numérique et de lui donner un lien direct avec la nature. On peut jouer avec des combinaisons d'images. Pour ce qui est des engagements, je propose un jeu de composition typographique avec les visuels, poétiques. Arnaud Levy :  Concernant le menu : Le menu permet de présenter à la manière d'autres CMS standards, on utilise le langage des autres CMS pour présenter des choses (par exemple, on a une page "tarifs" mais qui permet d'expliquer le principe de contributions. Également apparition d'un bouton "tester osuny", qui ramène sur une page dédiée permettant de tester plusieurs choses. L'idée est de ne pas perturber les personnes qui viennent et ne connaissent pas et cherchent un CMS Il faudrait qu'on valide aujourd'hui :     - Le "no logo" en inclusive sans    - est-ce qu'on part sur la logique de la petite colonne de gauche ou de la grand colonne de gauche    - Inclusive sans ou Adelphe ?     - Est-ce que les photos conviennent ? Retours    - Sebastien Gaya :     Je suis fan de celui où on a le titre en inclusif et le sous-titre en Adelphe, et en dessous le titre en adelphe et le contenu en inclusif. Je trouve que ça met bien en valeur et ça conserve la lisibilité. Le fil d'Ariane en footer, je suis étonné. - Pierre-André Boissinot :  Je suis d'accord. - Alexis Benoît :  Moi aussi.  - Sebastien Rufer :  Je pars avec une dyslexie, j'ai donc du mal avec la lexture en italique. Concernant le fil d'Ariane, le fait qu'il manque, je trouve qu'on manque de visibilité, on est un peu perdus. Là on a une sobriété complète, donc je n'ai aucun moyen de savoir de quoi il s'agit, ce que je suis en train de regarder. La personne qui n'est pas passée par la page d'accueil doit pouvoir se retrouver facilement. - Arnaud Levy :  Est-ce que le fil d'Ariane sous l'image serait envisageable ? - Sebastien Rufer :  Il faut tester, peut-être que c'est autre chose que le fil d'Ariane. Ce n'est pas tant la problématique du fil d'Ariane en tant que tel, mais plutôt la combinaison titre et résumé qui peut apporter la contextualisation. Il y a un petit côté avec un volet de page d'atterrissage, il faut qu'elles soient autosuffisantes, ces pages : Le visiteur est un zappeur, soit il comprend tout de suite, soit pas. Il faut que très vite il sache ce qu'il a à faire. - Arnaud Bridou :  Petit doute sur les images avec du texte, qui peuvent être difficiles à lire. La superoposition des photos n'est pas très liée à Osuny. - Sebastien Gaya :  Je suis d'accord. Et il faut s'assurer de la lisibilité. - Arnaud Levy :  J'aime bien les images pures. J'aime bien qu'il n'y ait que l'image qu'on doive considérer.  - Sebastien Rufer :  Ca a peut être moins de sens d'avoir de la matière brute. Peut-être intégrer l'effet de matière et un visuel plus organique (végétal par exemple) en superposition. Cela apporterait du sens. - Emie :  Je suis complètement d'accord avec Sebastien Gaya pour les choix de typo, étant moi même dyslexique, l'italique est un frein. Je rejoins aussi sur le fil d'Ariane. Sur les superpopsitions d'images, je trouve que ça a du sens, je les trouve très très belles, les petites écritures blanches sur les images : sobriété en un mot je le lis, en deux trois mots je les lis pas.  - Takumi :  on est pas dans la performance de la compréhension sobriété à ce moment là, la fonction de ces jeux là c'est vraiment de l'illustration ; au niveau des contrastes, je dois le travailler  - Léonie :  J'ai particulièrement apprécié les choix du menus, je trouve ça très intuitif, et puis ça correspond à des choses qui m'avaient été demandées pendant le stage (tarifs, etc) ; sur le choix des polices, je rejoins Emie et Sébastien sur le fait d'utiliser la sans sérif pour le texte principal, ça favorise la lisibilité. Le fait de ne pas avoir le fil d'Ariane c'est perturbant pour quelqu'un qui débarque sur le site.     - Alex :  Je trouve ça très beau, je rejoins ce qui a été dit sur les choix de typo, et l'accent sur la lisibilité, j'aime beaucoup les compositions mots-images, en évitant les contre-sens évidemment. Quand il y a des textes centrés, je ne sais pas si c'est pas un peu plus difficile pour la lecture. - Sebastien Rufer :  Oui effectivement, il faut faire attention, là on est sur 2-3 lignes, il faut pas faire plus. C'est souvent problématique pour les troubles Dys.  - Alex :  Les choix de typos sont excellent. Les screenshots de sites fonctionnent bien. C'est vrai que les photos sont très minérales. - Takumi :  Oui, je suis en train de chercher dans les photos de Violenn pour faire un tri : pour culture on a telle icono, etc. On pourrai voir pour valider ça la prochaine fois.         - ArnaudL :  Oui on a une piste et un découpage typo, il reste à découper pour l'iconographie, notamment les fonctionnalités comme un des trois pans         - Sebastien Rufer :  Attention, les utilisateurs pourraient ne pas scroller sur la page 1 qui est très auto-suffisante, il faudrait trouver une astuce graphique pour dire "il y a d'autres choses en dessous", une amorce, une invitation à descendre... - Alexis :  Un texte sur la ligne de flotaison ?     - Sebastien Rufer :  On perdrait cette sobriété d'arrivée. Il faudrait une astuce graphique. - Takumi :  Pourquoi ne pas juste avoir l'image sur la home ? - Alexis :  On perd en contenu informationnel dans ce cas. - Takumi :  On pourrait s'inspirer de ce que fait. Twill qui a un pictogramme qui invite à scroller. - ArnaudL :  Je vous présente le footer, et le site communs, dédié à la communauté. Le découpage du footer ( découvrir, faire, soigner) vous convient-il ?  - Léonie :  Le seul accès à la partie communs c'est dans le footer ? - ArnaudL :  On va renvoyer à plusieurs moments dans le site. - SebastienG :  Je suis pas sûr que le mattermost soit au bon endroit, je l'aurais rejoint avec aide. -  SebastienR :  Sur le footer, j'ai du mal avec "aide", je sais pas ce que je trouverai derrière, je m'attends à avoir un forum de discussion, le bon terme ne serait-il pas documentation ou documentation de référence ? Les sites créés je peine à les situer dans la partie faire ; enfin la partie soigner ne me parle pas, il y a un contraste entre ce que je met derrière le mot et ce que je lis ensuite ; J'ai l'impression qu'on mélange deux choses : la partie métier et la section "aides", on devrait la renommer en "contribution". Il faudrait peut être segmenter par métier. - ArnaudL :  Sur l'idée de soigner, en fait c'est prendre soin, c'est donc normal que ce soit déstabilisant. -  SebastienR :  D'accord, il y a un effet de contraste. - ArnaudL :  Des avis sur les décrochés graphiques ? - Alexis :  J'aime bien. Identités présentées https://www.figma.com/proto/VDW7nVtyZbxuBrafSE0Mly/Osuny---Identit%C3%A9-visuelle?n[ ...]aling=scale-down-width&content-scaling=fixed&page-id=6338%3A42 La version appréciée :  https://www.figma.com/proto/VDW7nVtyZbxuBrafSE0Mly/Osuny---Identit%C3%A9-visuelle?n[ ...]fixed&starting-point-node-id=6398%3A15772&page-id=6398%3A15736 Note : Ces propos sont adaptés pour une meilleure compréhension à la lecture.</p>  <p> Replay  <br>  </p>  <p>https://vimeo.com/1170635116?fl=ip&fe=ec</p>
+
+date: "2026-03-05T10:00:00+01:00"
+dates:
+  status: "archive"
+  archive: true
+  event:
+    kind: simple
+    is_child: false
+  computed:
+    short: >-
+      5 mars 2026
+    long: >-
+      Jeudi 5 mars 2026
+    two_lines:
+      short: >-
+        5 mars 2026
+      long: >-
+        Jeudi 5 mars 2026
+  from:
+    day: "2026-03-05"
+  to:
+    day: "2026-03-05"
+  add_to_calendar:
+    google: "https://www.google.com/calendar/render?action=TEMPLATE&text=Assembl%C3%A9e%20Osuny%20%2327%20R%C3%A9union%20mensuelle%20ouverte&dates=20260305/20260306&ctz=Europe/Paris&details=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F"
+    yahoo: "https://calendar.yahoo.com/?v=60&TITLE=Assembl%C3%A9e%20Osuny%20%2327%20R%C3%A9union%20mensuelle%20ouverte&ST=20260305&ET=20260305&DUR=allday&DESC=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F"
+    office: "https://outlook.office.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2327%20R%C3%A9union%20mensuelle%20ouverte&startdt=2026-03-05&enddt=2026-03-06&allday=true&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F"
+    outlook: "https://outlook.live.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2327%20R%C3%A9union%20mensuelle%20ouverte&startdt=2026-03-05&enddt=2026-03-06&allday=true&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F"
+    ical: "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//AddToCalendar//RubyGem//EN%0ABEGIN:VEVENT%0ADTSTAMP:20260511T141231Z%0ADTSTART;VALUE=DATE:20260305%0ADTEND;VALUE=DATE:20260306%0ASUMMARY:Assembl%C3%A9e%20Osuny%20%2327%20R%C3%A9union%20mensuelle%20ouverte%0AURL:https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F%0ADESCRIPTION:\n\nhttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F%0AUID:-https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F%0AEND:VEVENT%0AEND:VCALENDAR"
+
+
+
+image:
+  id: "d23618b6-552b-4c2d-8b62-786e9c00b1f2"
+  alt: ""
+  credit: >-
+    <p>Violenn Simon</p>
+
+
+events_categories:
+  - "assemblees-osuny"
+taxonomies:
+  - permalink: ""
+    path: ""
+    slug: ""
+    file: ""
+    name: >-
+      Catégories
+    categories:
+      - permalink: "/agenda/assemblees-osuny/"
+        path: "/events_categories/assemblees-osuny"
+        slug: "assemblees-osuny"
+        file: "content/fr/events_categories/assemblees-osuny/_index.html"
+        name: >-
+          Assemblées Osuny
+
+
+breadcrumbs:
+  - title: >-
+      Accueil
+    path: "/"
+  - title: >-
+      Agenda
+    path: "/agenda/"
+  - title: >-
+      Assemblée Osuny #27
+
+design:
+  full_width: false
+  toc:
+    present: true
+    offcanvas: false
+
+current_time_slot:
+  permalink: "/agenda/2026/assemblee-osuny-27/"
+  path: "/events/2026/03/05-10-00-assemblee-osuny-27"
+  slug: "assemblee-osuny-27"
+  file: "content/fr/events/2026/03/05-10-00-assemblee-osuny-27.html"
+  start:
+    date: "2026-03-05"
+    time: "10:00"
+    datetime: "2026-03-05T10:00:00+01:00"
+  end:
+    date: "2026-03-05"
+    time: "12:00"
+    datetime: "2026-03-05T12:00:00+01:00"
+  status: "archive"
+
+  add_to_calendar:
+    google: "https://www.google.com/calendar/render?action=TEMPLATE&text=Assembl%C3%A9e%20Osuny%20%2327%20R%C3%A9union%20mensuelle%20ouverte&dates=20260305T100000/20260305T120000&ctz=Europe/Paris&details=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F"
+    yahoo: "https://calendar.yahoo.com/?v=60&TITLE=Assembl%C3%A9e%20Osuny%20%2327%20R%C3%A9union%20mensuelle%20ouverte&ST=20260305T090000Z&DUR=0200&DESC=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F"
+    office: "https://outlook.office.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2327%20R%C3%A9union%20mensuelle%20ouverte&startdt=2026-03-05T09:00:00Z&enddt=2026-03-05T11:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F"
+    outlook: "https://outlook.live.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2327%20R%C3%A9union%20mensuelle%20ouverte&startdt=2026-03-05T09:00:00Z&enddt=2026-03-05T11:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F"
+    ical: "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//AddToCalendar//RubyGem//EN%0ABEGIN:VEVENT%0ADTSTAMP:20260511T141232Z%0ADTSTART:20260305T090000Z%0ADTEND:20260305T110000Z%0ASUMMARY:Assembl%C3%A9e%20Osuny%20%2327%20R%C3%A9union%20mensuelle%20ouverte%0AURL:https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F%0ADESCRIPTION:\n\nhttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F%0AUID:-https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F%0AEND:VEVENT%0AEND:VCALENDAR"
+
+
+time_slots:
+  - permalink: "/agenda/2026/assemblee-osuny-27/"
+    path: "/events/2026/03/05-10-00-assemblee-osuny-27"
+    slug: "assemblee-osuny-27"
+    file: "content/fr/events/2026/03/05-10-00-assemblee-osuny-27.html"
+    start:
+      date: "2026-03-05"
+      time: "10:00"
+      datetime: "2026-03-05T10:00:00+01:00"
+    end:
+      date: "2026-03-05"
+      time: "12:00"
+      datetime: "2026-03-05T12:00:00+01:00"
+    status: "archive"
+
+    add_to_calendar:
+      google: "https://www.google.com/calendar/render?action=TEMPLATE&text=Assembl%C3%A9e%20Osuny%20%2327%20R%C3%A9union%20mensuelle%20ouverte&dates=20260305T100000/20260305T120000&ctz=Europe/Paris&details=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F"
+      yahoo: "https://calendar.yahoo.com/?v=60&TITLE=Assembl%C3%A9e%20Osuny%20%2327%20R%C3%A9union%20mensuelle%20ouverte&ST=20260305T090000Z&DUR=0200&DESC=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F"
+      office: "https://outlook.office.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2327%20R%C3%A9union%20mensuelle%20ouverte&startdt=2026-03-05T09:00:00Z&enddt=2026-03-05T11:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F"
+      outlook: "https://outlook.live.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2327%20R%C3%A9union%20mensuelle%20ouverte&startdt=2026-03-05T09:00:00Z&enddt=2026-03-05T11:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F"
+      ical: "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//AddToCalendar//RubyGem//EN%0ABEGIN:VEVENT%0ADTSTAMP:20260511T141232Z%0ADTSTART:20260305T090000Z%0ADTEND:20260305T110000Z%0ASUMMARY:Assembl%C3%A9e%20Osuny%20%2327%20R%C3%A9union%20mensuelle%20ouverte%0AURL:https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F%0ADESCRIPTION:\n\nhttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F%0AUID:-https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2026%2Fassemblee-osuny-27%2F%0AEND:VEVENT%0AEND:VCALENDAR"
+
+
+translationKey: communication-website-agenda-event-5639d710-fd63-47d5-ae67-81132240498d
+
+
+meta_description: >-
+  Assemblée Osuny #27
+
+
+header_cta:
+
+contents_reading_time:
+  seconds: 705
+  text: >-
+    12 minutes
+contents:
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 2
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Nous organisons une réunion mensuelle ouverte, le premier jeudi de chaque mois, dans le but de rassembler toute la communauté Osuny. Cet événement est un moment d'échange et de discussions, pendant lequel l'équipe noesya présente les avancées fonctionnelles. Cet événement est ouvert, vous êtes libre de venir quand vous le souhaitez, il n'y a aucune obligation d'être présent·e chaque mois, c'est à votre convenance. Nous souhaitons co-construire l'ordre du jour de cette réunion mensuelle avec vous, donc nous sommes à l'écoute de vos remarques et/ou questions.</p><p><a href="https://visio.liiib.re/twy-azyr-gac" target="_blank" rel="noreferrer">Accéder à la vidéoconférence <span class="sr-only">(lien externe)</span></a></p>
+
+
+
+
+
+
+  - kind: block
+    template: persons
+    title: >-
+      Présences
+    slug: >-
+      presences
+    ranks:
+      base: 2
+      self: 2
+      children: 3
+    top:
+      active: true
+      title: 
+        value: >-
+          Présences
+        heading: 2
+
+    data:
+
+      layout: grid
+      options:
+        image: true
+        summary: true
+        link: true
+        contact: false
+
+      persons:
+        - permalink: "/personnes/alexis-benoit/"
+          path: "/persons/alexis-benoit"
+          slug: "alexis-benoit"
+          file: "content/fr/persons/alexis-benoit.html"
+
+        - permalink: "/personnes/emie-baud/"
+          path: "/persons/emie-baud"
+          slug: "emie-baud"
+          file: "content/fr/persons/emie-baud.html"
+
+        - permalink: "/personnes/pierre-andre-boissinot/"
+          path: "/persons/pierre-andre-boissinot"
+          slug: "pierre-andre-boissinot"
+          file: "content/fr/persons/pierre-andre-boissinot.html"
+
+        - permalink: "/personnes/arnaud-bridou/"
+          path: "/persons/arnaud-bridou"
+          slug: "arnaud-bridou"
+          file: "content/fr/persons/arnaud-bridou.html"
+
+        - permalink: "/personnes/sebastien-gaya/"
+          path: "/persons/sebastien-gaya"
+          slug: "sebastien-gaya"
+          file: "content/fr/persons/sebastien-gaya.html"
+
+        - permalink: "/personnes/takumi-kobayashi/"
+          path: "/persons/takumi-kobayashi"
+          slug: "takumi-kobayashi"
+          file: "content/fr/persons/takumi-kobayashi.html"
+
+        - permalink: "/personnes/arnaud-levy/"
+          path: "/persons/arnaud-levy"
+          slug: "arnaud-levy"
+          file: "content/fr/persons/arnaud-levy.html"
+
+        - permalink: "/personnes/lydie-marion/"
+          path: "/persons/lydie-marion"
+          slug: "lydie-marion"
+          file: "content/fr/persons/lydie-marion.html"
+
+        - permalink: "/personnes/leonie-miege/"
+          path: "/persons/leonie-miege"
+          slug: "leonie-miege"
+          file: "content/fr/persons/leonie-miege.html"
+
+        - permalink: "/personnes/sebastien-rufer/"
+          path: "/persons/sebastien-rufer"
+          slug: "sebastien-rufer"
+          file: "content/fr/persons/sebastien-rufer.html"
+
+      quantity: 10
+
+
+  - kind: block
+    template: title
+    title: >-
+      Releases Front
+    slug: >-
+      releases-front
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Releases Front
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Gros chantier de rangement en cours</p><p><b>V8.1.3</b></p><p><a href="https://github.com/osunyorg/theme/releases/tag/v8.1.3">https://github.com/osunyorg/theme/releases/tag/v8.1.3</a>    </p><p>– Soin de la configuration agenda    </p><p>– Configuration des ajustements des avatars (espaces sur grand écran)    </p><p>– Nouvelles mises en pages possibles dans les blocs liens   </p><p> – Ajout des sous-titres aux pages    </p><p>– Cas particulier sur les événements, les heures servent désormais à trier    </p><p>– Problème lié au navigateur safari : les vidéos youtube ne se chargeaient plus, désormais un correctif a été fait mais le fonctionnement n'est pas parfait pour autant (il faut cliquer deux fois, une solution est en cours de recherche).</p><p>– Nettoyage, améliorations du code.</p><p><b>V8.1.4</b></p><p><a href="https://github.com/osunyorg/theme/releases/tag/v8.1.4">https://github.com/osunyorg/theme/releases/tag/v8.1.4</a><br>– Ajout du lieu des expositions dans le bloc expo, avant c'était juste dans la page- correction d'interlignage du style de texte "meta"</p><p><br><b>V8.1.5</b></p><p><a href="https://github.com/osunyorg/theme/releases/tag/v8.1.5" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/tag/v8.1.5 <span class="sr-only">(lien externe)</span></a><a href="https://github.com/osunyorg/theme/releases/tag/v8.1.5"></a></p><p>– Par défaut, affichage des archives désactivées pour l'agenda</p><p>- Correctifs</p><p>– Nouvelle fonctionnalité : possibilité d'afficher la dernière mise à jour de la page information.</p><p><b>V9.0</b></p><p><a href="https://github.com/osunyorg/theme/releases/tag/v9.0.0" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/tag/v9.0.0 <span class="sr-only">(lien externe)</span></a><a href="https://github.com/osunyorg/theme/releases/tag/v9.0.0"></a></p><p>– Travail pour s'adapter à la nouvelle version d'Hugo</p><p>– Correctifs.</p><p><br><b>v9.1.0-hugo-0.154.5 à venir (beta)</b></p><p>– Développement d'outils de qualité de code : nombre maximum de lignes par fichier, vérifier que des morceaux de templates ne soient pas utilisés, pour identifier et ranger le code qui peut être rangé. Les analyseurs statiques du code existent en ingénieurie logicielle et permettent de s'assurer d'un code de qualité. En back, des outils existent, en front, on a pas trouvé d'outils. Ainsi on a adapté les outils du back pour le front.</p><p>– Rangement du code : découpage des fichiers trop lourds, renommage. Exemple : complexité cyclomatique, un outil qui permet d'analyser la complexité du code (voir livre coder proprement). Plus les algos sont compliqués, plus il y a de comportements imprévisibles : en back, la complexité maximum est à 5, en front on ne sait pas encore vraiment. </p><p>- Désormais, le front affichera la version hugo correspondante<br>Nouveau contributeur : Sander, qui a fait un correctif de variable de style, merci à lui. Il s'occupe dorénavant de faire la version anglaise de Developers.</p><p>– Note sur les pages imprimables : Cette fonction est toujours disponible mais est dorénavant en plugin, car tous les sites n'en ont pas besoin, et ça double le nombre de pages générées.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Releases Back
+    slug: >-
+      releases-back
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Releases Back
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><b>V3.11</b></p><p><a href="https://github.com/osunyorg/admin/releases/tag/v3.11.0" target="_blank" rel="noreferrer">https://github.com/osunyorg/admin/releases/tag/v3.11.0 <span class="sr-only">(lien externe)</span></a><a href="https://github.com/osunyorg/admin/releases/tag/v3.11.0"></a></p><p>– Une erreur liée à l'importeur pexels a été corrigée.</p><p>– Filtres pour les sites hébergés avec Deux fleurs.</p><p>– Une nouvelle version de garage sera mise en ligne. Elle assurera notamment une compatibilité avec une version récente d'Hugo.</p><p>– Il est enfin possible de supprimer un site.</p><p>– Nettoyage et réparations.</p><p>– Gros sujet sur la gestion des allias et des redirections.</p><p>– Activation automatique de la mesure d'audience plausible.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Nouveautés sites
+    slug: >-
+      nouveautes-sites
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Nouveautés sites
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><b>Déjà-vu</b></p><p><a href="https://www.deja-vu-ass.fr/">https://www.deja-vu-ass.fr</a></p><p>Refonte d'un site pour le rendre plus en adéquation avec les besoins de l'association et ce qu'elle renvoie en termes d'image (refonte graphique) : un site simple épuré, facile d'utilisation. Un travail mené par Léonie dans le cadre de son stage.</p><p><b>Ecocean</b></p><p><a href="https://www.ecocean.fr" target="_blank" rel="noreferrer">https://www.ecocean.fr <span class="sr-only">(lien externe)</span></a></p><p><b>Du vert dans les rouages</b></p><p><a href="https://www.duvertdanslesrouages.fr" target="_blank" rel="noreferrer">https://www.duvertdanslesrouages.fr <span class="sr-only">(lien externe)</span></a><a href="https://www.duvertdanslesrouages.fr/"></a></p><p><b>Nouveau showcase</b></p><p><a href="https://showcase.osuny.org" target="_blank" rel="noreferrer">https://showcase.osuny.org <span class="sr-only">(lien externe)</span></a></p><p><b>Importeur Medium</b></p><p>Désormais, les pages de blog medium peuvent être importées.</p><p><a href="https://github.com/osunyorg/importers/tree/main/medium">https://github.com/osunyorg/importers/tree/main/medium</a><a href="https://apres-la-biere.jeanloufourquet.osuny.site/">https://apres-la-biere.jeanloufourquet.osuny.site/</a></p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Discussions
+    slug: >-
+      discussions
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Discussions
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><b>V10 du thème à venir</b></p><p><i>Alex :</i> Il y aura des modifications fondamentales notamment au niveau des classes du CSS. Actuellement on classe de manière sémantique, et on va aller vers quelque chose de plus design system, p-donc des classes génériques, plus faciles à modifier. Par exemple, quand on va modifier la mise en page "liste" des blocs, on aura juste à viser une classe et pas une classe et les natures éditoriales. <br><i>ArnaudL :</i> On cherche à avoir le meilleur balisage possible, on a commencé avec le standard AAA, très exigeant mais qui faisait un CSS difficile à comprendre. On choisi de partir sur ce qu'on a appelé du AA, plus léger. On a fait l'erreur d'utiliser beaucoup d'extend, ce qui crée un CSS trop compliqué et trop lourd. On va donc ajouter des classes html pour alléger le CSS. On espère trouver un équilibre. On va gagner en cohérence avec cette version.On préviendra toute la communauté au moment du passage en v10 pour éviter tous les effets de bords.<br><i>Alex :</i> C'est l'année de la robustesse pour le thème<br><i>Sebastien Rufer :</i> Je vais préciser un point lié à la certification RGESN pour Rennes. Le RGESN est exigeant sur les preuves à avancer. Il y a peut être une réflexion à avoir de comment on justifie ces engagements vis-à-vis de l'écoconception, de l'accessibilité : comment tel ou tel engagement est justifié avec des vraies réponses par exemple au RGESN, avec des vrais éléments tangibles : des preuves trop complexes à appréhender. Il serait intéressant d'avoir un "pack clé en main" des différents engagements.<br><i>ArnaudL :</i> Oui, il faudrait caler avec un socle d'audit <br><i>SebastienR : </i>Avoir des copiers-collers possibles pour directement remplir les conditions du RGESN. Un côté facilitant pourrait-être assuré <br><i>ArnaudL :</i> Comme on a fait avec le RGAA : <a href="https://developers.osuny.org/docs/audit/accessibilite/audit-site/">https://developers.osuny.org/docs/audit/accessibilite/audit-site/</a>    Sebastien : Oui<br><i>ArnaudL :</i> Dans le cas d'un prochain audit RGESN, on pourrait reprendre les éléments. Aboutir à un audit de socle RGESN<br><i>SebastienR : </i>C'est même un point qui peut jouer dans le choix d'un CMS, ce n'est pas un départ à zéro. Le sujet est présent en collectivités.<br><i>SebastienR : </i>On manque d'éléments tangibles pour expliquer le caractère éco-conçu, par exemple sur les maquettes qu'on voyait du futur site on ne sait pas si c'est un effet d'annonce. Il y a un gros enjeu sur Osuny sur ce sujet là, ce serait dommage d'avoir une mauvaise appréciation en appel d'offre, alors que vous cochez plus de cases que d'autres outils. Je me dis simplement que d'aborder sous l'angle du RGESN, on amène une matière qui va faciliter l'analyse de l'appel d'offre.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Nouvelle identité et nouveaux sites Osuny
+    slug: >-
+      nouvelle-identite-et-nouveaux-sites-osuny
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Nouvelle identité et nouveaux sites Osuny
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Pour rappel, des pistes ont été présentées durant l'assemblée #24 (<a href="https://www.osuny.org/agenda/2025/assemblee-osuny-24/">https://www.osuny.org/agenda/2025/assemblee-osuny-24/</a>)</p><p>L'objectif est à la fois de simplifier et d'affirmer l'identité du commun Osuny. Le choix s'est porté sur du "no branding", autrement dit, qui s'éloigne des registres marchands.<br>Lors de l'assemblée 24 a été relevé le risque de faire une identité trop froide, ainsi que puzzle, complexe et élitiste. Takumi a travaillé sur ces différents points.</p><p><br><i>Takumi :</i> la dernière fois j'ai exploré des choses sur la sobriété pour s'éloigner des choses convenues, du code de la startup et du marketing, d'où le choix radical de monotypographie. Avec le matériel typographique déjà existant dans Osuny j'ai ensuite construit quelque chose qui permette de clarifier l'objectif du site. Il s'agit d'une part de parler du produit et d'autre part de parler du commun. Dans un premier temps, j'ai travaillé pour le produit : iconographie et typo. L'idée est d'avoir une typo simple pour la "marque", en récupérant "l'inclusive sans" qui sera toujours à travers le site, et d'utiliser le nom de manière très sobre. Plusieurs possibilités :        </p><p>- Adelphe en titre principal et inclusive en texte. </p><p>- Inclusive en titrage : plus fonctionnel et moins maniéré   </p><p> Concernant l'iconographie : on a des secteurs d'activité et des engagements, il semble intéressant de reprendre le travail de Violenn qui permet de parler d'un produit numérique et de lui donner un lien direct avec la nature. On peut jouer avec des combinaisons d'images. Pour ce qui est des engagements, je propose un jeu de composition typographique avec les visuels, poétiques.</p><p><i>Arnaud Levy :</i> Concernant le menu : Le menu permet de présenter à la manière d'autres CMS standards, on utilise le langage des autres CMS pour présenter des choses (par exemple, on a une page "tarifs" mais qui permet d'expliquer le principe de contributions. Également apparition d'un bouton "tester osuny", qui ramène sur une page dédiée permettant de tester plusieurs choses. L'idée est de ne pas perturber les personnes qui viennent et ne connaissent pas et cherchent un CMS</p><p>Il faudrait qu'on valide aujourd'hui :    </p><p>- Le "no logo" en inclusive sans   </p><p>- est-ce qu'on part sur la logique de la petite colonne de gauche ou de la grand colonne de gauche   </p><p>- Inclusive sans ou Adelphe ?    </p><p>- Est-ce que les photos conviennent ?<br><br><b>Retours   </b></p><p><i>- Sebastien Gaya :  </i>  Je suis fan de celui où on a le titre en inclusif et le sous-titre en Adelphe, et en dessous le titre en adelphe et le contenu en inclusif. Je trouve que ça met bien en valeur et ça conserve la lisibilité. Le fil d'Ariane en footer, je suis étonné.</p><p><i>- Pierre-André Boissinot :</i> Je suis d'accord.</p><p><i>- Alexis Benoît :</i> Moi aussi.</p><p><i> - Sebastien Rufer : </i>Je pars avec une dyslexie, j'ai donc du mal avec la lexture en italique. Concernant le fil d'Ariane, le fait qu'il manque, je trouve qu'on manque de visibilité, on est un peu perdus. Là on a une sobriété complète, donc je n'ai aucun moyen de savoir de quoi il s'agit, ce que je suis en train de regarder. La personne qui n'est pas passée par la page d'accueil doit pouvoir se retrouver facilement.</p><p><i>- Arnaud Levy :</i> Est-ce que le fil d'Ariane sous l'image serait envisageable ?</p><p><i>- Sebastien Rufer :</i> Il faut tester, peut-être que c'est autre chose que le fil d'Ariane. Ce n'est pas tant la problématique du fil d'Ariane en tant que tel, mais plutôt la combinaison titre et résumé qui peut apporter la contextualisation. Il y a un petit côté avec un volet de page d'atterrissage, il faut qu'elles soient autosuffisantes, ces pages : Le visiteur est un zappeur, soit il comprend tout de suite, soit pas. Il faut que très vite il sache ce qu'il a à faire.</p><p><i>- Arnaud Bridou : </i>Petit doute sur les images avec du texte, qui peuvent être difficiles à lire. La superoposition des photos n'est pas très liée à Osuny.</p><p><i>- Sebastien Gaya :</i> Je suis d'accord. Et il faut s'assurer de la lisibilité.</p><p><i>- Arnaud Levy :</i> J'aime bien les images pures. J'aime bien qu'il n'y ait que l'image qu'on doive considérer. </p><p><i>- Sebastien Rufer :</i> Ca a peut être moins de sens d'avoir de la matière brute. Peut-être intégrer l'effet de matière et un visuel plus organique (végétal par exemple) en superposition. Cela apporterait du sens.</p><p><i>- Emie :</i> Je suis complètement d'accord avec Sebastien Gaya pour les choix de typo, étant moi même dyslexique, l'italique est un frein. Je rejoins aussi sur le fil d'Ariane. Sur les superpopsitions d'images, je trouve que ça a du sens, je les trouve très très belles, les petites écritures blanches sur les images : sobriété en un mot je le lis, en deux trois mots je les lis pas. </p><p><i>- Takumi :</i> on est pas dans la performance de la compréhension sobriété à ce moment là, la fonction de ces jeux là c'est vraiment de l'illustration ; au niveau des contrastes, je dois le travailler </p><p><i>- Léonie :</i> J'ai particulièrement apprécié les choix du menus, je trouve ça très intuitif, et puis ça correspond à des choses qui m'avaient été demandées pendant le stage (tarifs, etc) ; sur le choix des polices, je rejoins Emie et Sébastien sur le fait d'utiliser la sans sérif pour le texte principal, ça favorise la lisibilité. Le fait de ne pas avoir le fil d'Ariane c'est perturbant pour quelqu'un qui débarque sur le site.    </p><p><i>- Alex : </i>Je trouve ça très beau, je rejoins ce qui a été dit sur les choix de typo, et l'accent sur la lisibilité, j'aime beaucoup les compositions mots-images, en évitant les contre-sens évidemment. Quand il y a des textes centrés, je ne sais pas si c'est pas un peu plus difficile pour la lecture.</p><p><i>- Sebastien Rufer :</i> Oui effectivement, il faut faire attention, là on est sur 2-3 lignes, il faut pas faire plus. C'est souvent problématique pour les troubles Dys.</p><p><i> - Alex :</i> Les choix de typos sont excellent. Les screenshots de sites fonctionnent bien. C'est vrai que les photos sont très minérales.</p><p><i>- Takumi :</i> Oui, je suis en train de chercher dans les photos de Violenn pour faire un tri : pour culture on a telle icono, etc. On pourrai voir pour valider ça la prochaine fois.        </p><p><i>- ArnaudL :</i> Oui on a une piste et un découpage typo, il reste à découper pour l'iconographie, notamment les fonctionnalités comme un des trois pans        </p><p><i>- Sebastien Rufer :</i> Attention, les utilisateurs pourraient ne pas scroller sur la page 1 qui est très auto-suffisante, il faudrait trouver une astuce graphique pour dire "il y a d'autres choses en dessous", une amorce, une invitation à descendre...</p><p><i>- Alexis :</i> Un texte sur la ligne de flotaison ?  </p><p> <i>- Sebastien Rufer : </i>On perdrait cette sobriété d'arrivée. Il faudrait une astuce graphique.</p><p><i>- Takumi :</i> Pourquoi ne pas juste avoir l'image sur la home ?</p><p><i>- Alexis :</i> On perd en contenu informationnel dans ce cas.</p><p><i>- Takumi :</i> On pourrait s'inspirer de ce que fait. Twill qui a un pictogramme qui invite à scroller.</p><p><i>- ArnaudL :</i> Je vous présente le footer, et le site communs, dédié à la communauté. Le découpage du footer ( découvrir, faire, soigner) vous convient-il ? </p><p><i>- Léonie :</i> Le seul accès à la partie communs c'est dans le footer ?</p><p><i>- ArnaudL :</i> On va renvoyer à plusieurs moments dans le site.</p><p><i>- SebastienG : </i>Je suis pas sûr que le mattermost soit au bon endroit, je l'aurais rejoint avec aide.</p><p>- <i>SebastienR :</i> Sur le footer, j'ai du mal avec "aide", je sais pas ce que je trouverai derrière, je m'attends à avoir un forum de discussion, le bon terme ne serait-il pas documentation ou documentation de référence ? Les sites créés je peine à les situer dans la partie faire ; enfin la partie soigner ne me parle pas, il y a un contraste entre ce que je met derrière le mot et ce que je lis ensuite ; J'ai l'impression qu'on mélange deux choses : la partie métier et la section "aides", on devrait la renommer en "contribution". Il faudrait peut être segmenter par métier.</p><p><i>- ArnaudL : </i>Sur l'idée de soigner, en fait c'est prendre soin, c'est donc normal que ce soit déstabilisant.</p><p>- <i>SebastienR :</i> D'accord, il y a un effet de contraste.</p><p><i>- ArnaudL : </i>Des avis sur les décrochés graphiques ?</p><p><i>- Alexis :</i> J'aime bien.</p><p><b>Identités présentées</b></p><p><a href="https://www.figma.com/proto/VDW7nVtyZbxuBrafSE0Mly/Osuny---Identit%C3%A9-visuelle?n[">https://www.figma.com/proto/VDW7nVtyZbxuBrafSE0Mly/Osuny---Identit%C3%A9-visuelle?n[</a>...]aling=scale-down-width&content-scaling=fixed&page-id=6338%3A42</p><p>La version appréciée : <a href="https://www.figma.com/proto/VDW7nVtyZbxuBrafSE0Mly/Osuny---Identit%C3%A9-visuelle?n[">https://www.figma.com/proto/VDW7nVtyZbxuBrafSE0Mly/Osuny---Identit%C3%A9-visuelle?n[</a>...]fixed&starting-point-node-id=6398%3A15772&page-id=6398%3A15736</p><p><i>Note : Ces propos sont adaptés pour une meilleure compréhension à la lecture.</i></p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Replay
+    slug: >-
+      replay
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Replay
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: video
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+
+      url: >-
+        https://vimeo.com/1170635116?fl=ip&fe=ec
+
+      layout: player
+
+      video_iframe: >-
+        <iframe class="vimeo" loading="lazy" src="https://player.vimeo.com/video/1170635116?fl=ip&fe=ec" referrerpolicy="strict-origin-when-cross-origin" title="Video"></iframe>
+      video: 
+        platform: "vimeo"
+        identifier: "1170635116?fl=ip&fe=ec"
+        title: >-
+          Video
+        poster: >-
+          https://vumbnail.com/1170635116?fl=ip&fe=ec.jpg
+        embed: >-
+          https://player.vimeo.com/video/1170635116?fl=ip&fe=ec
+        embed_with_defaults: >-
+          https://player.vimeo.com/video/1170635116?fl=ip&fe=ec?autoplay=1&quality=360p&dnt=1
+        iframe: >-
+          <iframe class="vimeo" loading="lazy" src="https://player.vimeo.com/video/1170635116?fl=ip&fe=ec" referrerpolicy="strict-origin-when-cross-origin" title="Video"></iframe>
+
+
+
+---
