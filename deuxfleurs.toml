@@ -19,10 +19,6 @@ from = "/publications/2023-08-07-presentation-ouvrage-danne-bellon-cis-26-juin-2
 to = "/actualites/2023-08-07-presentation-ouvrage-danne-bellon-cis-26-juin-2023/"
 
 [[redirects]]
-from = "/publications/2023-08-21-revue-de-litterature-48/index.html"
-to = "/actualites/2023-08-21-revue-de-litterature-48/"
-
-[[redirects]]
 from = "/equipe/benjamin-coriat/index.html"
 to = "/personnes/benjamin-coriat/"
 
@@ -37,10 +33,6 @@ to = "/personnes/anne-alombert/"
 [[redirects]]
 from = "/personnes/categories/implication/comites-osuny/gestion-de-contenu/index.html"
 to = "/personnes/categories/implication/comites-osuny/comite-gestion-de-contenu/"
-
-[[redirects]]
-from = "/publications/2022-10-03-14-revue-de-litterature-du-3-octobre/index.html"
-to = "/actualites/2022-10-03-14-revue-de-litterature-du-3-octobre/"
 
 [[redirects]]
 from = "/equipe/categories/metiers/recherche-scientifique/index.html"
@@ -79,10 +71,6 @@ from = "/publications/2023-08-08-conference-dalexis-kauffmann-soutenir-le-develo
 to = "/actualites/2023-08-08-conference-dalexis-kauffmann-soutenir-le-developpement-des-communs-numeriques/"
 
 [[redirects]]
-from = "/publications/2023-12-13-revue-de-litterature-64/index.html"
-to = "/actualites/2023-12-13-revue-de-litterature-64/"
-
-[[redirects]]
 from = "/equipe/edouard-jourdain/index.html"
 to = "/personnes/edouard-jourdain/"
 
@@ -95,24 +83,12 @@ from = "/personnes/categories/implication/comites-osuny/design-1/index.html"
 to = "/personnes/categories/implication/comites-osuny/comite-design/"
 
 [[redirects]]
-from = "/publications/2022-10-24-revue-de-litterature-17/index.html"
-to = "/actualites/2022-10-24-revue-de-litterature-17/"
-
-[[redirects]]
-from = "/publications/2023-11-16-revue-de-litterature-60/index.html"
-to = "/actualites/2023-11-16-revue-de-litterature-60/"
-
-[[redirects]]
 from = "/equipe/fabrice-flipo/index.html"
 to = "/personnes/fabrice-flipo/"
 
 [[redirects]]
 from = "/equipe/lionel-maurel/index.html"
 to = "/personnes/lionel-maurel/"
-
-[[redirects]]
-from = "/publications/2022-10-10-revue-de-litterature-15/index.html"
-to = "/actualites/2022-10-10-revue-de-litterature-15/"
 
 [[redirects]]
 from = "/personnes/categories/commoners/freelance/index.html"
@@ -137,10 +113,6 @@ to = "/personnes/categories/metiers/developpement/"
 [[redirects]]
 from = "/equipe/categories/metier/gestion-de-projet/index.html"
 to = "/personnes/categories/metiers/gestion-de-projet/"
-
-[[redirects]]
-from = "/publications/2022-09-05-revue-de-litterature-du-5-septembre/index.html"
-to = "/actualites/2022-09-05-revue-de-litterature-du-5-septembre/"
 
 [[redirects]]
 from = "/equipe/arnaud-bridou/publications/index.html"
@@ -183,10 +155,6 @@ from = "/equipe/fabienne-orsi/index.html"
 to = "/personnes/fabienne-orsi/"
 
 [[redirects]]
-from = "/publications/2022-08-01-revue-de-litterature-du-1er-aout/index.html"
-to = "/actualites/2022-08-01-revue-de-litterature-du-1er-aout/"
-
-[[redirects]]
 from = "/equipe/pierre-slamich/index.html"
 to = "/personnes/pierre-slamich/"
 
@@ -197,10 +165,6 @@ to = "/personnes/categories/implication/comites-osuny/dev-front/"
 [[redirects]]
 from = "/equipe/categories/metiers/gestion-de-projet/index.html"
 to = "/personnes/categories/metiers/gestion-de-projet/"
-
-[[redirects]]
-from = "/publications/2022-08-22-revue-de-litterature-du-22-aout/index.html"
-to = "/actualites/2022-08-22-revue-de-litterature-du-22-aout/"
 
 [[redirects]]
 from = "/personnes/categories/comites/design-1/index.html"
@@ -235,24 +199,12 @@ from = "/equipe/index.html"
 to = "/personnes/"
 
 [[redirects]]
-from = "/publications/2023-08-09-revue-de-litterature-46/index.html"
-to = "/actualites/2023-08-09-revue-de-litterature-46/"
-
-[[redirects]]
 from = "/publications/carnet-de-recherche/index.html"
 to = "/actualites/carnet-de-recherche/"
 
 [[redirects]]
-from = "/publications/2023-04-20-revue-de-litterature-37/index.html"
-to = "/actualites/2023-04-20-revue-de-litterature-37/"
-
-[[redirects]]
 from = "/publications/2023-11-22-retour-sur-ledition-numerique-en-communs-a-lille/index.html"
 to = "/actualites/2023-11-22-retour-sur-ledition-numerique-en-communs-a-lille/"
-
-[[redirects]]
-from = "/publications/2023-11-22-revue-de-litterature-61/index.html"
-to = "/actualites/2023-11-22-revue-de-litterature-61/"
 
 [[redirects]]
 from = "/personnes/categories/implication/comites-osuny/scientifique/index.html"
@@ -267,24 +219,12 @@ from = "/comites/comite-de-design/index.html"
 to = "/comites/comite-design/"
 
 [[redirects]]
-from = "/publications/2023-01-10-revue-de-litterature-27/index.html"
-to = "/actualites/2023-01-10-revue-de-litterature-27/"
-
-[[redirects]]
 from = "/equipe/remy-gerbet/index.html"
 to = "/personnes/remy-gerbet/"
 
 [[redirects]]
-from = "/publications/2023-06-12-revue-de-litterature-40/index.html"
-to = "/actualites/2023-06-12-revue-de-litterature-40/"
-
-[[redirects]]
 from = "/publications/2023-01-12-quelles-sont-les-specificites-des-sites-web-des-universites/index.html"
 to = "/actualites/2023-01-12-quelles-sont-les-specificites-des-sites-web-des-universites/"
-
-[[redirects]]
-from = "/publications/2022-09-26-revue-de-litterature-du-26-septembre/index.html"
-to = "/actualites/2022-09-26-revue-de-litterature-du-26-septembre/"
 
 [[redirects]]
 from = "/equipe/categories/gestion-de-projet/index.html"
@@ -379,10 +319,6 @@ from = "/equipe/antonio-casilli/index.html"
 to = "/personnes/antonio-casilli/"
 
 [[redirects]]
-from = "/publications/2024-01-17-revue-de-litterature-66/index.html"
-to = "/actualites/2024-01-17-revue-de-litterature-66/"
-
-[[redirects]]
 from = "/equipe/marine-decleve/index.html"
 to = "/personnes/marine-decleve/"
 
@@ -411,10 +347,6 @@ from = "/equipe/categories/regions/nouvelle-aquitaine/index.html"
 to = "/personnes/categories/regions/nouvelle-aquitaine/"
 
 [[redirects]]
-from = "/publications/2023-01-18-revue-de-litterature-28/index.html"
-to = "/actualites/2023-01-18-revue-de-litterature-28/"
-
-[[redirects]]
 from = "/publications/2023-08-08-retour-sur-la-conference-dialoguee-politiser-le-renoncement-en-presence-dalexandre-monnin/index.html"
 to = "/actualites/2023-08-08-retour-sur-la-conference-dialoguee-politiser-le-renoncement-en-presence-dalexandre-monnin/"
 
@@ -431,28 +363,12 @@ from = "/equipe/olivier-ertz/index.html"
 to = "/personnes/olivier-ertz/"
 
 [[redirects]]
-from = "/publications/2023-03-14-revue-de-litterature-33/index.html"
-to = "/actualites/2023-03-14-revue-de-litterature-33/"
-
-[[redirects]]
 from = "/2025/comite-scientifique-3/index.html"
 to = "/agenda/2025/comite-scientifique-3/"
 
 [[redirects]]
 from = "/equipe/stephanie-schaer/index.html"
 to = "/personnes/stephanie-schaer/"
-
-[[redirects]]
-from = "/publications/2023-03-30-revue-de-litterature-35/index.html"
-to = "/actualites/2023-03-30-revue-de-litterature-35/"
-
-[[redirects]]
-from = "/publications/2023-11-29-revue-de-litterature-62/index.html"
-to = "/actualites/2023-11-29-revue-de-litterature-62/"
-
-[[redirects]]
-from = "/publications/2022-12-05-revue-de-litterature-22/index.html"
-to = "/actualites/2022-12-05-revue-de-litterature-22/"
 
 [[redirects]]
 from = "/personnes/categories/comites-osuny/index.html"
@@ -473,10 +389,6 @@ to = "/personnes/categories/implication/comites-osuny/comite-accessibilite/"
 [[redirects]]
 from = "/publications/2024-01-16-les-communs-definitions-et-courants-de-pensee-1/index.html"
 to = "/actualites/2024-01-16-les-communs-definitions-et-courants-de-pensee-1/"
-
-[[redirects]]
-from = "/publications/2023-11-08-revue-de-litterature-59/index.html"
-to = "/actualites/2023-11-08-revue-de-litterature-59/"
 
 [[redirects]]
 from = "/publications/2023-08-17-echelles-et-gouvernance-des-communs/index.html"
@@ -507,20 +419,8 @@ from = "/equipe/magali-angles/actualites/index.html"
 to = "/personnes/magali-angles/actualites/"
 
 [[redirects]]
-from = "/publications/2022-11-28-revue-de-litterature-21/index.html"
-to = "/actualites/2022-11-28-revue-de-litterature-21/"
-
-[[redirects]]
-from = "/publications/2022-08-16-revue-de-litterature-du-16-aout/index.html"
-to = "/actualites/2022-08-16-revue-de-litterature-du-16-aout/"
-
-[[redirects]]
 from = "/equipe/michel-bauwens/index.html"
 to = "/personnes/michel-bauwens/"
-
-[[redirects]]
-from = "/publications/2023-06-26-revue-de-litterature-42/index.html"
-to = "/actualites/2023-06-26-revue-de-litterature-42/"
 
 [[redirects]]
 from = "/participer/personne/index.html"
@@ -547,16 +447,8 @@ from = "/equipe/categories/metier/index.html"
 to = "/personnes/categories/metiers/"
 
 [[redirects]]
-from = "/publications/2023-07-12-revue-de-litterature-44/index.html"
-to = "/actualites/2023-07-12-revue-de-litterature-44/"
-
-[[redirects]]
 from = "/participer/je-souhaite-que-mon-organisation-participe/index.html"
 to = "/participer/en-tant-qu-organisation/"
-
-[[redirects]]
-from = "/publications/2022-08-08-revue-de-litterature-du-8-aout/index.html"
-to = "/actualites/2022-08-08-revue-de-litterature-du-8-aout/"
 
 [[redirects]]
 from = "/equipe/categories/commoners/index.html"
@@ -579,24 +471,8 @@ from = "/equipe/anne-bellon/index.html"
 to = "/personnes/anne-bellon/"
 
 [[redirects]]
-from = "/publications/2023-02-27-revue-de-litterature-32/index.html"
-to = "/actualites/2023-02-27-revue-de-litterature-32/"
-
-[[redirects]]
-from = "/publications/2024-06-05-revue-de-litterature-82/index.html"
-to = "/actualites/2024-06-05-revue-de-litterature-82/"
-
-[[redirects]]
-from = "/publications/2023-08-30-revue-de-litterature-49/index.html"
-to = "/actualites/2023-08-30-revue-de-litterature-49/"
-
-[[redirects]]
 from = "/equipe/categories/comites/index.html"
 to = "/personnes/categories/implication/comites-osuny/"
-
-[[redirects]]
-from = "/publications/2022-08-29-revue-de-litterature-du-29-aout/index.html"
-to = "/actualites/2022-08-29-revue-de-litterature-du-29-aout/"
 
 [[redirects]]
 from = "/personnes/categories/commoners/freelance-osuny/index.html"
@@ -605,10 +481,6 @@ to = "/personnes/categories/implication/freelances/"
 [[redirects]]
 from = "/equipe/magali-angles/publications/index.html"
 to = "/personnes/magali-angles/actualites/"
-
-[[redirects]]
-from = "/publications/2022-11-21-revue-de-litterature-20/index.html"
-to = "/actualites/2022-11-21-revue-de-litterature-20/"
 
 [[redirects]]
 from = "/equipe/pene-sophie/index.html"
