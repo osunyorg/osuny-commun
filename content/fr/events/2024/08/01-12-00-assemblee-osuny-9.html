@@ -1,0 +1,707 @@
+---
+title: >-
+  Assemblée Osuny #9
+
+subtitle: >-
+  Réunion mensuelle ouverte
+
+
+url: "/agenda/2024/assemblee-osuny-9/"
+slug: "assemblee-osuny-9"
+meta:
+  hugo:
+    permalink: "/agenda/2024/assemblee-osuny-9/"
+    path: "/events/2024/08/01-12-00-assemblee-osuny-9"
+    file: "content/fr/events/2024/08/01-12-00-assemblee-osuny-9.html"
+    slug: "assemblee-osuny-9"
+  dates:
+    created_at: 2025-03-14T10:04:58+01:00
+    updated_at: 2026-05-11T16:07:21+02:00
+search:
+  id: "c588d8c4-a4cf-445e-8d49-1a334aec5add"
+  about_id: "a2730f17-263f-4d28-afd9-0769eab96969"
+  url: "/agenda/2024/assemblee-osuny-9/"
+  kind: "Communication::Website::Agenda::Event::TimeSlot::Localization"
+  lang: "fr"
+  title: >-
+    Assemblée Osuny #9 Réunion mensuelle ouverte
+
+  body: >-
+    <p>  <br>Nous organisons une réunion mensuelle ouverte, le premier jeudi de chaque mois, dans le but de rassembler toute la communauté Osuny. Cet événement est un moment d'échange et de discussions, pendant lequel l'équipe noesya présente les avancées fonctionnelles. Cet événement est ouvert, vous êtes libre de venir quand vous le souhaitez, il n'y a aucune obligation d'être présent·e chaque mois, c'est à votre convenance. Nous souhaitons co-construire l'ordre du jour de cette réunion mensuelle avec vous, donc nous sommes à l'écoute de vos remarques et/ou questions. Accéder à la vidéoconférence Jitsi</p>  <p> Présentation des options  <br>   <br>Olivia présente le travail réalisé sur les options des actualités. Nous avons étendu ce travail aux autres blocs de listes, campus, organisations et personnes. Nous pouvons maintenant choisir d'afficher l'image, le résumé, l'auteur, la date, les catégories et le temps de lecture. Pour les contributeurs, la principale différence est qu'auparavant, on demandait si on voulait masquer ou afficher. Nous n’avions pas la notion des options par défaut, ce qui est le cas à présent, par défaut l'image et le résumé sont affichés.  Les fonctionnements ont été documentés sur developers : https://developers.osuny.org/docs/theme/architecture/options/ Sources : - Pull requests admin  https://github.com/osunyorg/admin/pull/1850 https://github.com/osunyorg/admin/pull/2120 - Pull requests thème https://github.com/osunyorg/theme/pull/493   https://github.com/osunyorg/theme/pull/513</p>  <p> Taxonomies  <br>   <br>Nous avons travaillé sur la taxonomie des catégories. Un système de catégories fonctionne comme un arbre où l'on coche en fonction de ce que l'on souhaite indexer. Par exemple, pour indiquer un genre musical et, pour un autre projet, des compétences mises en œuvre, compétence et genre musical sont des catégories différentes et auparavant, on ne pouvait pas le faire. Nous avons tenté une approche pour le site de  Takumi , actuellement en cours de développement, permettant des taxonomies multiples pour décrire des projets. Nous avons codé avec Olivia pour gérer ce cas de manière légère pour les projets. Il reste le problème d'articulation entre une taxonomie fermée et des éléments libres : comment les articuler ? Yuna demande si, dans les listes de projets et des actualités, il est possible de choisir ce qu'on affiche dans chaque item, notamment l'élément du projet qu'on affiche. Arnaud répond que, dans une liste restreinte, on ne va jamais par défaut fouiller dans les blocs. Cela reste possible, mais il pense que ce n'est pas faisable pour des éléments si particuliers. Arnaud précise que les “custom fields” et “custom types” sont des projets prévus. Ajouter des objets spéciaux qui n’existent pas en standard nécessite, par exemple, d'avoir un scénario d'utilisation ou un cas client. C'est très abstrait. Cela ne va pas venir immédiatement sur la feuille de route ; nous allons d'abord stabiliser. Une fois que nous aurons atteint un niveau de stabilité, nous pourrons nous attaquer à ce projet et décider lequel prioriser, “fields” ou “types”.</p>  <p> Point sur l'UI de l'agenda  <br>   <br>Nous travaillons avec la Gaité Lyrique via  Matter of Fact , et il y a de nombreux défis concernant l'agenda. Nous avons travaillé avec  Ophélie Burgstahler , mandatée par Matter Of Fact, pour nous adapter à un agenda complexe. Nous disposons d'un système de filtre et de remontées par événements, et nous devons gérer plusieurs milliers d'événements. Sur l'interface sur laquelle nous travaillons, lorsque nous accédons à un événement, nous retrouvons les informations pratiques, un bloc vidéo, et un lien vers un événement concerné. Nous avons une gestion détaillée pour les événements multiples. Il est possible que nous fassions évoluer la gestion des événements en admin et en front par défaut pour conserver le système actuel. Nous pourrions gérer des événements en direct, avec des éditions automatiques et l'archivage. Les événements passés sont archivés par défaut. Nous allons avoir un beau système de gestion événementielle. Pour les systèmes d'événements récurrents, cela risque d'être complexe avec de nombreuses questions d'interface. Cela doit rester facile à utiliser. Sources : - Figma :  https://www.figma.com/design/tQh3oLfNwSt8aoVDuUjQt0/Th%C3%A8me-Osuny?node-id=8218-516&t=QoEWt9xcpI1PQuyr-0</p>  <p> Point sur i18n  <br>   <br>Refonte de la partie multilingue d'Osuny. Le principe global est de créer une actualité liée à une catégorie spécifique. Chaque objet aura des localisations, un sous-titre en français, un crédit en français, etc. Nous travaillons sur ce projet depuis quelques semaines. Le principal avantage est de pouvoir connecter une personne à une catégorie même si celle-ci n'était pas traduite. En effet, certains auteurs et/ou catégories n'étaient pas visibles. Nous intégrons également un élément d'interface dans l'administration du multilingue. Nous écrivons une documentation sur la migration pour créer ce système de localisation pour tous les objets. Nous expliquons son fonctionnement, quels objets nous localisons et pour quelles raisons. Sources : -Pull request en cours admin :  https://github.com/osunyorg/admin/pull/2025 -Doc developers : https://developers.osuny.org/docs/admin/i18n/migration-2023-2024 https://developers.osuny.org/docs/admin/i18n/methode-2024/</p>  <p> Point sur le carousel  <br>   <br>Refonte en cours par Clara. Olivia supervise l'accessibilité du carousel. La livraison est prévue cette semaine afin de permettre un audit RGAA du thème. Sources : - Pull request en cours thème :  https://github.com/osunyorg/theme/pull/499</p>  <p> Audit RGAA  <br>   <br>Temesis  fera un audit du thème la semaine prochaine. L'idée est de développer une méthodologie spécifique d'Osuny pour noter les différences. Si tout va bien, nous serons conformes à 100%. Cela devrait aller, mais cela ne signifie pas que tous les sites le seront. L'idée est de s'appuyer sur cet audit de base et de regarder les différences de couleurs, vérifier dans les overrides HTML si rien n'a été cassé. Si cela fonctionne, nous pourrons faire un audit avec très peu de travail. On vérifiera les adaptations de configuration, les modifications HTML, etc. Nous avons développé des outils d'admin qui vérifient les surcouches HTML. En octobre, nous espérons un audit complet et nous aurons quelque chose de très propre. Nous pourrons faire le site delta avec le site  Comnum  de Rennes. La méthode d'audit delta sera publiée en  Creative Commons , tout le monde pourra l'utiliser pour faire des audits très légers.</p>  <p> Normalisation RGESN  <br>   <br>Nous avons mis en place un générateur  RGESN , qui permet de générer une déclaration par défaut en laissant les cases vides, tout en respectant le formalisme légal. Nous avons effectué avec Comnum un audit RGESN via ce générateur :  https://comnum.rennes.fr/declaration-decoconception/ L'idée pour les mentions légales, l'éco-conception et le RGAA est d’avoir des générateurs qui standardisent avec un socle. L’objectif est que les organisations puissent bénéficier d'un audit simplifié à des tarifs réduits et abordables. Il serait idéal d'obtenir des déclarations RGESN et RGAA bien faites et pas très chères.</p>  <p>  Release thème v6.0.16 + v6.1.  <br>   <br>https://github.com/osunyorg/theme/releases/ - Problèmes sur les icônes, plusieurs formats différents. Nous nous sommes demandés comment faire pour les icônes. Conseil d'utiliser  Remixicon . Les icônes sont toujours les mêmes maintenant. Ce n'est pas exclu que nous remettions en question ce système, parce qu'à certains endroits cela ne nous plaît pas. - Questions de maintenance du thème de plus en plus importantes, car on approche des 100 sites - Travail sur le CTA. Beaucoup de personnes ne l'utilisaient pas, parce qu'il était trop gros avec un énorme encadré. Mise en place d'un autre layout beaucoup plus discret - Beaucoup de corrections au niveau de l'accessibilité. Globalement, on unifie au fur et à mesure qu'on ajoute des fonctionnalités. Gros travail de rangement, de simplification et de rationalisation - Travail sur les revues en open access et publications des chercheur.e.s dans les pages chercheur.e.s.  Nous avons des papers dans des volumes au sein des revues (journals) comme avec le  Degrowth journal , et des publications dans d'autres revues qui sont synchronisées avec  Hal . Nous avons maintenant la possibilité de rajouter d'autres sources à la main - Affichage des chiffres clés sur la tablette : ajustements mis en place - Patch pour les icônes mis en place</p>  <p> Release admin v2.2.3  <br>   <br>https://github.com/osunyorg/admin/releases/tag/v2.2.3 - Nous avions parlé de la librairie Goodjob à la dernière assemblée. Nos modifications ont été acceptées et nous sommes passés de la version 3 à 4. - Nous avons intégré la navigation des pages des royaumes désignés par Denis dans l'admin. - Travail sur l'API Osuny pour les événements. - Vulnérabilité avec le site  Deuxfleurs  : possibilité de modifier un autre site hébergé avec Deuxfleurs. Quentin Dufour a créé un patch pour Deuxfleurs. Sébou a développé un système qui intègre cela avec Osuny, offrant maintenant un système cloisonné. Cela s'est produit pendant le travail sur le projet de décroissance internationale :  https://degrowth.net/ . Retours des développements sur le  forum Osuny . - Travail sur les styles des extranets. - Comportement des images dans les héritages. - Nouveau bloc contact : mis en place pour le site  Reseau Excellence . Beaucoup d'options sur ce bloc avec des données pas forcément très heureuses. Beaucoup de temps pour affiner que ce soit au moins propre sur la grille, avec des espaces bien gérés. - Ben Robra, chercheur, nous a signalé un problème avec les citations des formats universitaires qui ne venaient pas de HAL, cela modifiait les auteur.rice.s. Ce problème est résolu. - Améliorations des logos des administrations dans l'administration. - Ajout de classes HTML sur un bloc, permet de fabriquer des comportements spécifiques sur un bloc en front. Cela permet de mieux cibler en CSS, c'est beaucoup plus pratique.</p>  <p> Questionnements sur LanguageTool  <br>   <br>Laisse-t-on LanguageTool comme cela ou est-ce qu’on le déclenche au clic d’un bouton ? LanguageTool permet d’analyser le texte et de voir la liste des problèmes. Il est capable de détecter des erreurs de grammaire, d’orthographe, de typographie, et des lourdeurs stylistiques. Nous avons un abonnement pour 100 requêtes par jour pour 29 euros par mois. Cela fait de la pédagogie en expliquant les problèmes rencontrés. Le problème, c'est que cela se fait automatiquement, ce qui incite à corriger. Mais, certains jours, nous avons 2000 requêtes par jour. Nous avons demandé à ajuster les tarifs : il faudrait passer à 1000 requêtes par jour pour 100€ par mois. Choix : - Bouton dans le menu : faire une analyse. On choisit de lancer l’analyse. C’est mieux au niveau écologique - Non, on le fait automatiquement, cela aide les personnes à produire un meilleur texte. Si la personne ne voit pas les erreurs, cela imposera aux lecteurs un style peut être lourd à lire. Qu'est-ce que nous choisissons ? Dianela pense que si une personne connaît la fonctionnalité et que ça lui sert, elle va l'activer. Yuna propose d’activer en fonction des contenus, comme pour des longs articles. Ça peut aussi se faire la première fois et après avoir un message qui indique : "Voulez-vous encore bénéficier de cette fonctionnalité ?" Nous avons deux états pour le moment : publié ou brouillon. Peut-être ajouter un état avec cette analyse. Yuna précise que pour la balance écologie, Osuny fait déjà beaucoup sur ce point, donc la balance sociale l'emporte ici, mais il y a moyen d'impacter le côté écologique avec une certaine granularité. Il faut affiner l'utilisation de cet outil, trouver les bons moments ou contextes d'utilisation. Yuna se pose la question : “En tant que contributeur.rice, a-t-on envie de dire aux personnes "Vous pouvez faire mieux" ou "on vous laisse tranquille ?” Il y a une limite entre ce qu'on suggère et ce qu'on laisse faire. Arnaud précise que les gens qui n'utilisent pas les outils, c'est à eux qu'il faut donner cet outil. C’est une question de qualité : est-ce que la qualité est bonne ? Pour l'instant, on ne bouge pas, mais on continue à réfléchir sur la gestion de la qualité. Yuna demande si on a accès aux statistiques de l'outil ? Une des pistes serait l’usage, est-ce que les personnes acceptent les suggestions ? Ce sont des questions à se poser avant de choisir. Peut-être faire quelques shadowing pour observer cette fonctionnalité en train d'être utilisée par les utilisateurs du BO, est-ce qu'ils l'utilisent ?</p>  <p> Key CDN  <br>   <br>Actuellement, nous utilisons un CDN pour redimensionner automatiquement les images à la volée, avec 13 formats générés. Ces formats offrent un grand avantage en termes d'accessibilité sans compromettre la qualité. De plus, il est très rapide, mais cet outil n'est pas libre. Nous étions à 50 euros par mois (ratio trafic et traitement d'images), et maintenant, nous en sommes à 50 euros par semaine. Cela va encore augmenter, car nous prévoyons beaucoup de trafic. Pour donner un exemple, lors des dernières 24 heures, nous avons eu 6 gigas de trafic, 7 000 requêtes et 18 000 images traitées. Pour le mois de juillet : 113 gigas, 1 million de requêtes et 535 000 images. Nous subissons une certaine pression sur ce sujet : devons-nous payer plus pour KeyCDN ou mettre en place notre propre service, notamment avec l'équipe de Deux Fleurs ? L’idée serait de travailler sur un CDN libre, mais cela demande beaucoup de ressources machines. C’est un projet de grande envergure nécessitant des langages très performants. Il faut créer un système très résilient avec un affichage rapide pour les utilisateurs. </p>  <p> Nous souhaitons que toute la chaîne soit libre. Nous avions eu des discussions avec les Chatons l’année dernière, mais aucune solution n’en est ressortie.</p>  <p> Replay  <br>  </p>  <p>https://vimeo.com/995303729 <br>Assemblée Osuny #9</p>
+
+date: "2024-08-01T12:00:00+02:00"
+dates:
+  status: "archive"
+  archive: true
+  event:
+    kind: simple
+    is_child: false
+  computed:
+    short: >-
+      1 août 2024
+    long: >-
+      Jeudi 1 août 2024
+    two_lines:
+      short: >-
+        1 août 2024
+      long: >-
+        Jeudi 1 août 2024
+  from:
+    day: "2024-08-01"
+  to:
+    day: "2024-08-01"
+  add_to_calendar:
+    google: "https://www.google.com/calendar/render?action=TEMPLATE&text=Assembl%C3%A9e%20Osuny%20%239%20R%C3%A9union%20mensuelle%20ouverte&dates=20240801/20240802&ctz=Europe/Paris&details=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F"
+    yahoo: "https://calendar.yahoo.com/?v=60&TITLE=Assembl%C3%A9e%20Osuny%20%239%20R%C3%A9union%20mensuelle%20ouverte&ST=20240801&ET=20240801&DUR=allday&DESC=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F"
+    office: "https://outlook.office.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%239%20R%C3%A9union%20mensuelle%20ouverte&startdt=2024-08-01&enddt=2024-08-02&allday=true&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F"
+    outlook: "https://outlook.live.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%239%20R%C3%A9union%20mensuelle%20ouverte&startdt=2024-08-01&enddt=2024-08-02&allday=true&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F"
+    ical: "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//AddToCalendar//RubyGem//EN%0ABEGIN:VEVENT%0ADTSTAMP:20260511T140718Z%0ADTSTART;VALUE=DATE:20240801%0ADTEND;VALUE=DATE:20240802%0ASUMMARY:Assembl%C3%A9e%20Osuny%20%239%20R%C3%A9union%20mensuelle%20ouverte%0AURL:https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F%0ADESCRIPTION:\n\nhttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F%0AUID:-https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F%0AEND:VEVENT%0AEND:VCALENDAR"
+
+
+
+image:
+  id: "8614f529-8923-49c0-919b-b2ca1ac48f1b"
+  alt: ""
+  credit: >-
+    <p>Violenn Simon</p>
+
+
+
+breadcrumbs:
+  - title: >-
+      Accueil
+    path: "/"
+  - title: >-
+      Agenda
+    path: "/agenda/"
+  - title: >-
+      Assemblée Osuny #9
+
+design:
+  full_width: false
+  toc:
+    present: true
+    offcanvas: false
+
+current_time_slot:
+  permalink: "/agenda/2024/assemblee-osuny-9/"
+  path: "/events/2024/08/01-12-00-assemblee-osuny-9"
+  slug: "assemblee-osuny-9"
+  file: "content/fr/events/2024/08/01-12-00-assemblee-osuny-9.html"
+  start:
+    date: "2024-08-01"
+    time: "12:00"
+    datetime: "2024-08-01T12:00:00+02:00"
+  end:
+    date: "2024-08-01"
+    time: "14:00"
+    datetime: "2024-08-01T14:00:00+02:00"
+  status: "archive"
+
+  add_to_calendar:
+    google: "https://www.google.com/calendar/render?action=TEMPLATE&text=Assembl%C3%A9e%20Osuny%20%239%20R%C3%A9union%20mensuelle%20ouverte&dates=20240801T120000/20240801T140000&ctz=Europe/Paris&details=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F"
+    yahoo: "https://calendar.yahoo.com/?v=60&TITLE=Assembl%C3%A9e%20Osuny%20%239%20R%C3%A9union%20mensuelle%20ouverte&ST=20240801T100000Z&DUR=0200&DESC=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F"
+    office: "https://outlook.office.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%239%20R%C3%A9union%20mensuelle%20ouverte&startdt=2024-08-01T10:00:00Z&enddt=2024-08-01T12:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F"
+    outlook: "https://outlook.live.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%239%20R%C3%A9union%20mensuelle%20ouverte&startdt=2024-08-01T10:00:00Z&enddt=2024-08-01T12:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F"
+    ical: "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//AddToCalendar//RubyGem//EN%0ABEGIN:VEVENT%0ADTSTAMP:20260511T140719Z%0ADTSTART:20240801T100000Z%0ADTEND:20240801T120000Z%0ASUMMARY:Assembl%C3%A9e%20Osuny%20%239%20R%C3%A9union%20mensuelle%20ouverte%0AURL:https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F%0ADESCRIPTION:\n\nhttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F%0AUID:-https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F%0AEND:VEVENT%0AEND:VCALENDAR"
+
+
+time_slots:
+  - permalink: "/agenda/2024/assemblee-osuny-9/"
+    path: "/events/2024/08/01-12-00-assemblee-osuny-9"
+    slug: "assemblee-osuny-9"
+    file: "content/fr/events/2024/08/01-12-00-assemblee-osuny-9.html"
+    start:
+      date: "2024-08-01"
+      time: "12:00"
+      datetime: "2024-08-01T12:00:00+02:00"
+    end:
+      date: "2024-08-01"
+      time: "14:00"
+      datetime: "2024-08-01T14:00:00+02:00"
+    status: "archive"
+
+    add_to_calendar:
+      google: "https://www.google.com/calendar/render?action=TEMPLATE&text=Assembl%C3%A9e%20Osuny%20%239%20R%C3%A9union%20mensuelle%20ouverte&dates=20240801T120000/20240801T140000&ctz=Europe/Paris&details=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F"
+      yahoo: "https://calendar.yahoo.com/?v=60&TITLE=Assembl%C3%A9e%20Osuny%20%239%20R%C3%A9union%20mensuelle%20ouverte&ST=20240801T100000Z&DUR=0200&DESC=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F"
+      office: "https://outlook.office.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%239%20R%C3%A9union%20mensuelle%20ouverte&startdt=2024-08-01T10:00:00Z&enddt=2024-08-01T12:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F"
+      outlook: "https://outlook.live.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%239%20R%C3%A9union%20mensuelle%20ouverte&startdt=2024-08-01T10:00:00Z&enddt=2024-08-01T12:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F"
+      ical: "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//AddToCalendar//RubyGem//EN%0ABEGIN:VEVENT%0ADTSTAMP:20260511T140719Z%0ADTSTART:20240801T100000Z%0ADTEND:20240801T120000Z%0ASUMMARY:Assembl%C3%A9e%20Osuny%20%239%20R%C3%A9union%20mensuelle%20ouverte%0AURL:https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F%0ADESCRIPTION:\n\nhttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F%0AUID:-https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2024%2Fassemblee-osuny-9%2F%0AEND:VEVENT%0AEND:VCALENDAR"
+
+
+translationKey: communication-website-agenda-event-6b5eb84f-596c-4d34-a676-934364a7ac22
+
+
+meta_description: >-
+  Assemblée Osuny #9
+
+
+header_cta:
+
+contents_reading_time:
+  seconds: 629
+  text: >-
+    10 minutes
+contents:
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 2
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Nous organisons une réunion mensuelle ouverte, le premier jeudi de chaque mois, dans le but de rassembler toute la communauté Osuny. Cet événement est un moment d'échange et de discussions, pendant lequel l'équipe noesya présente les avancées fonctionnelles. Cet événement est ouvert, vous êtes libre de venir quand vous le souhaitez, il n'y a aucune obligation d'être présent·e chaque mois, c'est à votre convenance. Nous souhaitons co-construire l'ordre du jour de cette réunion mensuelle avec vous, donc nous sommes à l'écoute de vos remarques et/ou questions.</p><p><a href="https://jitsi.my.noesya.coop/OsunyCommunaute" target="_blank" rel="noreferrer">Accéder à la vidéoconférence Jitsi <span class="sr-only">(lien externe)</span></a></p>
+
+
+
+
+
+
+  - kind: block
+    template: persons
+
+
+    ranks:
+      base: 2
+      children: 2
+    top:
+      active: false
+
+    data:
+
+      layout: grid
+      options:
+        image: true
+        summary: true
+        link: false
+        contact: false
+
+      persons:
+        - permalink: "/personnes/magali-angles/"
+          path: "/persons/magali-angles"
+          slug: "magali-angles"
+          file: "content/fr/persons/magali-angles.html"
+
+        - permalink: "/personnes/david-bruant/"
+          path: "/persons/david-bruant"
+          slug: "david-bruant"
+          file: "content/fr/persons/david-bruant.html"
+
+        - permalink: "/personnes/sebastien-gaya/"
+          path: "/persons/sebastien-gaya"
+          slug: "sebastien-gaya"
+          file: "content/fr/persons/sebastien-gaya.html"
+
+        - permalink: "/personnes/yuna-orsini/"
+          path: "/persons/yuna-orsini"
+          slug: "yuna-orsini"
+          file: "content/fr/persons/yuna-orsini.html"
+
+        - permalink: "/personnes/daniela-penaranda/"
+          path: "/persons/daniela-penaranda"
+          slug: "daniela-penaranda"
+          file: "content/fr/persons/daniela-penaranda.html"
+
+        - permalink: "/personnes/clara-rigaud/"
+          path: "/persons/clara-rigaud"
+          slug: "clara-rigaud"
+          file: "content/fr/persons/clara-rigaud.html"
+
+        - permalink: "/personnes/olivia-simonet/"
+          path: "/persons/olivia-simonet"
+          slug: "olivia-simonet"
+          file: "content/fr/persons/olivia-simonet.html"
+
+      quantity: 7
+
+
+  - kind: block
+    template: title
+    title: >-
+      Présentation des options
+    slug: >-
+      presentation-des-options
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Présentation des options
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Olivia présente le travail réalisé sur les options des actualités. Nous avons étendu ce travail aux autres blocs de listes, campus, organisations et personnes. Nous pouvons maintenant choisir d'afficher l'image, le résumé, l'auteur, la date, les catégories et le temps de lecture.</p><p>Pour les contributeurs, la principale différence est qu'auparavant, on demandait si on voulait masquer ou afficher. Nous n’avions pas la notion des options par défaut, ce qui est le cas à présent, par défaut l'image et le résumé sont affichés. </p><p>Les fonctionnements ont été documentés sur developers : https://developers.osuny.org/docs/theme/architecture/options/</p><p>Sources :<br>- Pull requests admin <br><a href="https://github.com/osunyorg/admin/pull/1850" target="_blank" rel="noreferrer">https://github.com/osunyorg/admin/pull/1850 <span class="sr-only">(lien externe)</span></a><br><a href="https://github.com/osunyorg/admin/pull/2120" target="_blank" rel="noreferrer">https://github.com/osunyorg/admin/pull/2120 <span class="sr-only">(lien externe)</span></a></p><p>- Pull requests thème<br><a href="https://github.com/osunyorg/theme/pull/493" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/pull/493 <span class="sr-only">(lien externe)</span></a> <br><a href="https://github.com/osunyorg/theme/pull/513" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/pull/513 <span class="sr-only">(lien externe)</span></a></p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Taxonomies
+    slug: >-
+      taxonomies
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Taxonomies
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Nous avons travaillé sur la taxonomie des catégories.</p><p>Un système de catégories fonctionne comme un arbre où l'on coche en fonction de ce que l'on souhaite indexer. Par exemple, pour indiquer un genre musical et, pour un autre projet, des compétences mises en œuvre, compétence et genre musical sont des catégories différentes et auparavant, on ne pouvait pas le faire.</p><p>Nous avons tenté une approche pour le site de <a href="https://reseau.noesya.coop/personnes/takumi-kobayashi" target="_blank" rel="noreferrer">Takumi <span class="sr-only">(lien externe)</span></a>, actuellement en cours de développement, permettant des taxonomies multiples pour décrire des projets. Nous avons codé avec Olivia pour gérer ce cas de manière légère pour les projets.</p><p>Il reste le problème d'articulation entre une taxonomie fermée et des éléments libres : comment les articuler ?</p><p>Yuna demande si, dans les listes de projets et des actualités, il est possible de choisir ce qu'on affiche dans chaque item, notamment l'élément du projet qu'on affiche. Arnaud répond que, dans une liste restreinte, on ne va jamais par défaut fouiller dans les blocs. Cela reste possible, mais il pense que ce n'est pas faisable pour des éléments si particuliers.<br>Arnaud précise que les “custom fields” et “custom types” sont des projets prévus. Ajouter des objets spéciaux qui n’existent pas en standard nécessite, par exemple, d'avoir un scénario d'utilisation ou un cas client. C'est très abstrait. Cela ne va pas venir immédiatement sur la feuille de route ; nous allons d'abord stabiliser. Une fois que nous aurons atteint un niveau de stabilité, nous pourrons nous attaquer à ce projet et décider lequel prioriser, “fields” ou “types”.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Point sur l'UI de l'agenda
+    slug: >-
+      point-sur-l-ui-de-l-agenda
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Point sur l'UI de l'agenda
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Nous travaillons avec la Gaité Lyrique via <a href="https://matteroffact.fr/" target="_blank" rel="noreferrer">Matter of Fact <span class="sr-only">(lien externe)</span></a>, et il y a de nombreux défis concernant l'agenda. Nous avons travaillé avec <a href="https://reseau.noesya.coop/personnes/ophelie-burgstahler" target="_blank" rel="noreferrer">Ophélie Burgstahler <span class="sr-only">(lien externe)</span></a>, mandatée par Matter Of Fact, pour nous adapter à un agenda complexe. Nous disposons d'un système de filtre et de remontées par événements, et nous devons gérer plusieurs milliers d'événements.</p><p>Sur l'interface sur laquelle nous travaillons, lorsque nous accédons à un événement, nous retrouvons les informations pratiques, un bloc vidéo, et un lien vers un événement concerné. Nous avons une gestion détaillée pour les événements multiples. Il est possible que nous fassions évoluer la gestion des événements en admin et en front par défaut pour conserver le système actuel. Nous pourrions gérer des événements en direct, avec des éditions automatiques et l'archivage. Les événements passés sont archivés par défaut. Nous allons avoir un beau système de gestion événementielle.</p><p>Pour les systèmes d'événements récurrents, cela risque d'être complexe avec de nombreuses questions d'interface. Cela doit rester facile à utiliser.</p><p>Sources :<br>- Figma : <a href="https://www.figma.com/design/tQh3oLfNwSt8aoVDuUjQt0/Th%C3%A8me-Osuny?node-id=8218-516&t=QoEWt9xcpI1PQuyr-0" target="_blank" rel="noreferrer">https://www.figma.com/design/tQh3oLfNwSt8aoVDuUjQt0/Th%C3%A8me-Osuny?node-id=8218-516&t=QoEWt9xcpI1PQuyr-0 <span class="sr-only">(lien externe)</span></a></p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Point sur i18n
+    slug: >-
+      point-sur-i18n
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Point sur i18n
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Refonte de la partie multilingue d'Osuny. Le principe global est de créer une actualité liée à une catégorie spécifique. Chaque objet aura des localisations, un sous-titre en français, un crédit en français, etc. Nous travaillons sur ce projet depuis quelques semaines. Le principal avantage est de pouvoir connecter une personne à une catégorie même si celle-ci n'était pas traduite. En effet, certains auteurs et/ou catégories n'étaient pas visibles. Nous intégrons également un élément d'interface dans l'administration du multilingue.</p><p>Nous écrivons une documentation sur la migration pour créer ce système de localisation pour tous les objets. Nous expliquons son fonctionnement, quels objets nous localisons et pour quelles raisons.</p><p>Sources :</p><p>-Pull request en cours admin : <br><a href="https://github.com/osunyorg/admin/pull/2025" target="_blank" rel="noreferrer">https://github.com/osunyorg/admin/pull/2025 <span class="sr-only">(lien externe)</span></a></p><p>-Doc developers :<br><a href="https://developers.osuny.org/docs/admin/i18n/migration-2023-2024" target="_blank" rel="noreferrer">https://developers.osuny.org/docs/admin/i18n/migration-2023-2024 <span class="sr-only">(lien externe)</span></a></p><p><a href="https://developers.osuny.org/docs/admin/i18n/methode-2024/" target="_blank" rel="noreferrer">https://developers.osuny.org/docs/admin/i18n/methode-2024/ <span class="sr-only">(lien externe)</span></a><br></p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Point sur le carousel
+    slug: >-
+      point-sur-le-carousel
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Point sur le carousel
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Refonte en cours par Clara. Olivia supervise l'accessibilité du carousel. La livraison est prévue cette semaine afin de permettre un audit RGAA du thème.</p><p>Sources :<br>- Pull request en cours thème : <a href="https://github.com/osunyorg/theme/pull/499" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/pull/499 <span class="sr-only">(lien externe)</span></a></p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Audit RGAA
+    slug: >-
+      audit-rgaa
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Audit RGAA
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><a href="https://www.temesis.com/" target="_blank" rel="noreferrer">Temesis <span class="sr-only">(lien externe)</span></a> fera un audit du thème la semaine prochaine. L'idée est de développer une méthodologie spécifique d'Osuny pour noter les différences. Si tout va bien, nous serons conformes à 100%. Cela devrait aller, mais cela ne signifie pas que tous les sites le seront. L'idée est de s'appuyer sur cet audit de base et de regarder les différences de couleurs, vérifier dans les overrides HTML si rien n'a été cassé. Si cela fonctionne, nous pourrons faire un audit avec très peu de travail. On vérifiera les adaptations de configuration, les modifications HTML, etc. Nous avons développé des outils d'admin qui vérifient les surcouches HTML.</p><p>En octobre, nous espérons un audit complet et nous aurons quelque chose de très propre. Nous pourrons faire le site delta avec le site <a href="https://comnum.rennes.fr/" target="_blank" rel="noreferrer">Comnum <span class="sr-only">(lien externe)</span></a> de Rennes. La méthode d'audit delta sera publiée en <a href="https://fr.wikipedia.org/wiki/Creative_Commons" target="_blank" rel="noreferrer">Creative Commons <span class="sr-only">(lien externe)</span></a>, tout le monde pourra l'utiliser pour faire des audits très légers.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Normalisation RGESN
+    slug: >-
+      normalisation-rgesn
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Normalisation RGESN
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Nous avons mis en place un générateur <a href="https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/" target="_blank" rel="noreferrer">RGESN <span class="sr-only">(lien externe)</span></a>, qui permet de générer une déclaration par défaut en laissant les cases vides, tout en respectant le formalisme légal. Nous avons effectué avec Comnum un audit RGESN via ce générateur : <a href="https://comnum.rennes.fr/declaration-decoconception/" target="_blank" rel="noreferrer">https://comnum.rennes.fr/declaration-decoconception/ <span class="sr-only">(lien externe)</span></a></p><p>L'idée pour les mentions légales, l'éco-conception et le RGAA est d’avoir des générateurs qui standardisent avec un socle. L’objectif est que les organisations puissent bénéficier d'un audit simplifié à des tarifs réduits et abordables. Il serait idéal d'obtenir des déclarations RGESN et RGAA bien faites et pas très chères.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Release thème v6.0.16 + v6.1.
+    slug: >-
+      release-theme-v6-0-16-v6-1
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Release thème v6.0.16 + v6.1.
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><a href="https://github.com/osunyorg/theme/releases/" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/ <span class="sr-only">(lien externe)</span></a></p><p>- Problèmes sur les icônes, plusieurs formats différents. Nous nous sommes demandés comment faire pour les icônes. Conseil d'utiliser <a href="https://remixicon.com" target="_blank" rel="noreferrer">Remixicon <span class="sr-only">(lien externe)</span></a>. Les icônes sont toujours les mêmes maintenant. Ce n'est pas exclu que nous remettions en question ce système, parce qu'à certains endroits cela ne nous plaît pas.</p><p>- Questions de maintenance du thème de plus en plus importantes, car on approche des 100 sites</p><p>- Travail sur le CTA. Beaucoup de personnes ne l'utilisaient pas, parce qu'il était trop gros avec un énorme encadré. Mise en place d'un autre layout beaucoup plus discret</p><p>- Beaucoup de corrections au niveau de l'accessibilité. Globalement, on unifie au fur et à mesure qu'on ajoute des fonctionnalités. Gros travail de rangement, de simplification et de rationalisation</p><p>- Travail sur les revues en open access et publications des chercheur.e.s dans les pages chercheur.e.s.  Nous avons des papers dans des volumes au sein des revues (journals) comme avec le <a href="https://www.degrowthjournal.org/" target="_blank" rel="noreferrer">Degrowth journal <span class="sr-only">(lien externe)</span></a>, et des publications dans d'autres revues qui sont synchronisées avec <a href="https://hal.science/" target="_blank" rel="noreferrer">Hal <span class="sr-only">(lien externe)</span></a>. Nous avons maintenant la possibilité de rajouter d'autres sources à la main</p><p>- Affichage des chiffres clés sur la tablette : ajustements mis en place</p><p>- Patch pour les icônes mis en place</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Release admin v2.2.3
+    slug: >-
+      release-admin-v2-2-3
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Release admin v2.2.3
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><a href="https://github.com/osunyorg/admin/releases/tag/v2.2.3" target="_blank" rel="noreferrer">https://github.com/osunyorg/admin/releases/tag/v2.2.3 <span class="sr-only">(lien externe)</span></a></p><p>- Nous avions parlé de la librairie Goodjob à la dernière assemblée. Nos modifications ont été acceptées et nous sommes passés de la version 3 à 4.</p><p>- Nous avons intégré la navigation des pages des royaumes désignés par Denis dans l'admin.</p><p>- Travail sur l'API Osuny pour les événements.</p><p>- Vulnérabilité avec le site <a href="https://deuxfleurs.fr/" target="_blank" rel="noreferrer">Deuxfleurs <span class="sr-only">(lien externe)</span></a> : possibilité de modifier un autre site hébergé avec Deuxfleurs. Quentin Dufour a créé un patch pour Deuxfleurs. Sébou a développé un système qui intègre cela avec Osuny, offrant maintenant un système cloisonné. Cela s'est produit pendant le travail sur le projet de décroissance internationale : <a href="https://degrowth.net/" target="_blank" rel="noreferrer">https://degrowth.net/ <span class="sr-only">(lien externe)</span></a>. Retours des développements sur le <a href="https://forum.osuny.org/" target="_blank" rel="noreferrer">forum Osuny <span class="sr-only">(lien externe)</span></a>.</p><p>- Travail sur les styles des extranets.</p><p>- Comportement des images dans les héritages.</p><p>- Nouveau bloc contact : mis en place pour le site <a href="https://www.reseauexcellence.fr/fr/" target="_blank" rel="noreferrer">Reseau Excellence <span class="sr-only">(lien externe)</span></a>. Beaucoup d'options sur ce bloc avec des données pas forcément très heureuses. Beaucoup de temps pour affiner que ce soit au moins propre sur la grille, avec des espaces bien gérés.</p><p>- Ben Robra, chercheur, nous a signalé un problème avec les citations des formats universitaires qui ne venaient pas de HAL, cela modifiait les auteur.rice.s. Ce problème est résolu.</p><p>- Améliorations des logos des administrations dans l'administration.</p><p>- Ajout de classes HTML sur un bloc, permet de fabriquer des comportements spécifiques sur un bloc en front. Cela permet de mieux cibler en CSS, c'est beaucoup plus pratique.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Questionnements sur LanguageTool
+    slug: >-
+      questionnements-sur-languagetool
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Questionnements sur LanguageTool
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Laisse-t-on LanguageTool comme cela ou est-ce qu’on le déclenche au clic d’un bouton ?</p><p>LanguageTool permet d’analyser le texte et de voir la liste des problèmes. Il est capable de détecter des erreurs de grammaire, d’orthographe, de typographie, et des lourdeurs stylistiques.<br>Nous avons un abonnement pour 100 requêtes par jour pour 29 euros par mois. Cela fait de la pédagogie en expliquant les problèmes rencontrés. Le problème, c'est que cela se fait automatiquement, ce qui incite à corriger. Mais, certains jours, nous avons 2000 requêtes par jour. Nous avons demandé à ajuster les tarifs : il faudrait passer à 1000 requêtes par jour pour 100€ par mois.</p><p>Choix :<br>- Bouton dans le menu : faire une analyse. On choisit de lancer l’analyse. C’est mieux au niveau écologique<br>- Non, on le fait automatiquement, cela aide les personnes à produire un meilleur texte. Si la personne ne voit pas les erreurs, cela imposera aux lecteurs un style peut être lourd à lire.<br>Qu'est-ce que nous choisissons ?</p><p>Dianela pense que si une personne connaît la fonctionnalité et que ça lui sert, elle va l'activer.<br>Yuna propose d’activer en fonction des contenus, comme pour des longs articles. Ça peut aussi se faire la première fois et après avoir un message qui indique : "Voulez-vous encore bénéficier de cette fonctionnalité ?"<br>Nous avons deux états pour le moment : publié ou brouillon. Peut-être ajouter un état avec cette analyse.<br>Yuna précise que pour la balance écologie, Osuny fait déjà beaucoup sur ce point, donc la balance sociale l'emporte ici, mais il y a moyen d'impacter le côté écologique avec une certaine granularité. Il faut affiner l'utilisation de cet outil, trouver les bons moments ou contextes d'utilisation.</p><p>Yuna se pose la question : “En tant que contributeur.rice, a-t-on envie de dire aux personnes "Vous pouvez faire mieux" ou "on vous laisse tranquille ?” Il y a une limite entre ce qu'on suggère et ce qu'on laisse faire. Arnaud précise que les gens qui n'utilisent pas les outils, c'est à eux qu'il faut donner cet outil. C’est une question de qualité : est-ce que la qualité est bonne ? Pour l'instant, on ne bouge pas, mais on continue à réfléchir sur la gestion de la qualité.</p><p>Yuna demande si on a accès aux statistiques de l'outil ? Une des pistes serait l’usage, est-ce que les personnes acceptent les suggestions ? Ce sont des questions à se poser avant de choisir. Peut-être faire quelques shadowing pour observer cette fonctionnalité en train d'être utilisée par les utilisateurs du BO, est-ce qu'ils l'utilisent ?</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Key CDN
+    slug: >-
+      key-cdn
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Key CDN
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Actuellement, nous utilisons un CDN pour redimensionner automatiquement les images à la volée, avec 13 formats générés. Ces formats offrent un grand avantage en termes d'accessibilité sans compromettre la qualité. De plus, il est très rapide, mais cet outil n'est pas libre.</p><p>Nous étions à 50 euros par mois (ratio trafic et traitement d'images), et maintenant, nous en sommes à 50 euros par semaine. Cela va encore augmenter, car nous prévoyons beaucoup de trafic. Pour donner un exemple, lors des dernières 24 heures, nous avons eu 6 gigas de trafic, 7 000 requêtes et 18 000 images traitées. Pour le mois de juillet : 113 gigas, 1 million de requêtes et 535 000 images.</p><p>Nous subissons une certaine pression sur ce sujet : devons-nous payer plus pour KeyCDN ou mettre en place notre propre service, notamment avec l'équipe de Deux Fleurs ?</p><p>L’idée serait de travailler sur un CDN libre, mais cela demande beaucoup de ressources machines. C’est un projet de grande envergure nécessitant des langages très performants. Il faut créer un système très résilient avec un affichage rapide pour les utilisateurs.</p><p>         </p><p>Nous souhaitons que toute la chaîne soit libre. Nous avions eu des discussions avec les Chatons l’année dernière, mais aucune solution n’en est ressortie.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Replay
+    slug: >-
+      replay
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Replay
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: video
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+
+      url: >-
+        https://vimeo.com/995303729
+      video_title: >-
+        Assemblée Osuny #9
+      layout: player
+
+      video_iframe: >-
+        <iframe class="vimeo" loading="lazy" src="https://player.vimeo.com/video/995303729" referrerpolicy="strict-origin-when-cross-origin" title="Assemblée Osuny #9"></iframe>
+      video: 
+        platform: "vimeo"
+        identifier: "995303729"
+        title: >-
+          Assemblée Osuny #9
+        poster: >-
+          https://vumbnail.com/995303729.jpg
+        embed: >-
+          https://player.vimeo.com/video/995303729
+        embed_with_defaults: >-
+          https://player.vimeo.com/video/995303729?autoplay=1&quality=360p&dnt=1
+        iframe: >-
+          <iframe class="vimeo" loading="lazy" src="https://player.vimeo.com/video/995303729" referrerpolicy="strict-origin-when-cross-origin" title="Assemblée Osuny #9"></iframe>
+
+
+
+---
