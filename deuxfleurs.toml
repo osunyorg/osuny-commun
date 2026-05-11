@@ -71,6 +71,10 @@ from = "/publications/2023-08-08-conference-dalexis-kauffmann-soutenir-le-develo
 to = "/actualites/2023-08-08-conference-dalexis-kauffmann-soutenir-le-developpement-des-communs-numeriques/"
 
 [[redirects]]
+from = "/agenda/2023/comite-scientifique-1/ /index.html"
+to = "/agenda/2023/comite-scientifique-1-1/"
+
+[[redirects]]
 from = "/equipe/edouard-jourdain/index.html"
 to = "/personnes/edouard-jourdain/"
 
