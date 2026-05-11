@@ -1,0 +1,631 @@
+---
+title: >-
+  Assemblée Osuny #15
+
+subtitle: >-
+  Réunion mensuelle ouverte
+
+
+url: "/agenda/2025/assemblee-osuny-15/"
+slug: "assemblee-osuny-15"
+meta:
+  hugo:
+    permalink: "/agenda/2025/assemblee-osuny-15/"
+    path: "/events/2025/02/06-11-00-assemblee-osuny-15"
+    file: "content/fr/events/2025/02/06-11-00-assemblee-osuny-15.html"
+    slug: "assemblee-osuny-15"
+  dates:
+    created_at: 2025-03-14T10:02:42+01:00
+    updated_at: 2026-05-11T16:08:43+02:00
+search:
+  id: "155cbe3f-3bbd-406d-bc0d-c16bfc50db55"
+  about_id: "8e2a169e-e7ee-4be2-ab01-13e83a433374"
+  url: "/agenda/2025/assemblee-osuny-15/"
+  kind: "Communication::Website::Agenda::Event::TimeSlot::Localization"
+  lang: "fr"
+  title: >-
+    Assemblée Osuny #15 Réunion mensuelle ouverte
+
+  body: >-
+    <p>  <br>Nous organisons une réunion mensuelle ouverte, le premier jeudi de chaque mois, dans le but de rassembler toute la communauté Osuny. Cet événement est un moment d'échange et de discussions, pendant lequel l'équipe noesya présente les avancées fonctionnelles. Cet événement est ouvert, vous êtes libre de venir quand vous le souhaitez, il n'y a aucune obligation d'être présent·e chaque mois, c'est à votre convenance. Nous souhaitons co-construire l'ordre du jour de cette réunion mensuelle avec vous, donc nous sommes à l'écoute de vos remarques et/ou questions.</p>  <p> Les rôles  <br>   <br>Nous réfléchissons actuellement aux rôles des utilisateurs du back-office. Nous prenons comme cas d'usage le site de La Criée, où des étudiants rédigent des articles. Ces étudiants n'ont pas le droit de publier directement, et un responsable de classe doit les encadrer, et publier leurs articles. Pour le moment, pour publier un article, il faut être administrateur ou responsable de site web. C'est problématique qu'une personne qui valide simplement des publications doive avoir des responsabilités aussi élevées. Un rôle intermédiaire serait nécessaire, avec une superposition des droits d'utilisateurs. Bien qu'un rôle intermédiaire puisse résoudre ce cas précis, nous risquons d'avoir ce type de besoins de façon récurrente. À long terme, la question des rôles va se poser régulièrement. Il faudrait une personne pouvant publier les articles, par exemple un.e secrétaire de rédaction, mais sans accès aux pages et aux données sensibles comme les actualités. Pour Arnaud, il y a deux besoins différents :  <br> publier les posts, mais ne pas toucher aux pages  <br> contrôler ce que fait un groupe de personnes  <br> La solution proposée dans le cadre de la Criée : créer un mini-site dédié aux étudiants. Il est préférable de séparer et sanctuariser les espaces plutôt que de les laisser sur le site principal. Cela permettrait d'avoir un espace réservé aux étudiants sans risquer de perturber le site principal. Dans ce contexte pédagogique, il serait plus simple d'avoir un site séparé. Autre problématique : la granularité des droits, une question qui se posera certainement à l'avenir. Pour Justin Puyo :  « Je suis d'accord, il y a deux aspects distincts. Nous avons besoin d'une plus grande finesse dans la granularité des droits. »</p>  <p> Médiathèque  <br>   <br>Nouvel espace de médiathèque disponible. La médiathèque ne traite que les images, pas les autres types de fichiers. Elle s'applique uniquement aux images à la une. Dans les objets, l'envoi d'image classique a été remplacé par un nouveau composant. Lors de l'envoi d'une image, une fenêtre de recadrage s'affiche. On peut ensuite saisir les informations, puis enregistrer ou annuler. Le processus sera progressif. Il est également possible d'importer depuis Unsplash et Pexels, ou depuis la médiathèque existante. Laura Fernandez de l’IUT de Bordeaux se demande si les images déjà présentes sur le site vont-elles apparaître dans la médiathèque. Arnaud répond que nous avons considéré cette option, mais il n'y aura pas de migration automatique. Nous réfléchissons à l'affichage de toutes les images de la médiathèque, mais nous voulions d'abord nous concentrer sur les collections. Par exemple, pour une collection de photos officielles de l'IUT, nous pourrons identifier les images appartenant à cette collection. L'objectif est de structurer une bibliothèque d'images réutilisables. Pour Laura, cela soulève des questions.  “Si toutes les images étaient dans la médiathèque, je pourrais les organiser et évaluer leur utilisation. ” Pour Arnaud, il n'est pas trop tard pour envisager cette option. Laura :  "Cette approche me semble très pertinente, il faudra réimporter les archives. » Justin : « Peut-être pas tout. Il serait intéressant de récupérer les images à la une des pages, qui sont plus réutilisables que celles des actualités." </p>  <p> Arnaud approuve cette suggestion, Laura propose une vue d'ensemble des images statiques. Arnaud suggère un import partiel, en commençant par les images à la une. PA précise que pour l'instant, le système ne fonctionne qu'avec les images à la une. Sébastien explique :  « Pour l'administration, nous utilisons Vue, un framework JavaScript. Auparavant, notre utilisation était peu élégante. Notre objectif est de minimiser le JavaScript tout en gardant son efficacité.   Nous utilisions Angular JS avant. Avec Arnaud, nous avons restructuré le code, créant une arborescence de fichiers avec des composants où coexistent deux approches JavaScript."  :  https://github.com/osunyorg/admin/tree/main/app/javascript/apps/components . C’est plus propre, plus facile à maintenir. Vue nous a semblé être le choix le plus sobre en termes de conception. Nous gardons JavaScript, mais sans superflu. Sacha rappelle : " L'objectif initial était de limiter le JavaScript au maximum pour un site plus sobre."  Il s'interroge sur les limites du design avec les composants natifs des navigateurs, et sur le bagage technique nécessaire pour créer un outil agréable à utiliser. Arnaud explique que pour les fonctionnalités complexes comme l'apparition et la disparition d'options, le JavaScript devient nécessaire. Sur Osuny, l'enregistrement ne peut pas se faire en natif pour des raisons de sécurité. Pour permettre les retours en arrière, le JavaScript est indispensable. Sébastien précise qu'une solution native aurait nécessité une équipe plus importante et une architecture plus complexe. Un framework nous permet de nous concentrer sur les fonctionnalités essentielles. Arnaud souligne que c'est un projet d'envergure. Pour l'édition en place, nous sortons du système de formulaires classique.  https://developers.osuny.org/docs/admin/composants/media-library/ Justin souligne : « La médiathèque est particulièrement utile pour les sites d'établissement avec plusieurs contributeurs, permettant de constituer une banque d'images officielles validées. » PA ajoute que cela s'applique aussi aux organismes culturels. Une fonction de date d'expiration pour les images avec droits limités est envisagée. Arnaud évoque l'évolution future d'Osuny vers des outils plus guidants, comme  Languagetool . L'objectif est de permettre l'édition des pages, actualités ou événements sans changer d'URL, en restant sur l'objet en cours d'édition. La gestion des doublons est intégrée dans la médiathèque ; si une image est envoyée plusieurs fois dans une page, le système utilise automatiquement l'image existante. L'objectif est de réduire légèrement les médias en front-end. Justin demande si la médiathèque est positionnée au niveau communication plutôt que site web, et si elle concerne aussi les extranets. Arnaud confirme que la médiathèque est commune à toute l'instance, y compris les extranets, contrairement à WordPress où elle est spécifique à chaque site.</p>  <p> Releases Front  <br>   <br>Une soft release est en cours pour migrer vers la V8. La documentation des fichiers du thème est en cours :  https://developers.osuny.org/docs/theme/html/ Le script de migration n'est pas encore stabilisé. L’objectif est d’unifier la notion de layout Dans Osuny, nous avons unifié les taxonomies pour plus de clarté.  Nous nous posons la question sur l'organisation du code : comment éviter les répétitions ? La solution : création de « passe-plats », des fichiers qui appellent des éléments communs. L'objectif serait d’éliminer les surcouches HTML et les overrides. Nous avons une réflexion majeure sur l'organisation du code dans un système collaboratif avec de nombreux contributeurs externes. Nous travaillons également sur l’amélioration de la gestion des images des organisations (ajout d'images en plus des logos) Sacha André se demande si nous envoyons des mails spécifiques lors des mises à jour. Arnaud :  « Nous communiquons via la chronique Osuny et les messages d'urgence »  Sacha précise que, par exemple, WordPress notifie ses mises à jour et là, il n’est au courant que parce qu’il participe à l'assemblée et il n’est pas non plus sur Slack. Pour Pierre-André :  « Un mail automatique à chaque release serait une bonne idée  » Arnaud précise que nous évoluons vers un système de pre-release permettant des adaptations en local, avec des dates de release annoncées. L'envoi par mail serait effectivement pertinent. Nous réfléchissons également à développer un script d'automatisation pour vérifier la non-régression du thème, avec capture des différences et création automatique d'issues dans les dépôts si nécessaire. </p>  <p> Enfin, l'équipe constate que GitHub pose des problèmes de stabilité récurrents. Une migration complète vers GitLab est en cours de réflexion.</p>  <p> Releases Back  <br>   <br>https://github.com/osunyorg/admin/releases/tag/v3.1.1 https://github.com/osunyorg/admin/releases/tag/v3.1.2 https://bordeauxmontaigne.osuny.org/api/docs/index.html  : nous disposons désormais d'une API documentée et robuste. Le contexte : les sites de Rennes sont codés par  Ecedi  et ils vont utiliser l'API Osuny. Le principe : un outil externe va consommer l'API Osuny et mettre à jour des données via celle-ci. On peut ainsi utiliser Osuny comme un outil de publication statique. Nous sommes dans le même principe comme avec HAL, mais dans le sens inverse : nous pouvons dorénavant pousser des éléments dans Osuny. Nous unifions, nous unifions également dans Figma, ,nous unifions aussi les mises en page avec 5 formats par défaut pour les listes. Sacha se pose la question de la différence entre un article et un projet. Pour Arnaud, pour un événement, c'est évident avec ses dates de début et de fin. Si nous ajoutons aux projets la même mise en page que les actualités, avec les auteurs, etc., la différence devient effectivement subtile. Et si nous renommons la page "actualités" en "magazine", cela se reflète dans l'admin. La différence est fonctionnelle : un événement passe en archive une fois publié, contrairement à une actualité. Les projets privilégient les images dans leur mise en page. Les pages ne seront pas identiques, mais nous souhaitons qu'elles suivent des standards d'usage. Par exemple : un projet prévu pour 2028 peut être publié dès maintenant, alors qu'un article daté de 2028 ne sera publié qu'en 2028. Justin : " En front-end, c'est un choix graphique, l'affichage est différent."  Arnaud précise que nous créons des espaces neutres avec trois comportements distincts : actualité, projet et agenda. Il évoque la possibilité d'un quatrième objet : un jobboard pour les offres d'emploi. Sacha pose la question suivante : " Au-delà de l'éco-conception, qu'est-ce qui vous différenciera de WordPress ?"  Arnaud : " Nos objectifs de départ sont très différents . " PA précise que l'architecture est fondamentalement différente. Malgré des fonctionnalités similaires, notre schéma architectural est unique, avec un back-office déporté qu'on peut héberger où l'on veut. Osuny était conçu initialement pour les universités, comme aide à Qualiopi, il signale les non-conformités. C'était une différence majeure. Pour Arnaud, la comparaison avec WordPress dépend du point de vue. “ Si c'est pour reproduire le désordre de WordPress, ça ne nous intéresse pas. Notre objectif est d’améliorer le plus de sites web possible sans visée lucrative comme WordPress. Nous ne cherchons pas à en faire une rente. Notre approche est à la fois décentralisée et centralisée : un espace économique géré collectivement, générant des sites hébergeables partout. C'est une différence politique et technique avec nos sites statiques. Contrairement à WordPress, pas de plugins. Nous privilégions les décisions collectives en assemblée. Osuny ne permet pas d'ajouter des plugins individuellement. L'esprit est différent." Arnaud précise : " Entre utilisateurs experts et débutants, nous devons éviter de devenir un couteau suisse. Mieux vaut faire moins de choses, mais les faire excellemment. Pour les champs personnalisés, nous n'y sommes pas. Privilégions les besoins standards plutôt que d'imiter Notion. Évitons le chaos. Restons simples mais efficaces." Pour Justin : " L'aspect intéressant d'Osuny, c'est sa vocation à être géré par sa communauté. Il faudra définir les limites. WordPress a cette force d'être totalement personnalisable, mais c'est aussi son défaut. Restons vigilants. Avec nos clients, soyons clairs : voici nos options, et si vous avez d'autres besoins, choisissez une autre solution. " </p>  <p> Arnaud conclut en expliquant que  "nous ne voulons pas créer un système universel. Osuny ne remplacera pas tous les CMS. Nous visons une coexistence, avec un CMS au socle frugal et démocratique."</p>  <p> Flux extranet  <br>   <br>Un travail est en cours sur les mails d'invitation, permettant aux utilisateurs de créer un compte ou de se connecter. Nous finalisons actuellement ce travail avec le site de  Communication Publique .</p>  <p> Rationalisation des catégories  <br>   <br>Toutes les catégories partagent désormais les mêmes fonctionnalités. Le développement front-end est quasi terminé, offrant plusieurs options d'affichage des taxonomies. Rennes nous a particulièrement challengés sur ce point, mais nous allons obtenir une base solide pour la gestion des taxonomies. </p>  <p> Justin Puyo se pose la question de l'utilité des taxonomies pour les pages. Pour Arnaud, il y a un besoin de créer des catégories comme "fiches pratiques" ou "fiches politiques". Cela génère automatiquement un lien vers la catégorie et une liste de toutes les pages associées. Pour le site de l' IUT Bordeaux Montaigne , je ne pense pas que ce soit nécessaire. En revanche, pour le site du  TMNLab , c'est pertinent, notamment pour les bases documentaires.</p>  <p> Sites en cours et nouveaux sites  <br>   <br>Nous avons actuellement 109 sites en production. https://www.frenchcraftguild.fr Nous avons un magnifique travail de design réalisé par  Violenn . C'est une association qui valorise les savoir-faire artisanaux et innovants en France. Les organisations sont présentées avec des images à la une, plutôt que des logos. Le thème permet d'intégrer des images à la une. https://www.communication-publique.fr Nous sommes ravis d'avoir réalisé le site de l'association qui regroupe les directeurs de communication des services publics. L'espace agenda est particulièrement riche. Un second site, "Parole publique", présente leur revue publiée depuis près de trente ans. La mission de l'association s'aligne parfaitement avec Osuny. L'expérience se prolonge avec la création d'un extranet. https://conventionetudianteia.osuny.site/ Nous avons réalisé le site d’une convention sur les IA génératives. Nous avons utilisé la typo  Redaction https://bonnepioche.fr/fr/ Nous avons développé le site de la société de production Bonne Pioche avec la mise en place d’un portfolio de réalisations. Le design est réalisé par  Anthony Ferretti .</p>  <p> Actualités  <br>   <br>Actualités sur la maison noesya :  https://maison.noesya.coop/ Deux événements à venir : le 6 mars et le 1ᵉʳ avril Comment créer un site web ? :  https://lab.noesya.coop/publications/2025-01-30-comment-creer-un-site-web/ Ce guide aide les débutants à aborder la création d'un site web. Il explique les différentes étapes pour les associations, les universités et toute personne créant son premier site. Par exemple, avec Osuny, il est possible d'intégrer du contenu sans attendre la finalisation du design (contrairement à WordPress). La section « Comment savoir si j'en ai besoin ? » permet d'évaluer si un accompagnement est nécessaire. Pour Sacha André : « L'article est très pratique, il définit clairement tous les blocs essentiels d'un site internet. »</p>  <p> Questions et remarques  <br>   <br>Sacha André s'interroge sur la performance énergétique d'Osuny  " Est-ce que recompiler le site à chaque modification n'est pas énergivore ? Même si je ne modifie qu'une virgule, une recompilation complète se déclenche."  Arnaud évoque le ratio lecture/écriture : Tout dépend de la proportion lecture versus écriture. " Ce qui est énergivore, c'est principalement la machine. Pour l'électricité, il faudrait faire une vraie analyse comparative des usages, c'est délicat."  PA précise que recompiler un site une fois est plus gourmand qu'afficher une page une fois. Prenons l'exemple du site de l'IUT Bordeaux Montaigne :  https://github.com/osunyorg/bordeauxmontaigne-iut/actions/runs/13175533573 "1 minute 57 de travail. Aujourd'hui, il y a eu 4 compilations, hier une vingtaine. À quel moment cela va-t-il compenser le temps de compilation d'hier, qui serait de 30 minutes ? Le trafic de l'IUT hier : 2 200 pages vues dans la journée. Pour 20 modifications dans la journée, le contenu génère un temps de compilation de 30 minutes par les machines, plus l'énergie d'hébergement. En comparaison avec WordPress, la courbe est différente : pas de coût de compilation au début, mais un ratio lecture/écriture à chaque fois." Arnaud explique :  "Le cas d'Osuny n'est pas pertinent s'il y a beaucoup de modifications et peu de lectures. L'architecture n'est alors pas adaptée, car elle génère beaucoup de recompilations pour peu d'utilisateurs. C'est adapté quand il y a beaucoup plus de lecteurs que de modifications." Justin suggère :  "La solution serait d'aller voir uniquement des sites Osuny."  Arnaud précise :  "Surtout des sites sobres, pas uniquement Osuny.  C'est une vraie question à se poser sur l'usage des sites ." Sacha aborde la question de la suffisance numérique. Arnaud confirme : « On est dans cette idée de suffisance." Sacha André se demande si Osuny serait intéressant pour des projets comme les wikis ? Pour Arnaud, la réponse est non, mais nous avons créé le site  Comnum  qu'on imaginait comme un wiki au départ.  "En analysant le besoin réel, c'est collaboratif, mais avec seulement trois personnes qui l'alimentent pour beaucoup de lecteurs." Justin souligne :  "Ce qui est important de comprendre avec le fait de choisir Osuny, c'est que l'impact n'est pas que sur le site, mais aussi cet outil permet de changer sa manière de faire les choses au quotidien, revoir ma manière de penser un site web, ça a un impact dans mon travail et mon quotidien perso sur la manière dont je vais utilise le web maintenant. C'est un choix idéologique, un pas vers quelque chose d'autre, pas que le fait d'avoir un site plus sobre." Difficulté à "vendre" Osuny Sacha avoue qu'il peine à "vendre" Osuny, à expliquer l'éco-conception. Pour toutes ces questions de performance énergétique et de sites statiques, ne serait-il pas intéressant d'avoir un travail de vulgarisation ? Comment faire avancer les choses culturellement ?  Arnaud :  "Ce que dit Justin est intéressant sur l'idéologie, je parle d'un numérique qui ne nuit pas, un numérique d'intérêt général qui ne nuit pas, je parle de dégâts, aligner tous les critères pour faire un numérique d'intérêt général dont l'éco-conception. C'est plein de sujets, des choses systémiques.Il y a aussi l'impact sur les métiers, on continue d'en mesurer les changements. On a documenté le côté développement et contribution, mais l'impact sur les métiers reste à analyser. Contrairement au tri des déchets qui responsabilise individuellement, ici l'idée est d'avoir une vision collective, pas uniquement des petits gestes." Justin partage :  "Un argument intéressant : un des gros impacts sur mon travail, le passage de WordPress à Osuny : sur WordPress, 60 % du temps, c'était pour gérer l'aspect technique, aujourd'hui sur Osuny le temps que je consacre au site, c'est 95% du temps, c'est assez dingue pour moi." Arnaud : "C'est un constat intéressant et direct. Pour un site informationnel ou communicationnel, les utilisateurs doivent pouvoir se concentrer uniquement sur le contenu, sans se préoccuper de la technique."</p>  <p> Replay  <br>   <br>Retour sur l'assemblée Osuny #15 <br>https://vimeo.com/1059709036 <br>Assemblée Osuny #15</p>
+
+date: "2025-02-06T11:00:00+01:00"
+dates:
+  status: "archive"
+  archive: true
+  event:
+    kind: simple
+    is_child: false
+  computed:
+    short: >-
+      6 février 2025
+    long: >-
+      Jeudi 6 février 2025
+    two_lines:
+      short: >-
+        6 février 2025
+      long: >-
+        Jeudi 6 février 2025
+  from:
+    day: "2025-02-06"
+  to:
+    day: "2025-02-06"
+  add_to_calendar:
+    google: "https://www.google.com/calendar/render?action=TEMPLATE&text=Assembl%C3%A9e%20Osuny%20%2315%20R%C3%A9union%20mensuelle%20ouverte&dates=20250206/20250207&ctz=Europe/Paris&details=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F"
+    yahoo: "https://calendar.yahoo.com/?v=60&TITLE=Assembl%C3%A9e%20Osuny%20%2315%20R%C3%A9union%20mensuelle%20ouverte&ST=20250206&ET=20250206&DUR=allday&DESC=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F"
+    office: "https://outlook.office.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2315%20R%C3%A9union%20mensuelle%20ouverte&startdt=2025-02-06&enddt=2025-02-07&allday=true&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F"
+    outlook: "https://outlook.live.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2315%20R%C3%A9union%20mensuelle%20ouverte&startdt=2025-02-06&enddt=2025-02-07&allday=true&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F"
+    ical: "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//AddToCalendar//RubyGem//EN%0ABEGIN:VEVENT%0ADTSTAMP:20260511T140839Z%0ADTSTART;VALUE=DATE:20250206%0ADTEND;VALUE=DATE:20250207%0ASUMMARY:Assembl%C3%A9e%20Osuny%20%2315%20R%C3%A9union%20mensuelle%20ouverte%0AURL:https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F%0ADESCRIPTION:\n\nhttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F%0AUID:-https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F%0AEND:VEVENT%0AEND:VCALENDAR"
+
+
+
+image:
+  id: "23e3364a-b0fa-42dd-a372-4b32b8f7f075"
+  alt: ""
+  credit: >-
+    <p>Violenn Simon</p>
+
+
+
+breadcrumbs:
+  - title: >-
+      Accueil
+    path: "/"
+  - title: >-
+      Agenda
+    path: "/agenda/"
+  - title: >-
+      Assemblée Osuny #15
+
+design:
+  full_width: false
+  toc:
+    present: true
+    offcanvas: false
+
+current_time_slot:
+  permalink: "/agenda/2025/assemblee-osuny-15/"
+  path: "/events/2025/02/06-11-00-assemblee-osuny-15"
+  slug: "assemblee-osuny-15"
+  file: "content/fr/events/2025/02/06-11-00-assemblee-osuny-15.html"
+  start:
+    date: "2025-02-06"
+    time: "11:00"
+    datetime: "2025-02-06T11:00:00+01:00"
+  end:
+    date: "2025-02-06"
+    time: "13:00"
+    datetime: "2025-02-06T13:00:00+01:00"
+  status: "archive"
+
+  add_to_calendar:
+    google: "https://www.google.com/calendar/render?action=TEMPLATE&text=Assembl%C3%A9e%20Osuny%20%2315%20R%C3%A9union%20mensuelle%20ouverte&dates=20250206T110000/20250206T130000&ctz=Europe/Paris&details=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F"
+    yahoo: "https://calendar.yahoo.com/?v=60&TITLE=Assembl%C3%A9e%20Osuny%20%2315%20R%C3%A9union%20mensuelle%20ouverte&ST=20250206T100000Z&DUR=0200&DESC=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F"
+    office: "https://outlook.office.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2315%20R%C3%A9union%20mensuelle%20ouverte&startdt=2025-02-06T10:00:00Z&enddt=2025-02-06T12:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F"
+    outlook: "https://outlook.live.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2315%20R%C3%A9union%20mensuelle%20ouverte&startdt=2025-02-06T10:00:00Z&enddt=2025-02-06T12:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F"
+    ical: "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//AddToCalendar//RubyGem//EN%0ABEGIN:VEVENT%0ADTSTAMP:20260511T140841Z%0ADTSTART:20250206T100000Z%0ADTEND:20250206T120000Z%0ASUMMARY:Assembl%C3%A9e%20Osuny%20%2315%20R%C3%A9union%20mensuelle%20ouverte%0AURL:https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F%0ADESCRIPTION:\n\nhttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F%0AUID:-https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F%0AEND:VEVENT%0AEND:VCALENDAR"
+
+
+time_slots:
+  - permalink: "/agenda/2025/assemblee-osuny-15/"
+    path: "/events/2025/02/06-11-00-assemblee-osuny-15"
+    slug: "assemblee-osuny-15"
+    file: "content/fr/events/2025/02/06-11-00-assemblee-osuny-15.html"
+    start:
+      date: "2025-02-06"
+      time: "11:00"
+      datetime: "2025-02-06T11:00:00+01:00"
+    end:
+      date: "2025-02-06"
+      time: "13:00"
+      datetime: "2025-02-06T13:00:00+01:00"
+    status: "archive"
+
+    add_to_calendar:
+      google: "https://www.google.com/calendar/render?action=TEMPLATE&text=Assembl%C3%A9e%20Osuny%20%2315%20R%C3%A9union%20mensuelle%20ouverte&dates=20250206T110000/20250206T130000&ctz=Europe/Paris&details=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F"
+      yahoo: "https://calendar.yahoo.com/?v=60&TITLE=Assembl%C3%A9e%20Osuny%20%2315%20R%C3%A9union%20mensuelle%20ouverte&ST=20250206T100000Z&DUR=0200&DESC=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F"
+      office: "https://outlook.office.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2315%20R%C3%A9union%20mensuelle%20ouverte&startdt=2025-02-06T10:00:00Z&enddt=2025-02-06T12:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F"
+      outlook: "https://outlook.live.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2315%20R%C3%A9union%20mensuelle%20ouverte&startdt=2025-02-06T10:00:00Z&enddt=2025-02-06T12:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F"
+      ical: "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//AddToCalendar//RubyGem//EN%0ABEGIN:VEVENT%0ADTSTAMP:20260511T140841Z%0ADTSTART:20250206T100000Z%0ADTEND:20250206T120000Z%0ASUMMARY:Assembl%C3%A9e%20Osuny%20%2315%20R%C3%A9union%20mensuelle%20ouverte%0AURL:https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F%0ADESCRIPTION:\n\nhttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F%0AUID:-https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-15%2F%0AEND:VEVENT%0AEND:VCALENDAR"
+
+
+translationKey: communication-website-agenda-event-6dd5a95c-afc0-4189-affb-1f1860e3bdef
+
+
+meta_description: >-
+  Assemblée Osuny #15
+
+
+header_cta:
+
+contents_reading_time:
+  seconds: 866
+  text: >-
+    14 minutes
+contents:
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 2
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Nous organisons une réunion mensuelle ouverte, le premier jeudi de chaque mois, dans le but de rassembler toute la communauté Osuny. Cet événement est un moment d'échange et de discussions, pendant lequel l'équipe noesya présente les avancées fonctionnelles. Cet événement est ouvert, vous êtes libre de venir quand vous le souhaitez, il n'y a aucune obligation d'être présent·e chaque mois, c'est à votre convenance. Nous souhaitons co-construire l'ordre du jour de cette réunion mensuelle avec vous, donc nous sommes à l'écoute de vos remarques et/ou questions.</p>
+
+
+
+
+
+
+  - kind: block
+    template: persons
+
+
+    ranks:
+      base: 2
+      children: 2
+    top:
+      active: false
+
+    data:
+
+      layout: grid
+      options:
+        image: true
+        summary: true
+        link: false
+        contact: false
+
+      persons:
+        - permalink: "/personnes/sacha-andre/"
+          path: "/persons/sacha-andre"
+          slug: "sacha-andre"
+          file: "content/fr/persons/sacha-andre.html"
+
+        - permalink: "/personnes/magali-angles/"
+          path: "/persons/magali-angles"
+          slug: "magali-angles"
+          file: "content/fr/persons/magali-angles.html"
+
+        - permalink: "/personnes/pierre-andre-boissinot/"
+          path: "/persons/pierre-andre-boissinot"
+          slug: "pierre-andre-boissinot"
+          file: "content/fr/persons/pierre-andre-boissinot.html"
+
+        - permalink: "/personnes/laura-fernandez/"
+          path: "/persons/laura-fernandez"
+          slug: "laura-fernandez"
+          file: "content/fr/persons/laura-fernandez.html"
+
+        - permalink: "/personnes/sebastien-gaya/"
+          path: "/persons/sebastien-gaya"
+          slug: "sebastien-gaya"
+          file: "content/fr/persons/sebastien-gaya.html"
+
+        - permalink: "/personnes/arnaud-levy/"
+          path: "/persons/arnaud-levy"
+          slug: "arnaud-levy"
+          file: "content/fr/persons/arnaud-levy.html"
+
+        - permalink: "/personnes/justin-puyo/"
+          path: "/persons/justin-puyo"
+          slug: "justin-puyo"
+          file: "content/fr/persons/justin-puyo.html"
+
+      quantity: 7
+
+
+  - kind: block
+    template: title
+    title: >-
+      Les rôles
+    slug: >-
+      les-roles
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Les rôles
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Nous réfléchissons actuellement aux rôles des utilisateurs du back-office.<br>Nous prenons comme cas d'usage le site de La Criée, où des étudiants rédigent des articles. Ces étudiants n'ont pas le droit de publier directement, et un responsable de classe doit les encadrer, et publier leurs articles. Pour le moment, pour publier un article, il faut être administrateur ou responsable de site web. C'est problématique qu'une personne qui valide simplement des publications doive avoir des responsabilités aussi élevées. Un rôle intermédiaire serait nécessaire, avec une superposition des droits d'utilisateurs. Bien qu'un rôle intermédiaire puisse résoudre ce cas précis, nous risquons d'avoir ce type de besoins de façon récurrente. À long terme, la question des rôles va se poser régulièrement. Il faudrait une personne pouvant publier les articles, par exemple un.e secrétaire de rédaction, mais sans accès aux pages et aux données sensibles comme les actualités.</p><p>Pour Arnaud, il y a deux besoins différents :</p><ul> <li>publier les posts, mais ne pas toucher aux pages</li> <li>contrôler ce que fait un groupe de personnes</li> </ul><p>La solution proposée dans le cadre de la Criée : créer un mini-site dédié aux étudiants. Il est préférable de séparer et sanctuariser les espaces plutôt que de les laisser sur le site principal. Cela permettrait d'avoir un espace réservé aux étudiants sans risquer de perturber le site principal. Dans ce contexte pédagogique, il serait plus simple d'avoir un site séparé.</p><p>Autre problématique : la granularité des droits, une question qui se posera certainement à l'avenir.<br>Pour Justin Puyo : <i>« Je suis d'accord, il y a deux aspects distincts. Nous avons besoin d'une plus grande finesse dans la granularité des droits. »</i></p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Médiathèque
+    slug: >-
+      mediatheque
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Médiathèque
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Nouvel espace de médiathèque disponible. La médiathèque ne traite que les images, pas les autres types de fichiers. Elle s'applique uniquement aux images à la une. Dans les objets, l'envoi d'image classique a été remplacé par un nouveau composant. Lors de l'envoi d'une image, une fenêtre de recadrage s'affiche. On peut ensuite saisir les informations, puis enregistrer ou annuler. Le processus sera progressif. Il est également possible d'importer depuis Unsplash et Pexels, ou depuis la médiathèque existante.</p><p>Laura Fernandez de l’IUT de Bordeaux se demande si les images déjà présentes sur le site vont-elles apparaître dans la médiathèque. Arnaud répond que nous avons considéré cette option, mais il n'y aura pas de migration automatique. Nous réfléchissons à l'affichage de toutes les images de la médiathèque, mais nous voulions d'abord nous concentrer sur les collections. Par exemple, pour une collection de photos officielles de l'IUT, nous pourrons identifier les images appartenant à cette collection. L'objectif est de structurer une bibliothèque d'images réutilisables.</p><p>Pour Laura, cela soulève des questions. <i>“Si toutes les images étaient dans la médiathèque, je pourrais les organiser et évaluer leur utilisation.</i>” Pour Arnaud, il n'est pas trop tard pour envisager cette option. Laura : <i>"Cette approche me semble très pertinente, il faudra réimporter les archives. » Justin : « Peut-être pas tout. Il serait intéressant de récupérer les images à la une des pages, qui sont plus réutilisables que celles des actualités."</i></p><p>    </p><p>Arnaud approuve cette suggestion, Laura propose une vue d'ensemble des images statiques. Arnaud suggère un import partiel, en commençant par les images à la une. PA précise que pour l'instant, le système ne fonctionne qu'avec les images à la une.</p><p>Sébastien explique : <em>« Pour l'administration, nous utilisons Vue, un framework JavaScript. Auparavant, notre utilisation était peu élégante. Notre objectif est de minimiser le JavaScript tout en gardant son efficacité.</em><i> </i><i>Nous utilisions Angular JS avant. Avec Arnaud, nous avons restructuré le code, créant une arborescence de fichiers avec des composants où coexistent deux approches JavaScript."</i> : <a href="https://github.com/osunyorg/admin/tree/main/app/javascript/apps/components">https://github.com/osunyorg/admin/tree/main/app/javascript/apps/components</a>. C’est plus propre, plus facile à maintenir. Vue nous a semblé être le choix le plus sobre en termes de conception. Nous gardons JavaScript, mais sans superflu. Sacha rappelle : "<i>L'objectif initial était de limiter le JavaScript au maximum pour un site plus sobre."</i> Il s'interroge sur les limites du design avec les composants natifs des navigateurs, et sur le bagage technique nécessaire pour créer un outil agréable à utiliser. Arnaud explique que pour les fonctionnalités complexes comme l'apparition et la disparition d'options, le JavaScript devient nécessaire. Sur Osuny, l'enregistrement ne peut pas se faire en natif pour des raisons de sécurité. Pour permettre les retours en arrière, le JavaScript est indispensable. Sébastien précise qu'une solution native aurait nécessité une équipe plus importante et une architecture plus complexe. Un framework nous permet de nous concentrer sur les fonctionnalités essentielles. Arnaud souligne que c'est un projet d'envergure. Pour l'édition en place, nous sortons du système de formulaires classique. <a href="https://developers.osuny.org/docs/admin/composants/media-library/">https://developers.osuny.org/docs/admin/composants/media-library/</a></p><p>Justin souligne : « La médiathèque est particulièrement utile pour les sites d'établissement avec plusieurs contributeurs, permettant de constituer une banque d'images officielles validées. » PA ajoute que cela s'applique aussi aux organismes culturels. Une fonction de date d'expiration pour les images avec droits limités est envisagée. Arnaud évoque l'évolution future d'Osuny vers des outils plus guidants, comme <a href="https://languagetool.org/fr" target="_blank" rel="noreferrer">Languagetool <span class="sr-only">(lien externe)</span></a>. L'objectif est de permettre l'édition des pages, actualités ou événements sans changer d'URL, en restant sur l'objet en cours d'édition.</p><p>La gestion des doublons est intégrée dans la médiathèque ; si une image est envoyée plusieurs fois dans une page, le système utilise automatiquement l'image existante. L'objectif est de réduire légèrement les médias en front-end. Justin demande si la médiathèque est positionnée au niveau communication plutôt que site web, et si elle concerne aussi les extranets. Arnaud confirme que la médiathèque est commune à toute l'instance, y compris les extranets, contrairement à WordPress où elle est spécifique à chaque site.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Releases Front
+    slug: >-
+      releases-front
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Releases Front
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Une soft release est en cours pour migrer vers la V8.</p><p>La documentation des fichiers du thème est en cours : <a href="https://developers.osuny.org/docs/theme/html/" target="_blank" rel="noreferrer">https://developers.osuny.org/docs/theme/html/ <span class="sr-only">(lien externe)</span></a></p><p>Le script de migration n'est pas encore stabilisé. L’objectif est d’unifier la notion de layout</p><p>Dans Osuny, nous avons unifié les taxonomies pour plus de clarté. </p><p>Nous nous posons la question sur l'organisation du code : comment éviter les répétitions ? La solution : création de « passe-plats », des fichiers qui appellent des éléments communs. L'objectif serait d’éliminer les surcouches HTML et les overrides. Nous avons une réflexion majeure sur l'organisation du code dans un système collaboratif avec de nombreux contributeurs externes. Nous travaillons également sur l’amélioration de la gestion des images des organisations (ajout d'images en plus des logos)</p><p>Sacha André se demande si nous envoyons des mails spécifiques lors des mises à jour. Arnaud : <i>« Nous communiquons via la chronique Osuny et les messages d'urgence »</i> Sacha précise que, par exemple, WordPress notifie ses mises à jour et là, il n’est au courant que parce qu’il participe à l'assemblée et il n’est pas non plus sur Slack. Pour Pierre-André :<i> « Un mail automatique à chaque release serait une bonne idée </i>» Arnaud précise que nous évoluons vers un système de pre-release permettant des adaptations en local, avec des dates de release annoncées. L'envoi par mail serait effectivement pertinent.</p><p>Nous réfléchissons également à développer un script d'automatisation pour vérifier la non-régression du thème, avec capture des différences et création automatique d'issues dans les dépôts si nécessaire.</p><p>             </p><p>Enfin, l'équipe constate que GitHub pose des problèmes de stabilité récurrents. Une migration complète vers GitLab est en cours de réflexion.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Releases Back
+    slug: >-
+      releases-back
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Releases Back
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><a href="https://github.com/osunyorg/admin/releases/tag/v3.1.1" target="_blank" rel="noreferrer">https://github.com/osunyorg/admin/releases/tag/v3.1.1 <span class="sr-only">(lien externe)</span></a><a href="https://github.com/osunyorg/admin/releases/tag/v3.1.1"></a><br><a href="https://github.com/osunyorg/admin/releases/tag/v3.1.2">https://github.com/osunyorg/admin/releases/tag/v3.1.2</a></p><p><a href="https://bordeauxmontaigne.osuny.org/api/docs/index.html" target="_blank" rel="noreferrer">https://bordeauxmontaigne.osuny.org/api/docs/index.html <span class="sr-only">(lien externe)</span></a> : nous disposons désormais d'une API documentée et robuste. Le contexte : les sites de Rennes sont codés par <a href="https://www.ecedi.fr/" target="_blank" rel="noreferrer">Ecedi <span class="sr-only">(lien externe)</span></a> et ils vont utiliser l'API Osuny. Le principe : un outil externe va consommer l'API Osuny et mettre à jour des données via celle-ci. On peut ainsi utiliser Osuny comme un outil de publication statique. Nous sommes dans le même principe comme avec HAL, mais dans le sens inverse : nous pouvons dorénavant pousser des éléments dans Osuny.</p><p>Nous unifions, nous unifions également dans Figma, ,nous unifions aussi les mises en page avec 5 formats par défaut pour les listes.</p><p>Sacha se pose la question de la différence entre un article et un projet. Pour Arnaud, pour un événement, c'est évident avec ses dates de début et de fin. Si nous ajoutons aux projets la même mise en page que les actualités, avec les auteurs, etc., la différence devient effectivement subtile. Et si nous renommons la page "actualités" en "magazine", cela se reflète dans l'admin. La différence est fonctionnelle : un événement passe en archive une fois publié, contrairement à une actualité. Les projets privilégient les images dans leur mise en page. Les pages ne seront pas identiques, mais nous souhaitons qu'elles suivent des standards d'usage. Par exemple : un projet prévu pour 2028 peut être publié dès maintenant, alors qu'un article daté de 2028 ne sera publié qu'en 2028.</p><p>Justin : "<i>En front-end, c'est un choix graphique, l'affichage est différent."</i> Arnaud précise que nous créons des espaces neutres avec trois comportements distincts : actualité, projet et agenda. Il évoque la possibilité d'un quatrième objet : un jobboard pour les offres d'emploi.</p><p>Sacha pose la question suivante : "<i>Au-delà de l'éco-conception, qu'est-ce qui vous différenciera de WordPress ?"</i> Arnaud : "<i>Nos objectifs de départ sont très différents</i>. " PA précise que l'architecture est fondamentalement différente. Malgré des fonctionnalités similaires, notre schéma architectural est unique, avec un back-office déporté qu'on peut héberger où l'on veut. Osuny était conçu initialement pour les universités, comme aide à Qualiopi, il signale les non-conformités. C'était une différence majeure.</p><p>Pour Arnaud, la comparaison avec WordPress dépend du point de vue. “<i>Si c'est pour reproduire le désordre de WordPress, ça ne nous intéresse pas. Notre objectif est d’améliorer le plus de sites web possible sans visée lucrative comme WordPress. Nous ne cherchons pas à en faire une rente. Notre approche est à la fois décentralisée et centralisée : un espace économique géré collectivement, générant des sites hébergeables partout. C'est une différence politique et technique avec nos sites statiques. Contrairement à WordPress, pas de plugins. Nous privilégions les décisions collectives en assemblée. Osuny ne permet pas d'ajouter des plugins individuellement. L'esprit est différent."</i></p><p>Arnaud précise : "<i>Entre utilisateurs experts et débutants, nous devons éviter de devenir un couteau suisse. Mieux vaut faire moins de choses, mais les faire excellemment. Pour les champs personnalisés, nous n'y sommes pas. Privilégions les besoins standards plutôt que d'imiter Notion. Évitons le chaos. Restons simples mais efficaces."</i></p><p>Pour Justin : "<i>L'aspect intéressant d'Osuny, c'est sa vocation à être géré par sa communauté. Il faudra définir les limites. WordPress a cette force d'être totalement personnalisable, mais c'est aussi son défaut. Restons vigilants. Avec nos clients, soyons clairs : voici nos options, et si vous avez d'autres besoins, choisissez une autre solution. "</i></p><p>        </p><p>Arnaud conclut en expliquant que<i> "nous ne voulons pas créer un système universel. Osuny ne remplacera pas tous les CMS. Nous visons une coexistence, avec un CMS au socle frugal et démocratique."</i></p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Flux extranet
+    slug: >-
+      flux-extranet
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Flux extranet
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Un travail est en cours sur les mails d'invitation, permettant aux utilisateurs de créer un compte ou de se connecter. Nous finalisons actuellement ce travail avec le site de <a href="https://www.communication-publique.fr/" target="_blank" rel="noreferrer">Communication Publique <span class="sr-only">(lien externe)</span></a>.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Rationalisation des catégories
+    slug: >-
+      rationalisation-des-categories
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Rationalisation des catégories
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Toutes les catégories partagent désormais les mêmes fonctionnalités. Le développement front-end est quasi terminé, offrant plusieurs options d'affichage des taxonomies. Rennes nous a particulièrement challengés sur ce point, mais nous allons obtenir une base solide pour la gestion des taxonomies.</p><p>  </p><p>Justin Puyo se pose la question de l'utilité des taxonomies pour les pages. Pour Arnaud, il y a un besoin de créer des catégories comme "fiches pratiques" ou "fiches politiques". Cela génère automatiquement un lien vers la catégorie et une liste de toutes les pages associées. Pour le site de l'<a href="https://www.iut.u-bordeaux-montaigne.fr/" target="_blank" rel="noreferrer">IUT Bordeaux Montaigne <span class="sr-only">(lien externe)</span></a>, je ne pense pas que ce soit nécessaire. En revanche, pour le site du <a href="https://www.tmnlab.com/" target="_blank" rel="noreferrer">TMNLab <span class="sr-only">(lien externe)</span></a>, c'est pertinent, notamment pour les bases documentaires.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Sites en cours et nouveaux sites
+    slug: >-
+      sites-en-cours-et-nouveaux-sites
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Sites en cours et nouveaux sites
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Nous avons actuellement 109 sites en production.</p><p><a href="https://www.frenchcraftguild.fr" target="_blank" rel="noreferrer">https://www.frenchcraftguild.fr <span class="sr-only">(lien externe)</span></a><br>Nous avons un magnifique travail de design réalisé par <a href="https://www.violennsimon.com/portfolio/" target="_blank" rel="noreferrer">Violenn <span class="sr-only">(lien externe)</span></a>. C'est une association qui valorise les savoir-faire artisanaux et innovants en France. Les organisations sont présentées avec des images à la une, plutôt que des logos. Le thème permet d'intégrer des images à la une.</p><p><a href="https://www.communication-publique.fr" target="_blank" rel="noreferrer">https://www.communication-publique.fr <span class="sr-only">(lien externe)</span></a><br>Nous sommes ravis d'avoir réalisé le site de l'association qui regroupe les directeurs de communication des services publics. L'espace agenda est particulièrement riche. Un second site, "Parole publique", présente leur revue publiée depuis près de trente ans. La mission de l'association s'aligne parfaitement avec Osuny. L'expérience se prolonge avec la création d'un extranet.</p><p><a href="https://conventionetudianteia.osuny.site/" target="_blank" rel="noreferrer">https://conventionetudianteia.osuny.site/ <span class="sr-only">(lien externe)</span></a><a href="https://conventionetudianteia.osuny.site/"></a><br>Nous avons réalisé le site d’une convention sur les IA génératives. Nous avons utilisé la typo <a href="https://www.redaction.us/" target="_blank" rel="noreferrer">Redaction <span class="sr-only">(lien externe)</span></a></p><p><a href="https://bonnepioche.fr/fr/" target="_blank" rel="noreferrer">https://bonnepioche.fr/fr/ <span class="sr-only">(lien externe)</span></a><br>Nous avons développé le site de la société de production Bonne Pioche avec la mise en place d’un portfolio de réalisations. Le design est réalisé par <a href="https://anthonyferretti.fr/" target="_blank" rel="noreferrer">Anthony Ferretti <span class="sr-only">(lien externe)</span></a>.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Actualités
+    slug: >-
+      actualites
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Actualités
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Actualités sur la maison noesya : <a href="https://maison.noesya.coop/" target="_blank" rel="noreferrer">https://maison.noesya.coop/ <span class="sr-only">(lien externe)</span></a><a href="https://maison.noesya.coop/"></a><br>Deux événements à venir : le 6 mars et le 1ᵉʳ avril</p><p>Comment créer un site web ? : <a href="https://lab.noesya.coop/publications/2025-01-30-comment-creer-un-site-web/" target="_blank" rel="noreferrer">https://lab.noesya.coop/publications/2025-01-30-comment-creer-un-site-web/ <span class="sr-only">(lien externe)</span></a><br>Ce guide aide les débutants à aborder la création d'un site web. Il explique les différentes étapes pour les associations, les universités et toute personne créant son premier site. Par exemple, avec Osuny, il est possible d'intégrer du contenu sans attendre la finalisation du design (contrairement à WordPress). La section « Comment savoir si j'en ai besoin ? » permet d'évaluer si un accompagnement est nécessaire. Pour Sacha André : « L'article est très pratique, il définit clairement tous les blocs essentiels d'un site internet. »</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Questions et remarques
+    slug: >-
+      questions-et-remarques
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Questions et remarques
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><b>Sacha André s'interroge sur la performance énergétique d'Osuny</b></p><p> "<i>Est-ce que recompiler le site à chaque modification n'est pas énergivore ? Même si je ne modifie qu'une virgule, une recompilation complète se déclenche." </i>Arnaud évoque le ratio lecture/écriture : Tout dépend de la proportion lecture versus écriture. "<i>Ce qui est énergivore, c'est principalement la machine. Pour l'électricité, il faudrait faire une vraie analyse comparative des usages, c'est délicat." </i>PA précise que recompiler un site une fois est plus gourmand qu'afficher une page une fois.<br>Prenons l'exemple du site de l'IUT Bordeaux Montaigne : <a href="https://github.com/osunyorg/bordeauxmontaigne-iut/actions/runs/13175533573" target="_blank" rel="noreferrer">https://github.com/osunyorg/bordeauxmontaigne-iut/actions/runs/13175533573 <span class="sr-only">(lien externe)</span></a><br><i>"1 minute 57 de travail. Aujourd'hui, il y a eu 4 compilations, hier une vingtaine. À quel moment cela va-t-il compenser le temps de compilation d'hier, qui serait de 30 minutes ? Le trafic de l'IUT hier : 2 200 pages vues dans la journée. Pour 20 modifications dans la journée, le contenu génère un temps de compilation de 30 minutes par les machines, plus l'énergie d'hébergement. En comparaison avec WordPress, la courbe est différente : pas de coût de compilation au début, mais un ratio lecture/écriture à chaque fois."</i></p><p>Arnaud explique : <i>"Le cas d'Osuny n'est pas pertinent s'il y a beaucoup de modifications et peu de lectures. L'architecture n'est alors pas adaptée, car elle génère beaucoup de recompilations pour peu d'utilisateurs. C'est adapté quand il y a beaucoup plus de lecteurs que de modifications."</i></p><p>Justin suggère : <i>"La solution serait d'aller voir uniquement des sites Osuny." </i>Arnaud précise : <i>"Surtout des sites sobres, pas uniquement Osuny. </i><i>C'est une vraie question à se poser sur l'usage des sites</i>." Sacha aborde la question de la suffisance numérique. Arnaud confirme : « On est dans cette idée de suffisance."</p><p><b>Sacha André se demande si Osuny serait intéressant pour des projets comme les wikis ?</b></p><p>Pour Arnaud, la réponse est non, mais nous avons créé le site <a href="https://comnum.rennes.fr/" target="_blank" rel="noreferrer">Comnum <span class="sr-only">(lien externe)</span></a> qu'on imaginait comme un wiki au départ. <i>"En analysant le besoin réel, c'est collaboratif, mais avec seulement trois personnes qui l'alimentent pour beaucoup de lecteurs."</i></p><p>Justin souligne : <i>"Ce qui est important de comprendre avec le fait de choisir Osuny, c'est que l'impact n'est pas que sur le site, mais aussi cet outil permet de changer sa manière de faire les choses au quotidien, revoir ma manière de penser un site web, ça a un impact dans mon travail et mon quotidien perso sur la manière dont je vais utilise le web maintenant. C'est un choix idéologique, un pas vers quelque chose d'autre, pas que le fait d'avoir un site plus sobre."</i></p><p><b>Difficulté à "vendre" Osuny</b></p><p>Sacha avoue qu'il peine à "vendre" Osuny, à expliquer l'éco-conception. Pour toutes ces questions de performance énergétique et de sites statiques, ne serait-il pas intéressant d'avoir un travail de vulgarisation ? Comment faire avancer les choses culturellement ? </p><p>Arnaud : <i>"Ce que dit Justin est intéressant sur l'idéologie, je parle d'un numérique qui ne nuit pas, un numérique d'intérêt général qui ne nuit pas, je parle de dégâts, aligner tous les critères pour faire un numérique d'intérêt général dont l'éco-conception. C'est plein de sujets, des choses systémiques.Il y a aussi l'impact sur les métiers, on continue d'en mesurer les changements. On a documenté le côté développement et contribution, mais l'impact sur les métiers reste à analyser. Contrairement au tri des déchets qui responsabilise individuellement, ici l'idée est d'avoir une vision collective, pas uniquement des petits gestes."</i></p><p>Justin partage : <i>"Un argument intéressant : un des gros impacts sur mon travail, le passage de WordPress à Osuny : sur WordPress, 60 % du temps, c'était pour gérer l'aspect technique, aujourd'hui sur Osuny le temps que je consacre au site, c'est 95% du temps, c'est assez dingue pour moi."</i></p><p><i>Arnaud : "C'est un constat intéressant et direct. Pour un site informationnel ou communicationnel, les utilisateurs doivent pouvoir se concentrer uniquement sur le contenu, sans se préoccuper de la technique."</i></p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Replay
+    slug: >-
+      replay
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Replay
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: video
+
+
+    ranks:
+      base: 3
+    top:
+      active: true
+      description: >-
+        <p>Retour sur l'assemblée Osuny #15</p>
+    data:
+      description: >-
+        <p>Retour sur l'assemblée Osuny #15</p>
+      url: >-
+        https://vimeo.com/1059709036
+      video_title: >-
+        Assemblée Osuny #15
+      layout: player
+
+      video_iframe: >-
+        <iframe class="vimeo" loading="lazy" src="https://player.vimeo.com/video/1059709036" referrerpolicy="strict-origin-when-cross-origin" title="Assemblée Osuny #15"></iframe>
+      video: 
+        platform: "vimeo"
+        identifier: "1059709036"
+        title: >-
+          Assemblée Osuny #15
+        poster: >-
+          https://vumbnail.com/1059709036.jpg
+        embed: >-
+          https://player.vimeo.com/video/1059709036
+        embed_with_defaults: >-
+          https://player.vimeo.com/video/1059709036?autoplay=1&quality=360p&dnt=1
+        iframe: >-
+          <iframe class="vimeo" loading="lazy" src="https://player.vimeo.com/video/1059709036" referrerpolicy="strict-origin-when-cross-origin" title="Assemblée Osuny #15"></iframe>
+
+
+
+---

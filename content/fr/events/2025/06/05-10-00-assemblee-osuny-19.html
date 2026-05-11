@@ -1,0 +1,533 @@
+---
+title: >-
+  Assemblée Osuny #19
+
+subtitle: >-
+  Réunion mensuelle ouverte
+
+
+url: "/agenda/2025/assemblee-osuny-19/"
+slug: "assemblee-osuny-19"
+meta:
+  hugo:
+    permalink: "/agenda/2025/assemblee-osuny-19/"
+    path: "/events/2025/06/05-10-00-assemblee-osuny-19"
+    file: "content/fr/events/2025/06/05-10-00-assemblee-osuny-19.html"
+    slug: "assemblee-osuny-19"
+  dates:
+    created_at: 2025-03-14T10:05:34+01:00
+    updated_at: 2026-05-11T16:10:16+02:00
+search:
+  id: "386779bc-7d90-482a-b02a-b0723a4e0828"
+  about_id: "b87ab8fc-301f-49c0-b03b-0b667cfb170a"
+  url: "/agenda/2025/assemblee-osuny-19/"
+  kind: "Communication::Website::Agenda::Event::TimeSlot::Localization"
+  lang: "fr"
+  title: >-
+    Assemblée Osuny #19 Réunion mensuelle ouverte
+
+  body: >-
+    <p>  <br>Nous organisons une réunion mensuelle ouverte, le premier jeudi de chaque mois, dans le but de rassembler toute la communauté Osuny. Cet événement est un moment d'échange et de discussions, pendant lequel l'équipe noesya présente les avancées fonctionnelles. Cet événement est ouvert, vous êtes libre de venir quand vous le souhaitez, il n'y a aucune obligation d'être présent·e chaque mois, c'est à votre convenance. Nous souhaitons co-construire l'ordre du jour de cette réunion mensuelle avec vous, donc nous sommes à l'écoute de vos remarques et/ou questions.</p>  <p> Releases Front  <br>   <br>https://github.com/osunyorg/theme/releases/tag/v 7.4.0 - Développement majeur du module Agenda : nombreuses améliorations dans cette version, notamment pour le site de la Gaîté Lyrique et les sites du Campus Art Méditerranée ; - Optimisation de l'affichage des noms des familles de catégories ; - Travail sur les correctifs d'accessibilité suite aux audits RGAA pour Rennes Métropole (Audits réalisés par  Ideance  et  Numerik-ea ). Concernant ces audits, nous sommes heureux de voir le bon niveau d'accessibilité. Il y a très peu de correctifs techniques, mais surtout des correctifs de contribution ou des correctifs de contexte. La documentation de l'audit :  https://developers.osuny.org/docs/audit/accessibilite/audit-site/  ;  - Un travail sur la non-régression visuelle est en cours. L'objectif est de contrôler les sites à chaque pre-release pour effectuer les corrections nécessaires avant la release ; - Développement d'un nouveau module de job board pour la gestion des offres d'emploi.</p>  <p> Releases Back  <br>   <br>https://github.com/osunyorg/admin/releases/tag/v3.4.0 - Ajustements pour la mise en ligne des sites de  Rennes Ville et Métropole ; - Mise à jour de l'agenda avec une nouvelle architecture ; - Optimisation de la gestion côté front-end ; - Pages confidentialité et mentions légales : modification pour permettre leur mise en brouillon, car sur le site de Rennes, ces pages sont centralisées ailleurs. Auparavant, en raison de l'obligation légale d'avoir ces pages, cette option était désactivée. Ce changement permet plus de flexibilité, mais nécessite l'ajout manuel du contenu s'il n'est pas disponible ailleurs ; - Optimisation de la partie API pour le site de Rennes ; - Gestion des images : amélioration du temps de traitement en déplaçant le téléchargement des images vers un processus distinct ; - Optimisation des fuseaux horaires ; - Page Agenda : implémentation d'un pré-calcul pour le mois en cours et les deux mois suivants pour optimiser le chargement côté front-end ; - Optimisation des métadonnées de recherche, principalement pour Rennes ; - Correction de la génération des slugs ; - Agenda : amélioration des créneaux horaires — ajout de la possibilité de définir une durée personnalisée pour les événements (par exemple, 6 h 30) au lieu d'une durée fixe ; - Objets planifiés : mise en place d'un système de détection des changements lors de l'actualisation du contenu dans le BO. Les fichiers désynchronisés sont identifiés et synchronisés toutes les 10 minutes via le BO d'Osuny, réduisant ainsi la charge sur GitHub. Un job nocturne vérifie et ajuste automatiquement les événements terminés ou à venir ; - Bloc agenda : amélioration du filtrage des événements selon leur statut et type (parent ou enfant), permettant d'afficher soit un festival complet, soit des événements spécifiques au sein d'un festival ; - Validateurs de dates : amélioration de la gestion des créneaux horaires lors des changements de dates d'événements :  https://developers.osuny.org/docs/admin/sites-web/features/agenda/#d%c3%a9calage-des-cr%c3%a9neaux</p>  <p> Nouvelles fonctionnalités  <br>   <br>Job board La fonctionnalité Offres d'emploi peut désormais être activée. Elle permet de créer des catégories similaires à celles des projets, actualités et agenda. Pour créer une offre, il suffit d'ajouter un titre, un sous-titre, un résumé, un CTA et des dates de validité. L'interface utilise le même éditeur de bloc que les autres sections. Le développement front-end est toujours en cours, et le système fonctionne actuellement de façon manuelle. Les boutons suivent le même comportement que dans les autres modules.  https://example.osuny.org/fr/offres-d-emploi/  Alumni public Sur un site d'école ou de formation, il est possible d'afficher les profils des alumni. Nous avons notamment mis en place ce système pour le site des Beaux-Arts de Marseille, actuellement en développement. L'interface propose des boutons en haut de page permettant d'accéder aux promotions, aux appels à projet et à la liste complète des alumni. Le menu présente les différentes années de promotion. Chaque profil d'alumni comprend des informations de contact et des blocs associés, similaires à ceux utilisés pour présenter les équipes sur les sites existants. Cette fonctionnalité sera intégrée prochainement. Fédération de contenus Cette fonctionnalité permet de récupérer des contenus lorsque les sites sont sur la même instance, permettant ainsi de transférer des contenus d'un site à un autre. Nous développons actuellement cette fonctionnalité pour les sites de Marseille, avec une mise en production prévue cette semaine. Il s'agit d'un système de syndication de contenus : un événement créé sur un site peut être diffusé sur plusieurs sites de la même instance. Cette approche permet de croiser les événements entre différents agendas pour créer un agenda global, dont l'utilisation est en cours de discussion. Les événements sont indiqués sur le site d'origine, avec une mention claire de leur provenance. La page de chaque événement syndiqué est intégrée au site de destination. Dans le back-office, un onglet « fédération des contenus » dans les réglages permet d'autoriser la réception de contenus depuis d'autres sites de l'instance.</p>  <p> Nouveaux sites  <br>   <br>Nous avons mis en ligne les sites de  Rennes Ville et Métropole  le 3 juin. Emmie Niard et Matthieu Delsaut de l'équipe de Rennes nous font leurs retours, ils sont très positifs. La ville apprécie particulièrement les accès rapides contextualisés sur la page d'accueil, permettant d'afficher des bandeaux d'alertes ciblés par sujet (comme les problèmes de piscine ou questions scolaires). La structure comprend deux bandeaux distincts : un pour les fiches et un autre pour les actualités. Le site d'actualités regroupe désormais tous les contenus, toutes thématiques confondues, en proposant différents formats et un suivi dans la durée. Le service déchets se montre notamment très satisfait de son espace dédié. Le site d'actualités dispose d'un moteur de recherche spécifique, une fonctionnalité très attendue par les habitant·e·s, qui permet d'afficher uniquement les actualités, sans autres informations parasites. Le service relation citoyenne procède actuellement aux tests du moteur de recherche. L'architecture technique repose sur une connexion entre Osuny et le hub Symfony via API, avec synchronisation nocturne quotidienne. Le serveur Elastic Search, installé sur le hub Symfony, communique avec le projet Vue.js, offrant ainsi une recherche plus performante que la version native d'Osuny. Notre priorité reste d'assurer la lisibilité et la maintenabilité de l'ensemble du système. Concernant l'éco-conception et l'accessibilité, l'audit d'accessibilité de 82 %.  Des éléments peuvent être améliorés, avec des points relevés côté  Ecedi  à corriger. Rennes se donne deux à trois semaines pour effectuer les corrections et réaliser un contre-audit avant l'été. Un autre point majeur concerne la cartographie : il faut améliorer l'accessibilité des cartes et proposer des alternatives fiables. Pour l'instant, un tableau est disponible dans le navigateur, mais il n'est pas encore totalement accessible. Un audit RGESN est prévu dès la semaine prochaine. Pour la simplification des services, des rendez-vous trimestriels sont programmés avec le service relation citoyen pour interroger les habitants. <br> Comme le souligne Arnaud Levy, Rennes est devenu le plus gros utilisateur d'Osuny. Les retours sont très positifs : beaucoup sont surpris par la sobriété visuelle du site. Malgré les nombreux changements, ils trouvent le site lisible, bien organisé, clair et rapide. <br>Matthieu Delsaut confirme la rapidité du site : nous sommes passés de 14 serveurs (7 en pré-production et 7 en production) à 2 serveurs, simplifiant ainsi l'architecture complexe. Matthieu attend un retour de l'équipe Datacampus concernant le monitoring et la vérification de la tenue en charge. <br>Emilie Niard rappelle qu'auparavant, le site contenait 1200 actualités, sans stratégie d'archivage ni dépublication des contenus. L'idée est de faire un bilan sur  Comnum . On repart sur une base saine. Matthieu Delsaut lance également un chantier pour normaliser tous les noms de domaines. En effet, la gestion des noms de domaines est compliquée, un document de normalisation en cours. https://www.le137.fr/ Déménagement des bureaux de noesya Paris pour rejoindre le 137 boulevard magenta avec  La Coop des communs ,  Inno3 , etc. https://rhu-talent.chubordeaux.osuny.site/ Projet du CHU sur la prédiction et la prévention des accidents cardio-emboliques. Des pages projets présentant les publications et les projets de recherche. Un site à la fois sobre et bien organisé</p>  <p> Sites en cours  <br>   <br>Les sites de Marseille seront mis en ligne dans deux semaines avec la fédération de contenus. Les sites sont très beaux, avec un système de dégradés qui varie en fonction de l'heure et de la saison, représentant les nuances du ciel marseillais. De belles illustrations et un énorme travail de rangement. Pour le site des Beaux-Arts de Marseille, un design original avec un très beau travail typographique. Nous prévoyons d'organiser à la maison noesya une rencontre avec les designers ayant travaillé avec Osuny pour échanger sur nos méthodes, partager les réussites et les difficultés, et documenter notre progression et notre vision du design.</p>  <p> Remarques  <br>   <br>DeuxFleurs  trouve le site de Rennes très bien. Ils seront ravis de travailler avec Rennes. Pour Osuny, des ApérOsuny vont être lancés cet été. Un à Bordeaux et un en visio. L'idée est de venir avec son ordinateur et repartir avec son site web Osuny. La première session se tiendra avec l'association Singa en juillet. C'est destiné aux petites associations qui bricolent actuellement sur Wix ou d'autres plateformes. Alex travaille sur la modularité du code. Il y a beaucoup d'options et ça grossit, donc on veut quelque chose de plus léger. On développe des modules et d'autres répertoires GitHub, utilisés comme des sous-thèmes Osuny qu'on peut activer selon les besoins. Ce sont des briques indépendantes qui s'intègrent facilement. Par exemple, nous avons un système de suggestions dans la recherche. Nous créons une page « Suggestions » dans le back-office où l'on met des pages, ce qui permet d'utiliser l'espace de recherche pour y naviguer et d'y mettre des blocs. C'est une brique externe au thème. Trois événements à venir à la maison noesya - Fête de la musique le 21 juin :  https://maison.noesya.coop/agenda/2025/fete-de-la-musique-2025/ - Expo Lavo :  https://maison.noesya.coop/agenda/2025/un-voyage-haut-en-couleur/   - Les petites histoires :  https://maison.noesya.coop/agenda/2025/les-histoires-noesya/   Une fête pour célébrer les 150 sites en production (référencés dans le showcase) est prévue prochainement. Actuellement, nous comptons 144 sites. Enfin, nous accueillons Linda et Charlotte en stage pour une durée de deux mois.</p>  <p> Replay  <br>  </p>  <p>https://vimeo.com/1090785473 <br>Assemblée Osuny #19 <br>Retour sur l'Assemblée Osuny #19 </p>
+
+date: "2025-06-05T10:00:00+02:00"
+dates:
+  status: "archive"
+  archive: true
+  event:
+    kind: simple
+    is_child: false
+  computed:
+    short: >-
+      5 juin 2025
+    long: >-
+      Jeudi 5 juin 2025
+    two_lines:
+      short: >-
+        5 juin 2025
+      long: >-
+        Jeudi 5 juin 2025
+  from:
+    day: "2025-06-05"
+  to:
+    day: "2025-06-05"
+  add_to_calendar:
+    google: "https://www.google.com/calendar/render?action=TEMPLATE&text=Assembl%C3%A9e%20Osuny%20%2319%20R%C3%A9union%20mensuelle%20ouverte&dates=20250605/20250606&ctz=Europe/Paris&details=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F"
+    yahoo: "https://calendar.yahoo.com/?v=60&TITLE=Assembl%C3%A9e%20Osuny%20%2319%20R%C3%A9union%20mensuelle%20ouverte&ST=20250605&ET=20250605&DUR=allday&DESC=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F"
+    office: "https://outlook.office.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2319%20R%C3%A9union%20mensuelle%20ouverte&startdt=2025-06-05&enddt=2025-06-06&allday=true&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F"
+    outlook: "https://outlook.live.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2319%20R%C3%A9union%20mensuelle%20ouverte&startdt=2025-06-05&enddt=2025-06-06&allday=true&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F"
+    ical: "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//AddToCalendar//RubyGem//EN%0ABEGIN:VEVENT%0ADTSTAMP:20260511T141011Z%0ADTSTART;VALUE=DATE:20250605%0ADTEND;VALUE=DATE:20250606%0ASUMMARY:Assembl%C3%A9e%20Osuny%20%2319%20R%C3%A9union%20mensuelle%20ouverte%0AURL:https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F%0ADESCRIPTION:\n\nhttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F%0AUID:-https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F%0AEND:VEVENT%0AEND:VCALENDAR"
+
+
+
+image:
+  id: "fbefeb22-be7e-421a-9417-fa1d9b2b9da5"
+  alt: ""
+  credit: >-
+    <p>Violenn Simon</p>
+
+
+
+breadcrumbs:
+  - title: >-
+      Accueil
+    path: "/"
+  - title: >-
+      Agenda
+    path: "/agenda/"
+  - title: >-
+      Assemblée Osuny #19
+
+design:
+  full_width: false
+  toc:
+    present: true
+    offcanvas: false
+
+current_time_slot:
+  permalink: "/agenda/2025/assemblee-osuny-19/"
+  path: "/events/2025/06/05-10-00-assemblee-osuny-19"
+  slug: "assemblee-osuny-19"
+  file: "content/fr/events/2025/06/05-10-00-assemblee-osuny-19.html"
+  start:
+    date: "2025-06-05"
+    time: "10:00"
+    datetime: "2025-06-05T10:00:00+02:00"
+  end:
+    date: "2025-06-05"
+    time: "12:00"
+    datetime: "2025-06-05T12:00:00+02:00"
+  status: "archive"
+
+  add_to_calendar:
+    google: "https://www.google.com/calendar/render?action=TEMPLATE&text=Assembl%C3%A9e%20Osuny%20%2319%20R%C3%A9union%20mensuelle%20ouverte&dates=20250605T100000/20250605T120000&ctz=Europe/Paris&details=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F"
+    yahoo: "https://calendar.yahoo.com/?v=60&TITLE=Assembl%C3%A9e%20Osuny%20%2319%20R%C3%A9union%20mensuelle%20ouverte&ST=20250605T080000Z&DUR=0200&DESC=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F"
+    office: "https://outlook.office.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2319%20R%C3%A9union%20mensuelle%20ouverte&startdt=2025-06-05T08:00:00Z&enddt=2025-06-05T10:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F"
+    outlook: "https://outlook.live.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2319%20R%C3%A9union%20mensuelle%20ouverte&startdt=2025-06-05T08:00:00Z&enddt=2025-06-05T10:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F"
+    ical: "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//AddToCalendar//RubyGem//EN%0ABEGIN:VEVENT%0ADTSTAMP:20260511T141013Z%0ADTSTART:20250605T080000Z%0ADTEND:20250605T100000Z%0ASUMMARY:Assembl%C3%A9e%20Osuny%20%2319%20R%C3%A9union%20mensuelle%20ouverte%0AURL:https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F%0ADESCRIPTION:\n\nhttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F%0AUID:-https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F%0AEND:VEVENT%0AEND:VCALENDAR"
+
+
+time_slots:
+  - permalink: "/agenda/2025/assemblee-osuny-19/"
+    path: "/events/2025/06/05-10-00-assemblee-osuny-19"
+    slug: "assemblee-osuny-19"
+    file: "content/fr/events/2025/06/05-10-00-assemblee-osuny-19.html"
+    start:
+      date: "2025-06-05"
+      time: "10:00"
+      datetime: "2025-06-05T10:00:00+02:00"
+    end:
+      date: "2025-06-05"
+      time: "12:00"
+      datetime: "2025-06-05T12:00:00+02:00"
+    status: "archive"
+
+    add_to_calendar:
+      google: "https://www.google.com/calendar/render?action=TEMPLATE&text=Assembl%C3%A9e%20Osuny%20%2319%20R%C3%A9union%20mensuelle%20ouverte&dates=20250605T100000/20250605T120000&ctz=Europe/Paris&details=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F"
+      yahoo: "https://calendar.yahoo.com/?v=60&TITLE=Assembl%C3%A9e%20Osuny%20%2319%20R%C3%A9union%20mensuelle%20ouverte&ST=20250605T080000Z&DUR=0200&DESC=%0A%0Ahttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F"
+      office: "https://outlook.office.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2319%20R%C3%A9union%20mensuelle%20ouverte&startdt=2025-06-05T08:00:00Z&enddt=2025-06-05T10:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F"
+      outlook: "https://outlook.live.com/calendar/0/action/compose?rru=addevent&subject=Assembl%C3%A9e%20Osuny%20%2319%20R%C3%A9union%20mensuelle%20ouverte&startdt=2025-06-05T08:00:00Z&enddt=2025-06-05T10:00:00Z&body=%3Cbr%3E%3Cbr%3Ehttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F"
+      ical: "data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//AddToCalendar//RubyGem//EN%0ABEGIN:VEVENT%0ADTSTAMP:20260511T141013Z%0ADTSTART:20250605T080000Z%0ADTEND:20250605T100000Z%0ASUMMARY:Assembl%C3%A9e%20Osuny%20%2319%20R%C3%A9union%20mensuelle%20ouverte%0AURL:https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F%0ADESCRIPTION:\n\nhttps%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F%0AUID:-https%3A%2F%2Fcommun.osuny.org%2Fagenda%2F2025%2Fassemblee-osuny-19%2F%0AEND:VEVENT%0AEND:VCALENDAR"
+
+
+translationKey: communication-website-agenda-event-a9214c5d-10be-41e1-be45-3fd8e6ea687d
+
+
+meta_description: >-
+  Assemblée Osuny #19
+
+
+header_cta:
+
+contents_reading_time:
+  seconds: 510
+  text: >-
+    9 minutes
+contents:
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 2
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Nous organisons une réunion mensuelle ouverte, le premier jeudi de chaque mois, dans le but de rassembler toute la communauté Osuny. Cet événement est un moment d'échange et de discussions, pendant lequel l'équipe noesya présente les avancées fonctionnelles. Cet événement est ouvert, vous êtes libre de venir quand vous le souhaitez, il n'y a aucune obligation d'être présent·e chaque mois, c'est à votre convenance. Nous souhaitons co-construire l'ordre du jour de cette réunion mensuelle avec vous, donc nous sommes à l'écoute de vos remarques et/ou questions.</p>
+
+
+
+
+
+
+  - kind: block
+    template: persons
+
+
+    ranks:
+      base: 2
+      children: 2
+    top:
+      active: false
+
+    data:
+
+      layout: grid
+      options:
+        image: true
+        summary: true
+        link: false
+        contact: false
+
+      persons:
+        - permalink: "/personnes/magali-angles/"
+          path: "/persons/magali-angles"
+          slug: "magali-angles"
+          file: "content/fr/persons/magali-angles.html"
+
+        - permalink: "/personnes/alexis-benoit/"
+          path: "/persons/alexis-benoit"
+          slug: "alexis-benoit"
+          file: "content/fr/persons/alexis-benoit.html"
+
+        - permalink: "/personnes/pierre-andre-boissinot/"
+          path: "/persons/pierre-andre-boissinot"
+          slug: "pierre-andre-boissinot"
+          file: "content/fr/persons/pierre-andre-boissinot.html"
+
+        - permalink: "/personnes/matthieu-delsaut/"
+          path: "/persons/matthieu-delsaut"
+          slug: "matthieu-delsaut"
+          file: "content/fr/persons/matthieu-delsaut.html"
+
+        - permalink: "/personnes/charlotte-duconseil/"
+          path: "/persons/charlotte-duconseil"
+          slug: "charlotte-duconseil"
+          file: "content/fr/persons/charlotte-duconseil.html"
+
+        - permalink: "/personnes/linda-elbs/"
+          path: "/persons/linda-elbs"
+          slug: "linda-elbs"
+          file: "content/fr/persons/linda-elbs.html"
+
+        - permalink: "/personnes/elisabeth-feuillebois/"
+          path: "/persons/elisabeth-feuillebois"
+          slug: "elisabeth-feuillebois"
+          file: "content/fr/persons/elisabeth-feuillebois.html"
+
+        - permalink: "/personnes/sebastien-gaya/"
+          path: "/persons/sebastien-gaya"
+          slug: "sebastien-gaya"
+          file: "content/fr/persons/sebastien-gaya.html"
+
+        - permalink: "/personnes/arnaud-levy/"
+          path: "/persons/arnaud-levy"
+          slug: "arnaud-levy"
+          file: "content/fr/persons/arnaud-levy.html"
+
+        - permalink: "/personnes/emmie-niard/"
+          path: "/persons/emmie-niard"
+          slug: "emmie-niard"
+          file: "content/fr/persons/emmie-niard.html"
+
+        - permalink: "/personnes/olivia-simonet/"
+          path: "/persons/olivia-simonet"
+          slug: "olivia-simonet"
+          file: "content/fr/persons/olivia-simonet.html"
+
+      quantity: 11
+
+
+  - kind: block
+    template: title
+    title: >-
+      Releases Front
+    slug: >-
+      releases-front
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Releases Front
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><a href="https://github.com/osunyorg/theme/releases/tag/v7.4.0">https://github.com/osunyorg/theme/releases/tag/v</a><a href="https://github.com/osunyorg/theme/releases/tag/v7.4.0">7.4.0</a></p><p>- Développement majeur du module Agenda : nombreuses améliorations dans cette version, notamment pour le site de la Gaîté Lyrique et les sites du Campus Art Méditerranée ;</p><p>- Optimisation de l'affichage des noms des familles de catégories ;</p><p>- Travail sur les correctifs d'accessibilité suite aux audits RGAA pour Rennes Métropole (Audits réalisés par<a href="https://ideance.net/fr/" target="_blank" rel="noreferrer"> Ideance <span class="sr-only">(lien externe)</span></a> et <a href="https://www.numerik-ea.fr/" target="_blank" rel="noreferrer">Numerik-ea <span class="sr-only">(lien externe)</span></a>). Concernant ces audits, nous sommes heureux de voir le bon niveau d'accessibilité. Il y a très peu de correctifs techniques, mais surtout des correctifs de contribution ou des correctifs de contexte. La documentation de l'audit : <a href="https://developers.osuny.org/docs/audit/accessibilite/audit-site/" target="_blank" rel="noreferrer">https://developers.osuny.org/docs/audit/accessibilite/audit-site/ <span class="sr-only">(lien externe)</span></a><a href="https://developers.osuny.org/docs/audit/accessibilite/audit-site/" target="_blank" rel="noreferrer"> <span class="sr-only">(lien externe)</span></a> ; </p><p>- Un travail sur la non-régression visuelle est en cours. L'objectif est de contrôler les sites à chaque pre-release pour effectuer les corrections nécessaires avant la release ;</p><p>- Développement d'un nouveau module de job board pour la gestion des offres d'emploi.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Releases Back
+    slug: >-
+      releases-back
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Releases Back
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><a href="https://github.com/osunyorg/admin/releases/tag/v3.4.0" target="_blank" rel="noreferrer">https://github.com/osunyorg/admin/releases/tag/v3.4.0 <span class="sr-only">(lien externe)</span></a></p><p>- Ajustements pour la mise en ligne des sites de <a href="https://metropole.rennes.fr/" target="_blank" rel="noreferrer">Rennes Ville et Métropole <span class="sr-only">(lien externe)</span></a>;</p><p>- Mise à jour de l'agenda avec une nouvelle architecture ;</p><p>- Optimisation de la gestion côté front-end ;</p><p>- Pages confidentialité et mentions légales : modification pour permettre leur mise en brouillon, car sur le site de Rennes, ces pages sont centralisées ailleurs. Auparavant, en raison de l'obligation légale d'avoir ces pages, cette option était désactivée. Ce changement permet plus de flexibilité, mais nécessite l'ajout manuel du contenu s'il n'est pas disponible ailleurs ;</p><p>- Optimisation de la partie API pour le site de Rennes ;</p><p>- Gestion des images : amélioration du temps de traitement en déplaçant le téléchargement des images vers un processus distinct ;</p><p>- Optimisation des fuseaux horaires ;</p><p>- Page Agenda : implémentation d'un pré-calcul pour le mois en cours et les deux mois suivants pour optimiser le chargement côté front-end ;</p><p>- Optimisation des métadonnées de recherche, principalement pour Rennes ;</p><p>- Correction de la génération des slugs ;</p><p>- Agenda : amélioration des créneaux horaires — ajout de la possibilité de définir une durée personnalisée pour les événements (par exemple, 6 h 30) au lieu d'une durée fixe ;</p><p>- Objets planifiés : mise en place d'un système de détection des changements lors de l'actualisation du contenu dans le BO. Les fichiers désynchronisés sont identifiés et synchronisés toutes les 10 minutes via le BO d'Osuny, réduisant ainsi la charge sur GitHub. Un job nocturne vérifie et ajuste automatiquement les événements terminés ou à venir ;</p><p>- Bloc agenda : amélioration du filtrage des événements selon leur statut et type (parent ou enfant), permettant d'afficher soit un festival complet, soit des événements spécifiques au sein d'un festival ;</p><p>- Validateurs de dates : amélioration de la gestion des créneaux horaires lors des changements de dates d'événements : <a href="https://developers.osuny.org/docs/admin/sites-web/features/agenda/#d%c3%a9calage-des-cr%c3%a9neaux" target="_blank" rel="noreferrer">https://developers.osuny.org/docs/admin/sites-web/features/agenda/#d%c3%a9calage-des-cr%c3%a9neaux <span class="sr-only">(lien externe)</span></a></p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Nouvelles fonctionnalités
+    slug: >-
+      nouvelles-fonctionnalites
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Nouvelles fonctionnalités
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><b>Job board</b></p><p>La fonctionnalité Offres d'emploi peut désormais être activée. Elle permet de créer des catégories similaires à celles des projets, actualités et agenda. Pour créer une offre, il suffit d'ajouter un titre, un sous-titre, un résumé, un CTA et des dates de validité. L'interface utilise le même éditeur de bloc que les autres sections. Le développement front-end est toujours en cours, et le système fonctionne actuellement de façon manuelle. Les boutons suivent le même comportement que dans les autres modules. <a href="https://example.osuny.org/fr/offres-d-emploi/" target="_blank" rel="noreferrer">https://example.osuny.org/fr/offres-d-emploi/  <span class="sr-only">(lien externe)</span></a></p><p><b>Alumni public</b></p><p>Sur un site d'école ou de formation, il est possible d'afficher les profils des alumni. Nous avons notamment mis en place ce système pour le site des Beaux-Arts de Marseille, actuellement en développement. L'interface propose des boutons en haut de page permettant d'accéder aux promotions, aux appels à projet et à la liste complète des alumni. Le menu présente les différentes années de promotion. Chaque profil d'alumni comprend des informations de contact et des blocs associés, similaires à ceux utilisés pour présenter les équipes sur les sites existants. Cette fonctionnalité sera intégrée prochainement.</p><p><b>Fédération de contenus</b></p><p>Cette fonctionnalité permet de récupérer des contenus lorsque les sites sont sur la même instance, permettant ainsi de transférer des contenus d'un site à un autre. Nous développons actuellement cette fonctionnalité pour les sites de Marseille, avec une mise en production prévue cette semaine. Il s'agit d'un système de syndication de contenus : un événement créé sur un site peut être diffusé sur plusieurs sites de la même instance. Cette approche permet de croiser les événements entre différents agendas pour créer un agenda global, dont l'utilisation est en cours de discussion. Les événements sont indiqués sur le site d'origine, avec une mention claire de leur provenance. La page de chaque événement syndiqué est intégrée au site de destination. Dans le back-office, un onglet « fédération des contenus » dans les réglages permet d'autoriser la réception de contenus depuis d'autres sites de l'instance.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Nouveaux sites
+    slug: >-
+      nouveaux-sites
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Nouveaux sites
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Nous avons mis en ligne les sites de <a href="https://metropole.rennes.fr/" target="_blank" rel="noreferrer">Rennes Ville et Métropole <span class="sr-only">(lien externe)</span></a> le 3 juin.<br>Emmie Niard et Matthieu Delsaut de l'équipe de Rennes nous font leurs retours, ils sont très positifs. La ville apprécie particulièrement les accès rapides contextualisés sur la page d'accueil, permettant d'afficher des bandeaux d'alertes ciblés par sujet (comme les problèmes de piscine ou questions scolaires). La structure comprend deux bandeaux distincts : un pour les fiches et un autre pour les actualités. Le site d'actualités regroupe désormais tous les contenus, toutes thématiques confondues, en proposant différents formats et un suivi dans la durée.</p><p>Le service déchets se montre notamment très satisfait de son espace dédié. Le site d'actualités dispose d'un moteur de recherche spécifique, une fonctionnalité très attendue par les habitant·e·s, qui permet d'afficher uniquement les actualités, sans autres informations parasites. Le service relation citoyenne procède actuellement aux tests du moteur de recherche.</p><p>L'architecture technique repose sur une connexion entre Osuny et le hub Symfony via API, avec synchronisation nocturne quotidienne. Le serveur Elastic Search, installé sur le hub Symfony, communique avec le projet Vue.js, offrant ainsi une recherche plus performante que la version native d'Osuny. Notre priorité reste d'assurer la lisibilité et la maintenabilité de l'ensemble du système.</p><p>Concernant l'éco-conception et l'accessibilité, l'audit d'accessibilité de 82 %.  Des éléments peuvent être améliorés, avec des points relevés côté <a href="https://www.ecedi.fr/" target="_blank" rel="noreferrer">Ecedi <span class="sr-only">(lien externe)</span></a> à corriger. Rennes se donne deux à trois semaines pour effectuer les corrections et réaliser un contre-audit avant l'été. Un autre point majeur concerne la cartographie : il faut améliorer l'accessibilité des cartes et proposer des alternatives fiables. Pour l'instant, un tableau est disponible dans le navigateur, mais il n'est pas encore totalement accessible.</p><p>Un audit RGESN est prévu dès la semaine prochaine. Pour la simplification des services, des rendez-vous trimestriels sont programmés avec le service relation citoyen pour interroger les habitants. </p><p>Comme le souligne Arnaud Levy, Rennes est devenu le plus gros utilisateur d'Osuny. Les retours sont très positifs : beaucoup sont surpris par la sobriété visuelle du site. Malgré les nombreux changements, ils trouvent le site lisible, bien organisé, clair et rapide. Matthieu Delsaut confirme la rapidité du site : nous sommes passés de 14 serveurs (7 en pré-production et 7 en production) à 2 serveurs, simplifiant ainsi l'architecture complexe. Matthieu attend un retour de l'équipe Datacampus concernant le monitoring et la vérification de la tenue en charge. Emilie Niard rappelle qu'auparavant, le site contenait 1200 actualités, sans stratégie d'archivage ni dépublication des contenus. L'idée est de faire un bilan sur <a href="https://comnum.rennes.fr/" target="_blank" rel="noreferrer">Comnum <span class="sr-only">(lien externe)</span></a>. On repart sur une base saine. Matthieu Delsaut lance également un chantier pour normaliser tous les noms de domaines. En effet, la gestion des noms de domaines est compliquée, un document de normalisation en cours.</p><p><a href="https://www.le137.fr/" target="_blank" rel="noreferrer">https://www.le137.fr/ <span class="sr-only">(lien externe)</span></a><a href="https://www.le137.fr/" target="_blank" rel="noreferrer"> <span class="sr-only">(lien externe)</span></a><br>Déménagement des bureaux de noesya Paris pour rejoindre le 137 boulevard magenta avec <a href="https://coopdescommuns.org/fr/association/" target="_blank" rel="noreferrer">La Coop des communs <span class="sr-only">(lien externe)</span></a>, <a href="https://inno3.fr/" target="_blank" rel="noreferrer">Inno3 <span class="sr-only">(lien externe)</span></a>, etc.</p><p><a href="https://rhu-talent.chubordeaux.osuny.site/" target="_blank" rel="noreferrer">https://rhu-talent.chubordeaux.osuny.site/ <span class="sr-only">(lien externe)</span></a><a href="https://rhu-talent.chubordeaux.osuny.site/" target="_blank" rel="noreferrer"> <span class="sr-only">(lien externe)</span></a><br>Projet du CHU sur la prédiction et la prévention des accidents cardio-emboliques. Des pages projets présentant les publications et les projets de recherche. Un site à la fois sobre et bien organisé</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Sites en cours
+    slug: >-
+      sites-en-cours
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Sites en cours
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p>Les sites de Marseille seront mis en ligne dans deux semaines avec la fédération de contenus.<br>Les sites sont très beaux, avec un système de dégradés qui varie en fonction de l'heure et de la saison, représentant les nuances du ciel marseillais. De belles illustrations et un énorme travail de rangement. Pour le site des Beaux-Arts de Marseille, un design original avec un très beau travail typographique.</p><p>Nous prévoyons d'organiser à la maison noesya une rencontre avec les designers ayant travaillé avec Osuny pour échanger sur nos méthodes, partager les réussites et les difficultés, et documenter notre progression et notre vision du design.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Remarques
+    slug: >-
+      remarques
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Remarques
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><a href="https://deuxfleurs.fr/" target="_blank" rel="noreferrer">DeuxFleurs <span class="sr-only">(lien externe)</span></a> trouve le site de Rennes très bien. Ils seront ravis de travailler avec Rennes.</p><p>Pour Osuny, des ApérOsuny vont être lancés cet été. Un à Bordeaux et un en visio. L'idée est de venir avec son ordinateur et repartir avec son site web Osuny. La première session se tiendra avec l'association Singa en juillet. C'est destiné aux petites associations qui bricolent actuellement sur Wix ou d'autres plateformes.</p><p>Alex travaille sur la modularité du code. Il y a beaucoup d'options et ça grossit, donc on veut quelque chose de plus léger. On développe des modules et d'autres répertoires GitHub, utilisés comme des sous-thèmes Osuny qu'on peut activer selon les besoins. Ce sont des briques indépendantes qui s'intègrent facilement. Par exemple, nous avons un système de suggestions dans la recherche. Nous créons une page « Suggestions » dans le back-office où l'on met des pages, ce qui permet d'utiliser l'espace de recherche pour y naviguer et d'y mettre des blocs. C'est une brique externe au thème.</p><p>Trois événements à venir à la maison noesya<br>- Fête de la musique le 21 juin : <a href="https://maison.noesya.coop/agenda/2025/fete-de-la-musique-2025/" target="_blank" rel="noreferrer">https://maison.noesya.coop/agenda/2025/fete-de-la-musique-2025/ <span class="sr-only">(lien externe)</span></a><br>- Expo Lavo : <a href="https://maison.noesya.coop/agenda/2025/un-voyage-haut-en-couleur/" target="_blank" rel="noreferrer">https://maison.noesya.coop/agenda/2025/un-voyage-haut-en-couleur/ <span class="sr-only">(lien externe)</span></a> <br>- Les petites histoires : <a href="https://maison.noesya.coop/agenda/2025/les-histoires-noesya/" target="_blank" rel="noreferrer">https://maison.noesya.coop/agenda/2025/les-histoires-noesya/ <span class="sr-only">(lien externe)</span></a> </p><p>Une fête pour célébrer les 150 sites en production (référencés dans le showcase) est prévue prochainement. Actuellement, nous comptons 144 sites.</p><p>Enfin, nous accueillons Linda et Charlotte en stage pour une durée de deux mois.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Replay
+    slug: >-
+      replay
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Replay
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: video
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+
+      url: >-
+        https://vimeo.com/1090785473
+      video_title: >-
+        Assemblée Osuny #19
+      layout: player
+      transcription: >-
+        <p>Retour sur l'Assemblée Osuny #19</p>
+      video_iframe: >-
+        <iframe class="vimeo" loading="lazy" src="https://player.vimeo.com/video/1090785473" referrerpolicy="strict-origin-when-cross-origin" title="Assemblée Osuny #19"></iframe>
+      video: 
+        platform: "vimeo"
+        identifier: "1090785473"
+        title: >-
+          Assemblée Osuny #19
+        poster: >-
+          https://vumbnail.com/1090785473.jpg
+        embed: >-
+          https://player.vimeo.com/video/1090785473
+        embed_with_defaults: >-
+          https://player.vimeo.com/video/1090785473?autoplay=1&quality=360p&dnt=1
+        iframe: >-
+          <iframe class="vimeo" loading="lazy" src="https://player.vimeo.com/video/1090785473" referrerpolicy="strict-origin-when-cross-origin" title="Assemblée Osuny #19"></iframe>
+
+
+
+---
