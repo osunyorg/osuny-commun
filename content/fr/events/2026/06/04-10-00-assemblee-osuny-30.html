@@ -27,7 +27,7 @@ search:
     Assemblée Osuny #30 Réunion mensuelle ouverte
 
   body: >-
-    <p>Présences </p>  <p>   <br>Nous organisons une réunion mensuelle ouverte, le premier jeudi de chaque mois, dans le but de rassembler toute la communauté Osuny. Cet événement est un moment d'échange et de discussions, pendant lequel l'équipe noesya présente les avancées fonctionnelles. Cet événement est ouvert, vous êtes libre de venir quand vous le souhaitez, il n'y a aucune obligation d'être présent·e chaque mois, c'est à votre convenance. Nous souhaitons co-construire l'ordre du jour de cette réunion mensuelle avec vous, donc nous sommes à l'écoute de vos remarques et/ou questions. Accéder à la vidéoconférence</p>  <p> Replay  <br>  </p>  <p>https://vimeo.com/1198353791 <br>Assemblée osuny #30 <br>Vidéo de la 30ème assemblée osuny. Les thèmes abordés ainsi que les  <br>discussions sont ceux décrits précédemment dans la page. La vidéo permet <br> d'entendre directement les échanges qui ont eu lieu. </p>
+    <p>Présences </p>  <p>   <br>Nous organisons une réunion mensuelle ouverte, le premier jeudi de chaque mois, dans le but de rassembler toute la communauté Osuny. Cet événement est un moment d'échange et de discussions, pendant lequel l'équipe noesya présente les avancées fonctionnelles. Cet événement est ouvert, vous êtes libre de venir quand vous le souhaitez, il n'y a aucune obligation d'être présent·e chaque mois, c'est à votre convenance. Nous souhaitons co-construire l'ordre du jour de cette réunion mensuelle avec vous, donc nous sommes à l'écoute de vos remarques et/ou questions. Accéder à la vidéoconférence</p>  <p> Release Front  <br>   <br>https://github.com/osunyorg/admin/releases/tag/v3.14.0 3.14 Admin :     - <br>   <br> Déplacement des événements par site désormais possibles : quand on a  <br>plusieurs sites sur la même instance, on peut les déplacer, c'est fait  <br>de manière à créer une redirection sur l'ancien chemin- <br> Il est désormais possible de créer des redirections propres pour des  <br>liens externes. Les redirections deuxfleurs, apaches, ngnix et netlify  <br>sont propres  <br> Les déplacements de site d'une instance à l'autre, il reste des choses imparfaites qu'on améliore  <br> Possibilité de réinitialiser les blocs dans une traduction  <br> Possibioité de voir les posts pérennes dans les filtres des actualités  <br> Réparations avec la corbeille- <br> P-A et Arthaud on travaillé sur le relachement, la gestion des mots de  <br>passes, on peut désormais pouvoir mettre ce qu'on veut dans les mots de  <br>passes  <br> P-A Quand on crée un site on a des positions dans les menus  <br>automatiques qui étaient incorrectes. Maintenant les pages ont bien un  <br>numéro fixe et cohérent, ca ne bouge plus sur les nouveaux sites, ce  <br>n'est pas le cas sur les sites déjà créés  <br> Les champs rich-text ne suivaient pas forcément en éditeur, c'est réparé- Ajout du bouton de traduction avec libre translate pour les organisations, demande de Julie du Réseau excellence- Mise en ligne avec Deuxfleurs passée en asynchrone, maintenant la mise en prod ne risque plus de crasher- Fédération des alertes déployée  <br> Admin : le badge qui indique l'état de la compilation du site est maintenant clicable- Travaux avec ECEDI sur le Git  <br> Travaux avec Humanum avec Bruno Morandière   <br> Mise à jour de la documentation développers  <br> Optimisation par lots, suite au problème avec Scalingo : il s'agit  <br>d'une consommation de ressources de certaines requêtes qui plombent : ça <br> pose la question du cloisonnement et de l'écriture sur disque. On vient <br> avec notre request, gérer les duplications et fonctions par lot en  <br>asynchrone.  <br> Depublication des actualités : on peut désormais définir une date à laquelle on souhaite qu'elle soit dépubliée- <br> Depuis lundi, il existe un éditeur V2 de blocs. La première phase a été <br> faite, la deuxième phase arrive bientôt, P-A l'a testé : c'est plus  <br>rapide, il n'y a plus de blocs qui sautent, plus stable. Des éléments de <br> user interface ont été intégrés sur les boutons, enregistrer et annuler <br> sont maintenant intégrés. Pas de changement d'ergonomie des blocs, mais <br> une articulation qui change techniquement.  <br> Réparation d'une initialisation qui ne fonctionnait pas  <br>  <br> Prochain chantier :       <br> Deuxième étape de l'éditeur de bloc,    <br>  <br> les blocs natifs sur une idée de Yuna : il y a ocnfusion actuelle sur  <br>les blocs natifs, on proposerait des options d'affichage de ces pages  <br>natives, ce qui permet dans l'admin de faire quelqu' chose qui  <br>aujourd'hui se fait en code. Mais ca ne résout pas la question de  <br>l'ordre des blocs. Yuna a eu une idée : un bloc correspondrait au  <br>contenu natif tout en laissant le contrôle sur les options d'affichage.  <br>On a commencé cela mais ce n'est pas prêt à release. Et ça veut dire que <br> tous les paramètres d'affichage en code devront être revus. </p>  <p> Release Back  <br>   <br>https://github.com/osunyorg/theme/releases/tag/v9.4.0-beta.1-hugo.159.2 https://github.com/osunyorg/theme/releases/tag/v9.4.0-beta.2-hugo.159.2 https://github.com/osunyorg/theme/releases/tag/v9.4.0-beta.3-hugo.159.2 https://github.com/osunyorg/theme/releases/tag/v9.4.0-beta.4-hugo.159.2 Alex : Il y a des évolutions, on va release après :            <br> Évolutions déployées sur pas mal de sites déjà  : ordre alphabétique  <br>pour l'affichage des formations, c'était le cas avant mais il ya avait  <br>eu un changement entre temps. On est revenu à l'état initial, c'est une  <br>réparation      <br> Correction dans la mise en page carrousel des témoignages       <br> Bloc catégories, on calcultait côté front au moment de la compliation <br> le nombre d'éléments à l'intérieur, on a changé pour s'appuyer sur les  <br>datas fournies par osuny, on ne calcule plus en fonciotn des objets coté <br> front      <br> on avait quelques natures éditoriales ou un objet arrivait       <br> on enlève les dimensions d'image sur l'icône osuny       <br> homogénéisation des métas, financé par Rennes : jusqu'à présent les  <br>comportements des fonctionnalités étaient variables et on a homogénéisé  <br>ça, ça peut être spécifié aujourd'hui. On peut choisir de manière  <br>constante pour tous les objets les modes d'affichage. On peut désormais  <br>gérer les articles et actualités en pleine largeur.       <br> Fonction de recherche améliorée financée par le réseau excellence :  <br>on peut désormais filtrer par type d'objet sur page find, pour avoir  <br>l'affichage d'un seul type de contenu. On peut aussi ajouter une  <br>fonction recherche sur notre type d'index, c'est activable pour chaque  <br>nature éditoriale, soit pour tout, pour rien ou pour certaines.  <br>Fonctionnalité financée par le réseau excellence avec un annuaire. Il  <br>reste à modifier le label pour la recherche par annuaire.      <br> Affichage en mode liste disponible pour le bloc organisation. Jusqu'à présent on avait que la grille et le mode large. </p>  <p> Nouveautés sites  <br>   <br>D'avantages - Bois https://www.davantages-bois.com/ Site <br> mis en production hier, Eric est menuisier et a changé de site pour un  <br>site plus aligné avec ses valeurs. Alain-Pierre a accompagné Eric pour  <br>la construction de ce site qui met en valeur son savoir faire de manière <br> simple. La formidable Armada https://www.laformidablearmada.com/ Agence <br> de design à Lyon qui a basculé sur osuny. Une iconographie très  <br>chouette, des effets de pralaxe exploités, c'est possible dans osuny ! Adapt https://www.adapt-project.org/ Association <br> qui présente des solutions pour l'adaptation au changement climatique.  <br>Des rapports et propositions mises en valeur avec osuny. Design par  <br>l'agence neue wave.</p>  <p> Discussions  <br> Replay  <br>  </p>  <p>https://vimeo.com/1198353791 <br>Assemblée osuny #30 <br>Vidéo de la 30ème assemblée osuny. Les thèmes abordés ainsi que les  <br>discussions sont ceux décrits précédemment dans la page. La vidéo permet <br> d'entendre directement les échanges qui ont eu lieu. </p>
 
 date: "2026-06-04T10:00:00+02:00"
 dates:
@@ -97,7 +97,7 @@ breadcrumbs:
 design:
   full_width: false
   toc:
-    present: false
+    present: true
     offcanvas: false
 
 current_time_slot:
@@ -156,9 +156,9 @@ meta_description: >-
 header_cta:
 
 contents_reading_time:
-  seconds: 40
+  seconds: 303
   text: >-
-    1 minute
+    5 minutes
 contents:
   - kind: block
     template: persons
@@ -267,6 +267,143 @@ contents:
   - kind: block
     template: title
     title: >-
+      Release Front
+    slug: >-
+      release-front
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Release Front
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><a href="https://github.com/osunyorg/admin/releases/tag/v3.14.0">https://github.com/osunyorg/admin/releases/tag/v3.14.0</a><br>3.14 Admin :     -  </p><ul> <li>Déplacement des événements par site désormais possibles : quand on a  plusieurs sites sur la même instance, on peut les déplacer, c'est fait  de manière à créer une redirection sur l'ancien chemin-  Il est désormais possible de créer des redirections propres pour des  liens externes. Les redirections deuxfleurs, apaches, ngnix et netlify  sont propres</li> <li>Les déplacements de site d'une instance à l'autre, il reste des choses imparfaites qu'on améliore</li> <li>Possibilité de réinitialiser les blocs dans une traduction</li> <li>Possibioité de voir les posts pérennes dans les filtres des actualités</li> <li>Réparations avec la corbeille-  P-A et Arthaud on travaillé sur le relachement, la gestion des mots de  passes, on peut désormais pouvoir mettre ce qu'on veut dans les mots de  passes</li> <li>P-A Quand on crée un site on a des positions dans les menus  automatiques qui étaient incorrectes. Maintenant les pages ont bien un  numéro fixe et cohérent, ca ne bouge plus sur les nouveaux sites, ce  n'est pas le cas sur les sites déjà créés</li> <li>Les champs rich-text ne suivaient pas forcément en éditeur, c'est réparé- Ajout du bouton de traduction avec libre translate pour les organisations, demande de Julie du Réseau excellence- Mise en ligne avec Deuxfleurs passée en asynchrone, maintenant la mise en prod ne risque plus de crasher- Fédération des alertes déployée</li> <li>Admin : le badge qui indique l'état de la compilation du site est maintenant clicable- Travaux avec ECEDI sur le Git</li> <li>Travaux avec Humanum avec Bruno Morandière </li> <li>Mise à jour de la documentation développers</li> <li>Optimisation par lots, suite au problème avec Scalingo : il s'agit  d'une consommation de ressources de certaines requêtes qui plombent : ça  pose la question du cloisonnement et de l'écriture sur disque. On vient  avec notre request, gérer les duplications et fonctions par lot en  asynchrone.</li> <li>Depublication des actualités : on peut désormais définir une date à laquelle on souhaite qu'elle soit dépubliée-  Depuis lundi, il existe un éditeur V2 de blocs. La première phase a été  faite, la deuxième phase arrive bientôt, P-A l'a testé : c'est plus  rapide, il n'y a plus de blocs qui sautent, plus stable. Des éléments de  user interface ont été intégrés sur les boutons, enregistrer et annuler  sont maintenant intégrés. Pas de changement d'ergonomie des blocs, mais  une articulation qui change techniquement.</li> <li>Réparation d'une initialisation qui ne fonctionnait pas<br> </li> <li>Prochain chantier :     </li> <li>Deuxième étape de l'éditeur de bloc,  <br> </li> <li>les blocs natifs sur une idée de Yuna : il y a ocnfusion actuelle sur  les blocs natifs, on proposerait des options d'affichage de ces pages  natives, ce qui permet dans l'admin de faire quelqu' chose qui  aujourd'hui se fait en code. Mais ca ne résout pas la question de  l'ordre des blocs. Yuna a eu une idée : un bloc correspondrait au  contenu natif tout en laissant le contrôle sur les options d'affichage.  On a commencé cela mais ce n'est pas prêt à release. Et ça veut dire que  tous les paramètres d'affichage en code devront être revus.</li> </ul>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Release Back
+    slug: >-
+      release-back
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Release Back
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><a href="https://github.com/osunyorg/theme/releases/tag/v9.4.0-beta.1-hugo.159.2">https://github.com/osunyorg/theme/releases/tag/v9.4.0-beta.1-hugo.159.2</a><a href="https://github.com/osunyorg/theme/releases/tag/v9.4.0-beta.2-hugo.159.2">https://github.com/osunyorg/theme/releases/tag/v9.4.0-beta.2-hugo.159.2</a><a href="https://github.com/osunyorg/theme/releases/tag/v9.4.0-beta.3-hugo.159.2">https://github.com/osunyorg/theme/releases/tag/v9.4.0-beta.3-hugo.159.2</a><a href="https://github.com/osunyorg/theme/releases/tag/v9.4.0-beta.4-hugo.159.2">https://github.com/osunyorg/theme/releases/tag/v9.4.0-beta.4-hugo.159.2</a><br>Alex : Il y a des évolutions, on va release après :          </p><ul> <li>Évolutions déployées sur pas mal de sites déjà  : ordre alphabétique  pour l'affichage des formations, c'était le cas avant mais il ya avait  eu un changement entre temps. On est revenu à l'état initial, c'est une  réparation    </li> <li>Correction dans la mise en page carrousel des témoignages     </li> <li>Bloc catégories, on calcultait côté front au moment de la compliation  le nombre d'éléments à l'intérieur, on a changé pour s'appuyer sur les  datas fournies par osuny, on ne calcule plus en fonciotn des objets coté  front    </li> <li>on avait quelques natures éditoriales ou un objet arrivait     </li> <li>on enlève les dimensions d'image sur l'icône osuny     </li> <li>homogénéisation des métas, financé par Rennes : jusqu'à présent les  comportements des fonctionnalités étaient variables et on a homogénéisé  ça, ça peut être spécifié aujourd'hui. On peut choisir de manière  constante pour tous les objets les modes d'affichage. On peut désormais  gérer les articles et actualités en pleine largeur.     </li> <li>Fonction de recherche améliorée financée par le réseau excellence :  on peut désormais filtrer par type d'objet sur page find, pour avoir  l'affichage d'un seul type de contenu. On peut aussi ajouter une  fonction recherche sur notre type d'index, c'est activable pour chaque  nature éditoriale, soit pour tout, pour rien ou pour certaines.  Fonctionnalité financée par le réseau excellence avec un annuaire. Il  reste à modifier le label pour la recherche par annuaire.    </li> <li>Affichage en mode liste disponible pour le bloc organisation. Jusqu'à présent on avait que la grille et le mode large.</li> </ul>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Nouveautés sites
+    slug: >-
+      nouveautes-sites
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Nouveautés sites
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+      text: >-
+        <p><b>D'avantages - Bois</b><br><a href="https://www.davantages-bois.com/">https://www.davantages-bois.com/</a><br>Site  mis en production hier, Eric est menuisier et a changé de site pour un  site plus aligné avec ses valeurs. Alain-Pierre a accompagné Eric pour  la construction de ce site qui met en valeur son savoir faire de manière  simple.</p><p><b>La formidable Armada</b><br><a href="https://www.laformidablearmada.com/">https://www.laformidablearmada.com/</a><br>Agence  de design à Lyon qui a basculé sur osuny. Une iconographie très  chouette, des effets de pralaxe exploités, c'est possible dans osuny !</p><p><b>Adapt</b><br><a href="https://www.adapt-project.org/">https://www.adapt-project.org/</a><br>Association  qui présente des solutions pour l'adaptation au changement climatique.  Des rapports et propositions mises en valeur avec osuny. Design par  l'agence neue wave.</p>
+
+
+
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Discussions
+    slug: >-
+      discussions
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Discussions
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: title
+    title: >-
       Replay
     slug: >-
       replay
@@ -317,6 +454,24 @@ contents:
           https://player.vimeo.com/video/1198353791?autoplay=1&quality=360p&dnt=1
         iframe: >-
           <iframe class="vimeo" loading="lazy" src="https://player.vimeo.com/video/1198353791" referrerpolicy="strict-origin-when-cross-origin" title="Assemblée osuny #30"></iframe>
+
+
+  - kind: block
+    template: chapter
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+      layout: no_background
+
+
+
+
+
 
 
 
