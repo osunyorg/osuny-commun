@@ -10,11 +10,12 @@ export default function Timer (callback, delay) {
     };
 
     this.resume = function() {
-        if (timerId) {
+        if (timerId || remaining <= 0) {
             return;
         }
 
         start = Date.now();
+
         timerId = window.setTimeout(callback, remaining);
     };
 
