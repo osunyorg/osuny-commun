@@ -1,9 +1,11 @@
 import { isReducedMotionPrefered } from './theme/utils/isReducedMotionPrefered';
+import Timer from './Timer';
 
 window.osuny = window.osuny || {};
 
 window.osuny.CustomHeroPersons = function (container) {
     this.intervalTimeout = 15000;
+    this.timers = [];
     this.container = container;
     this.list = container.querySelector('ul');
     this.persons = this.list.querySelectorAll('li');
@@ -16,6 +18,8 @@ window.osuny.CustomHeroPersons = function (container) {
     }
 
     window.addEventListener('resize', this.resize.bind(this));
+    window.addEventListener('blur', this.pause.bind(this));
+    window.addEventListener('focus', this.resume.bind(this));
 };
 
 window.osuny.CustomHeroPersons.prototype.start = function () {
@@ -31,9 +35,9 @@ window.osuny.CustomHeroPersons.prototype.animatePosition = function (position) {
     // Shuffle visible positions
     this.swap(position, this.getRandomIndex());
 
-    setTimeout(() => {
+    this.timers.push(new Timer(() => {
         this.fadeOut(position);
-    }, delay)
+    }, delay));
 };
 
 window.osuny.CustomHeroPersons.prototype.resize = function () {
@@ -68,9 +72,9 @@ window.osuny.CustomHeroPersons.prototype.fadeOut = function (index) {
         this.replace(index);
     }, { once: true });
 
-    setTimeout(() => {
+    this.timers.push(new Timer(() => {
         this.fadeOut(index);
-    }, this.intervalTimeout * (Math.random() * 0.1 + 0.9));
+    }, this.intervalTimeout * (Math.random() * 0.1 + 0.9)));
 };
 
 window.osuny.CustomHeroPersons.prototype.replace = function (index) {
@@ -78,13 +82,25 @@ window.osuny.CustomHeroPersons.prototype.replace = function (index) {
         target = this.list.children[targetIndex];
     target.classList.add('fade-out');
     this.swap(index, targetIndex);
-    setTimeout(() => {
+    this.timers.push(new Timer(() => {
         target.classList.remove('fade-out');
-    }, 500);
+    }, 500));
 };
 
 window.osuny.CustomHeroPersons.prototype.getRandomIndex = function () {
     return Math.floor(Math.random() * (this.list.children.length - this.visibleQuantity)) +  this.visibleQuantity;
+};
+
+window.osuny.CustomHeroPersons.prototype.pause = function () {
+    this.timers.forEach((timer) => {
+        timer.pause();
+    });
+};
+
+window.osuny.CustomHeroPersons.prototype.resume = function () {
+    this.timers.forEach((timer) => {
+        timer.resume();
+    });
 };
 
 window.osuny.page.registerComponent({
