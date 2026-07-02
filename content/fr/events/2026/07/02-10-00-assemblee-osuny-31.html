@@ -27,7 +27,7 @@ search:
     Assemblée Osuny #31 Réunion mensuelle ouverte
 
   body: >-
-    <p>  <br>Nous organisons une réunion mensuelle ouverte, le premier jeudi de chaque mois, dans le but de rassembler toute la communauté Osuny. Cet événement est un moment d'échange et de discussions, pendant lequel l'équipe noesya présente les avancées fonctionnelles. Cet événement est ouvert, vous êtes libre de venir quand vous le souhaitez, il n'y a aucune obligation d'être présent·e chaque mois, c'est à votre convenance. Nous souhaitons co-construire l'ordre du jour de cette réunion mensuelle avec vous, donc nous sommes à l'écoute de vos remarques et/ou questions. Accéder à la vidéoconférence</p>
+    <p>  <br>Nous organisons une réunion mensuelle ouverte, le premier jeudi de chaque mois, dans le but de rassembler toute la communauté Osuny. Cet événement est un moment d'échange et de discussions, pendant lequel l'équipe noesya présente les avancées fonctionnelles. Cet événement est ouvert, vous êtes libre de venir quand vous le souhaitez, il n'y a aucune obligation d'être présent·e chaque mois, c'est à votre convenance. Nous souhaitons co-construire l'ordre du jour de cette réunion mensuelle avec vous, donc nous sommes à l'écoute de vos remarques et/ou questions. Accéder à la vidéoconférence</p>  <p> Release Front  <br>   <br>3.15 Admin https://github.com/osunyorg/admin/releases/tag/v3.15.0 V2 de l'éditeur de bloc : Normalement peu de choses différentes en admin Côté <br> API, on peut désormais récupérer les détails d'un objet non pas par son <br> id osuny mais par son migration identifier, ce qui évite des requêtes  <br>en plus (voir usage pour reseau535) Réparation des mises à jour des catégories par PAB Changement de l'ordre des publications scientifiques et organisation selon la nomenclature de HAL Auto archivage des articles, fonction clarifiée Mise à jour du thème automatique dans GITLAB Dans <br> les dialogues avec la Gaîté Lyrique, il y a des festivals et événements <br> parents/enfants, cas d'un concert annoncé hors festival mais qui a un  <br>moment doit réintégrer un festival. C'est désormais possible Mise <br> en place d'un système qui log toutes les 10minutes pour gardeer une  <br>trace du nombre de taches en cours de traitement. Si on clique sur le  <br>compteur en bas de l'écran, on peut visualiser l'encombrement du nombre  <br>de tâhces en cours. Il y a également un système de couleur ajouté pour  <br>indiquer le degré de saturation. Ça dit combien il y a de tâches en  <br>queue toutes les 10 minutes, cela donne une idée du niveau  <br>d'encombrement Anonymisation <br> des mails aux admins : Sur une remarque de Sacha, il a expliqué qu'il  <br>n'ya avait aucune raison d'indiquer ces données dans le mail envoyé.  <br>Désormais c'est en destinataire caché, moins de données partagées. GITfiles <br> : PAB a rajouté des droits pour que les admins puissent suivre aussi  <br>ces chemins, quand il y a des synchronisations lentes notamment Tentative <br> avec RorvsWild, un outil suisse pour monitorer les temps de réponse et  <br>de ram. Actuellement en cours de tests, la bonne formule n'a pas été  <br>trouvée Amélioration <br> de la gestion des alumnis : Un système qui sera spécifique à GCCD ;  <br>aussi, l'import d'alumnis  ne change pas, mais on permet d'exporter en  <br>fichier excel les promotions</p>  <p> Replay  <br>  </p>  <p>https://vimeo.com/1206453206?share=copy&fl=sv&fe=ci <br>Assemblée osuny #31 <br>Vidéo de la 31ème assemblée osuny. Les thèmes abordés ainsi que les  <br>discussions sont ceux décrits précédemment dans la page. La vidéo permet <br> d'entendre directement les échanges qui ont eu lieu. <br> Release Back  </p>
 
 date: "2026-07-02T10:00:00+02:00"
 dates:
@@ -80,7 +80,7 @@ breadcrumbs:
 design:
   full_width: false
   toc:
-    present: false
+    present: true
     offcanvas: false
 
 current_time_slot:
@@ -139,9 +139,9 @@ meta_description: >-
 header_cta:
 
 contents_reading_time:
-  seconds: 27
+  seconds: 133
   text: >-
-    moins d'une minute
+    2 minutes
 contents:
   - kind: block
     template: chapter
@@ -163,21 +163,118 @@ contents:
 
 
   - kind: block
+    template: title
+    title: >-
+      Release Front
+    slug: >-
+      release-front
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Release Front
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
     template: chapter
 
 
     ranks:
-      base: 2
+      base: 3
     top:
       active: false
 
     data:
       layout: no_background
+      text: >-
+        <p><br><b>3.15 Admin</b><br><a href="https://github.com/osunyorg/admin/releases/tag/v3.15.0">https://github.com/osunyorg/admin/releases/tag/v3.15.0</a></p><ul><li>V2 de l'éditeur de bloc : Normalement peu de choses différentes en admin</li></ul><ul><li>Côté  API, on peut désormais récupérer les détails d'un objet non pas par son  id osuny mais par son migration identifier, ce qui évite des requêtes  en plus (voir usage pour reseau535)</li></ul><ul><li>Réparation des mises à jour des catégories par PAB</li></ul><ul><li>Changement de l'ordre des publications scientifiques et organisation selon la nomenclature de HAL</li></ul><ul><li>Auto archivage des articles, fonction clarifiée</li></ul><ul><li>Mise à jour du thème automatique dans GITLAB</li></ul><ul><li>Dans  les dialogues avec la Gaîté Lyrique, il y a des festivals et événements  parents/enfants, cas d'un concert annoncé hors festival mais qui a un  moment doit réintégrer un festival. C'est désormais possible</li></ul><ul><li>Mise  en place d'un système qui log toutes les 10minutes pour gardeer une  trace du nombre de taches en cours de traitement. Si on clique sur le  compteur en bas de l'écran, on peut visualiser l'encombrement du nombre  de tâhces en cours. Il y a également un système de couleur ajouté pour  indiquer le degré de saturation. Ça dit combien il y a de tâches en  queue toutes les 10 minutes, cela donne une idée du niveau  d'encombrement</li></ul><ul><li>Anonymisation  des mails aux admins : Sur une remarque de Sacha, il a expliqué qu'il  n'ya avait aucune raison d'indiquer ces données dans le mail envoyé.  Désormais c'est en destinataire caché, moins de données partagées.</li></ul><ul><li>GITfiles  : PAB a rajouté des droits pour que les admins puissent suivre aussi  ces chemins, quand il y a des synchronisations lentes notamment</li></ul><ul><li>Tentative  avec RorvsWild, un outil suisse pour monitorer les temps de réponse et  de ram. Actuellement en cours de tests, la bonne formule n'a pas été  trouvée</li></ul><ul><li>Amélioration  de la gestion des alumnis : Un système qui sera spécifique à GCCD ;  aussi, l'import d'alumnis  ne change pas, mais on permet d'exporter en  fichier excel les promotions</li></ul>
 
 
 
 
 
+
+  - kind: block
+    template: title
+    title: >-
+      Replay
+    slug: >-
+      replay
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Replay
+        heading: 2
+
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: video
+
+
+    ranks:
+      base: 3
+    top:
+      active: false
+
+    data:
+
+      url: >-
+        https://vimeo.com/1206453206?share=copy&fl=sv&fe=ci
+      video_title: >-
+        Assemblée osuny #31
+      layout: player
+      transcription: >-
+        <p>Vidéo de la 31ème assemblée osuny. Les thèmes abordés ainsi que les  discussions sont ceux décrits précédemment dans la page. La vidéo permet  d'entendre directement les échanges qui ont eu lieu.</p>
+      video_iframe: >-
+        <iframe class="vimeo" loading="lazy" src="https://player.vimeo.com/video/1206453206?share=copy&fl=sv&fe=ci" referrerpolicy="strict-origin-when-cross-origin" title="Assemblée osuny #31"></iframe>
+      video: 
+        platform: "vimeo"
+        identifier: "1206453206?share=copy&fl=sv&fe=ci"
+        title: >-
+          Assemblée osuny #31
+        poster: >-
+          https://vumbnail.com/1206453206?share=copy&fl=sv&fe=ci.jpg
+        embed: >-
+          https://player.vimeo.com/video/1206453206?share=copy&fl=sv&fe=ci
+        embed_with_defaults: >-
+          https://player.vimeo.com/video/1206453206?share=copy&fl=sv&fe=ci?autoplay=1&quality=360p&dnt=1
+        iframe: >-
+          <iframe class="vimeo" loading="lazy" src="https://player.vimeo.com/video/1206453206?share=copy&fl=sv&fe=ci" referrerpolicy="strict-origin-when-cross-origin" title="Assemblée osuny #31"></iframe>
+
+
+
+  - kind: block
+    template: title
+    title: >-
+      Release Back
+    slug: >-
+      release-back
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Release Back
+        heading: 2
+
+    data:
+      layout: classic
 
 
 
