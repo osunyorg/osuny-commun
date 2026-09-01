@@ -207,6 +207,10 @@ from = "/publications/carnet-de-recherche/index.html"
 to = "/actualites/carnet-de-recherche/"
 
 [[redirects]]
+from = "/fichiers/2026/index.html"
+to = "/fichiers/2026/communaute-osunyics/"
+
+[[redirects]]
 from = "/publications/2023-11-22-retour-sur-ledition-numerique-en-communs-a-lille/index.html"
 to = "/actualites/2023-11-22-retour-sur-ledition-numerique-en-communs-a-lille/"
 
