@@ -87,6 +87,10 @@ from = "/personnes/categories/implication/comites-osuny/design-1/index.html"
 to = "/personnes/categories/implication/comites-osuny/comite-design/"
 
 [[redirects]]
+from = "/indisponibilites-pour-les-mises-a-jour/index.html"
+to = "/comites/gouvernance-developpement/"
+
+[[redirects]]
 from = "/equipe/fabrice-flipo/index.html"
 to = "/personnes/fabrice-flipo/"
 
@@ -441,6 +445,10 @@ to = "/personnes/ludovic-bonduel/"
 [[redirects]]
 from = "/equipe/constance-nebbula/index.html"
 to = "/personnes/constance-nebbula/"
+
+[[redirects]]
+from = "/comites/indisponibilites-pour-les-mises-a-jour/index.html"
+to = "/comites/gouvernance-developpement/"
 
 [[redirects]]
 from = "/equipe/vera-vidal/index.html"
