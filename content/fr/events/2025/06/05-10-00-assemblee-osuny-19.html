@@ -176,9 +176,6 @@ contents:
 
 
 
-
-
-
   - kind: block
     template: persons
 
@@ -293,9 +290,6 @@ contents:
 
 
 
-
-
-
   - kind: block
     template: title
     title: >-
@@ -329,9 +323,6 @@ contents:
       layout: no_background
       text: >-
         <p><a href="https://github.com/osunyorg/admin/releases/tag/v3.4.0" target="_blank" rel="noreferrer">https://github.com/osunyorg/admin/releases/tag/v3.4.0 <span class="sr-only">(lien externe)</span></a></p><p>- Ajustements pour la mise en ligne des sites de <a href="https://metropole.rennes.fr/" target="_blank" rel="noreferrer">Rennes Ville et Métropole <span class="sr-only">(lien externe)</span></a>;</p><p>- Mise à jour de l'agenda avec une nouvelle architecture ;</p><p>- Optimisation de la gestion côté front-end ;</p><p>- Pages confidentialité et mentions légales : modification pour permettre leur mise en brouillon, car sur le site de Rennes, ces pages sont centralisées ailleurs. Auparavant, en raison de l'obligation légale d'avoir ces pages, cette option était désactivée. Ce changement permet plus de flexibilité, mais nécessite l'ajout manuel du contenu s'il n'est pas disponible ailleurs ;</p><p>- Optimisation de la partie API pour le site de Rennes ;</p><p>- Gestion des images : amélioration du temps de traitement en déplaçant le téléchargement des images vers un processus distinct ;</p><p>- Optimisation des fuseaux horaires ;</p><p>- Page Agenda : implémentation d'un pré-calcul pour le mois en cours et les deux mois suivants pour optimiser le chargement côté front-end ;</p><p>- Optimisation des métadonnées de recherche, principalement pour Rennes ;</p><p>- Correction de la génération des slugs ;</p><p>- Agenda : amélioration des créneaux horaires — ajout de la possibilité de définir une durée personnalisée pour les événements (par exemple, 6 h 30) au lieu d'une durée fixe ;</p><p>- Objets planifiés : mise en place d'un système de détection des changements lors de l'actualisation du contenu dans le BO. Les fichiers désynchronisés sont identifiés et synchronisés toutes les 10 minutes via le BO d'Osuny, réduisant ainsi la charge sur GitHub. Un job nocturne vérifie et ajuste automatiquement les événements terminés ou à venir ;</p><p>- Bloc agenda : amélioration du filtrage des événements selon leur statut et type (parent ou enfant), permettant d'afficher soit un festival complet, soit des événements spécifiques au sein d'un festival ;</p><p>- Validateurs de dates : amélioration de la gestion des créneaux horaires lors des changements de dates d'événements : <a href="https://developers.osuny.org/docs/admin/sites-web/features/agenda/#d%c3%a9calage-des-cr%c3%a9neaux" target="_blank" rel="noreferrer">https://developers.osuny.org/docs/admin/sites-web/features/agenda/#d%c3%a9calage-des-cr%c3%a9neaux <span class="sr-only">(lien externe)</span></a></p>
-
-
-
 
 
 
@@ -371,9 +362,6 @@ contents:
 
 
 
-
-
-
   - kind: block
     template: title
     title: >-
@@ -407,9 +395,6 @@ contents:
       layout: no_background
       text: >-
         <p>Nous avons mis en ligne les sites de <a href="https://metropole.rennes.fr/" target="_blank" rel="noreferrer">Rennes Ville et Métropole <span class="sr-only">(lien externe)</span></a> le 3 juin.<br>Emmie Niard et Matthieu Delsaut de l'équipe de Rennes nous font leurs retours, ils sont très positifs. La ville apprécie particulièrement les accès rapides contextualisés sur la page d'accueil, permettant d'afficher des bandeaux d'alertes ciblés par sujet (comme les problèmes de piscine ou questions scolaires). La structure comprend deux bandeaux distincts : un pour les fiches et un autre pour les actualités. Le site d'actualités regroupe désormais tous les contenus, toutes thématiques confondues, en proposant différents formats et un suivi dans la durée.</p><p>Le service déchets se montre notamment très satisfait de son espace dédié. Le site d'actualités dispose d'un moteur de recherche spécifique, une fonctionnalité très attendue par les habitant·e·s, qui permet d'afficher uniquement les actualités, sans autres informations parasites. Le service relation citoyenne procède actuellement aux tests du moteur de recherche.</p><p>L'architecture technique repose sur une connexion entre Osuny et le hub Symfony via API, avec synchronisation nocturne quotidienne. Le serveur Elastic Search, installé sur le hub Symfony, communique avec le projet Vue.js, offrant ainsi une recherche plus performante que la version native d'Osuny. Notre priorité reste d'assurer la lisibilité et la maintenabilité de l'ensemble du système.</p><p>Concernant l'éco-conception et l'accessibilité, l'audit d'accessibilité de 82 %.  Des éléments peuvent être améliorés, avec des points relevés côté <a href="https://www.ecedi.fr/" target="_blank" rel="noreferrer">Ecedi <span class="sr-only">(lien externe)</span></a> à corriger. Rennes se donne deux à trois semaines pour effectuer les corrections et réaliser un contre-audit avant l'été. Un autre point majeur concerne la cartographie : il faut améliorer l'accessibilité des cartes et proposer des alternatives fiables. Pour l'instant, un tableau est disponible dans le navigateur, mais il n'est pas encore totalement accessible.</p><p>Un audit RGESN est prévu dès la semaine prochaine. Pour la simplification des services, des rendez-vous trimestriels sont programmés avec le service relation citoyen pour interroger les habitants. </p><p>Comme le souligne Arnaud Levy, Rennes est devenu le plus gros utilisateur d'Osuny. Les retours sont très positifs : beaucoup sont surpris par la sobriété visuelle du site. Malgré les nombreux changements, ils trouvent le site lisible, bien organisé, clair et rapide. Matthieu Delsaut confirme la rapidité du site : nous sommes passés de 14 serveurs (7 en pré-production et 7 en production) à 2 serveurs, simplifiant ainsi l'architecture complexe. Matthieu attend un retour de l'équipe Datacampus concernant le monitoring et la vérification de la tenue en charge. Emilie Niard rappelle qu'auparavant, le site contenait 1200 actualités, sans stratégie d'archivage ni dépublication des contenus. L'idée est de faire un bilan sur <a href="https://comnum.rennes.fr/" target="_blank" rel="noreferrer">Comnum <span class="sr-only">(lien externe)</span></a>. On repart sur une base saine. Matthieu Delsaut lance également un chantier pour normaliser tous les noms de domaines. En effet, la gestion des noms de domaines est compliquée, un document de normalisation en cours.</p><p><a href="https://www.le137.fr/" target="_blank" rel="noreferrer">https://www.le137.fr/ <span class="sr-only">(lien externe)</span></a><a href="https://www.le137.fr/" target="_blank" rel="noreferrer"> <span class="sr-only">(lien externe)</span></a><br>Déménagement des bureaux de noesya Paris pour rejoindre le 137 boulevard magenta avec <a href="https://coopdescommuns.org/fr/association/" target="_blank" rel="noreferrer">La Coop des communs <span class="sr-only">(lien externe)</span></a>, <a href="https://inno3.fr/" target="_blank" rel="noreferrer">Inno3 <span class="sr-only">(lien externe)</span></a>, etc.</p><p><a href="https://rhu-talent.chubordeaux.osuny.site/" target="_blank" rel="noreferrer">https://rhu-talent.chubordeaux.osuny.site/ <span class="sr-only">(lien externe)</span></a><a href="https://rhu-talent.chubordeaux.osuny.site/" target="_blank" rel="noreferrer"> <span class="sr-only">(lien externe)</span></a><br>Projet du CHU sur la prédiction et la prévention des accidents cardio-emboliques. Des pages projets présentant les publications et les projets de recherche. Un site à la fois sobre et bien organisé</p>
-
-
-
 
 
 
@@ -449,9 +434,6 @@ contents:
 
 
 
-
-
-
   - kind: block
     template: title
     title: >-
@@ -485,9 +467,6 @@ contents:
       layout: no_background
       text: >-
         <p><a href="https://deuxfleurs.fr/" target="_blank" rel="noreferrer">DeuxFleurs <span class="sr-only">(lien externe)</span></a> trouve le site de Rennes très bien. Ils seront ravis de travailler avec Rennes.</p><p>Pour Osuny, des ApérOsuny vont être lancés cet été. Un à Bordeaux et un en visio. L'idée est de venir avec son ordinateur et repartir avec son site web Osuny. La première session se tiendra avec l'association Singa en juillet. C'est destiné aux petites associations qui bricolent actuellement sur Wix ou d'autres plateformes.</p><p>Alex travaille sur la modularité du code. Il y a beaucoup d'options et ça grossit, donc on veut quelque chose de plus léger. On développe des modules et d'autres répertoires GitHub, utilisés comme des sous-thèmes Osuny qu'on peut activer selon les besoins. Ce sont des briques indépendantes qui s'intègrent facilement. Par exemple, nous avons un système de suggestions dans la recherche. Nous créons une page « Suggestions » dans le back-office où l'on met des pages, ce qui permet d'utiliser l'espace de recherche pour y naviguer et d'y mettre des blocs. C'est une brique externe au thème.</p><p>Trois événements à venir à la maison noesya<br>- Fête de la musique le 21 juin : <a href="https://maison.noesya.coop/agenda/2025/fete-de-la-musique-2025/" target="_blank" rel="noreferrer">https://maison.noesya.coop/agenda/2025/fete-de-la-musique-2025/ <span class="sr-only">(lien externe)</span></a><br>- Expo Lavo : <a href="https://maison.noesya.coop/agenda/2025/un-voyage-haut-en-couleur/" target="_blank" rel="noreferrer">https://maison.noesya.coop/agenda/2025/un-voyage-haut-en-couleur/ <span class="sr-only">(lien externe)</span></a> <br>- Les petites histoires : <a href="https://maison.noesya.coop/agenda/2025/les-histoires-noesya/" target="_blank" rel="noreferrer">https://maison.noesya.coop/agenda/2025/les-histoires-noesya/ <span class="sr-only">(lien externe)</span></a> </p><p>Une fête pour célébrer les 150 sites en production (référencés dans le showcase) est prévue prochainement. Actuellement, nous comptons 144 sites.</p><p>Enfin, nous accueillons Linda et Charlotte en stage pour une durée de deux mois.</p>
-
-
-
 
 
 

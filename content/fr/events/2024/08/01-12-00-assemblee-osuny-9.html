@@ -176,9 +176,6 @@ contents:
 
 
 
-
-
-
   - kind: block
     template: persons
 
@@ -273,9 +270,6 @@ contents:
 
 
 
-
-
-
   - kind: block
     template: title
     title: >-
@@ -309,9 +303,6 @@ contents:
       layout: no_background
       text: >-
         <p>Nous avons travaillé sur la taxonomie des catégories.</p><p>Un système de catégories fonctionne comme un arbre où l'on coche en fonction de ce que l'on souhaite indexer. Par exemple, pour indiquer un genre musical et, pour un autre projet, des compétences mises en œuvre, compétence et genre musical sont des catégories différentes et auparavant, on ne pouvait pas le faire.</p><p>Nous avons tenté une approche pour le site de <a href="https://reseau.noesya.coop/personnes/takumi-kobayashi" target="_blank" rel="noreferrer">Takumi <span class="sr-only">(lien externe)</span></a>, actuellement en cours de développement, permettant des taxonomies multiples pour décrire des projets. Nous avons codé avec Olivia pour gérer ce cas de manière légère pour les projets.</p><p>Il reste le problème d'articulation entre une taxonomie fermée et des éléments libres : comment les articuler ?</p><p>Yuna demande si, dans les listes de projets et des actualités, il est possible de choisir ce qu'on affiche dans chaque item, notamment l'élément du projet qu'on affiche. Arnaud répond que, dans une liste restreinte, on ne va jamais par défaut fouiller dans les blocs. Cela reste possible, mais il pense que ce n'est pas faisable pour des éléments si particuliers.<br>Arnaud précise que les “custom fields” et “custom types” sont des projets prévus. Ajouter des objets spéciaux qui n’existent pas en standard nécessite, par exemple, d'avoir un scénario d'utilisation ou un cas client. C'est très abstrait. Cela ne va pas venir immédiatement sur la feuille de route ; nous allons d'abord stabiliser. Une fois que nous aurons atteint un niveau de stabilité, nous pourrons nous attaquer à ce projet et décider lequel prioriser, “fields” ou “types”.</p>
-
-
-
 
 
 
@@ -351,9 +342,6 @@ contents:
 
 
 
-
-
-
   - kind: block
     template: title
     title: >-
@@ -387,9 +375,6 @@ contents:
       layout: no_background
       text: >-
         <p>Refonte de la partie multilingue d'Osuny. Le principe global est de créer une actualité liée à une catégorie spécifique. Chaque objet aura des localisations, un sous-titre en français, un crédit en français, etc. Nous travaillons sur ce projet depuis quelques semaines. Le principal avantage est de pouvoir connecter une personne à une catégorie même si celle-ci n'était pas traduite. En effet, certains auteurs et/ou catégories n'étaient pas visibles. Nous intégrons également un élément d'interface dans l'administration du multilingue.</p><p>Nous écrivons une documentation sur la migration pour créer ce système de localisation pour tous les objets. Nous expliquons son fonctionnement, quels objets nous localisons et pour quelles raisons.</p><p>Sources :</p><p>-Pull request en cours admin : <br><a href="https://github.com/osunyorg/admin/pull/2025" target="_blank" rel="noreferrer">https://github.com/osunyorg/admin/pull/2025 <span class="sr-only">(lien externe)</span></a></p><p>-Doc developers :<br><a href="https://developers.osuny.org/docs/admin/i18n/migration-2023-2024" target="_blank" rel="noreferrer">https://developers.osuny.org/docs/admin/i18n/migration-2023-2024 <span class="sr-only">(lien externe)</span></a></p><p><a href="https://developers.osuny.org/docs/admin/i18n/methode-2024/" target="_blank" rel="noreferrer">https://developers.osuny.org/docs/admin/i18n/methode-2024/ <span class="sr-only">(lien externe)</span></a><br></p>
-
-
-
 
 
 
@@ -429,9 +414,6 @@ contents:
 
 
 
-
-
-
   - kind: block
     template: title
     title: >-
@@ -465,9 +447,6 @@ contents:
       layout: no_background
       text: >-
         <p><a href="https://www.temesis.com/" target="_blank" rel="noreferrer">Temesis <span class="sr-only">(lien externe)</span></a> fera un audit du thème la semaine prochaine. L'idée est de développer une méthodologie spécifique d'Osuny pour noter les différences. Si tout va bien, nous serons conformes à 100%. Cela devrait aller, mais cela ne signifie pas que tous les sites le seront. L'idée est de s'appuyer sur cet audit de base et de regarder les différences de couleurs, vérifier dans les overrides HTML si rien n'a été cassé. Si cela fonctionne, nous pourrons faire un audit avec très peu de travail. On vérifiera les adaptations de configuration, les modifications HTML, etc. Nous avons développé des outils d'admin qui vérifient les surcouches HTML.</p><p>En octobre, nous espérons un audit complet et nous aurons quelque chose de très propre. Nous pourrons faire le site delta avec le site <a href="https://comnum.rennes.fr/" target="_blank" rel="noreferrer">Comnum <span class="sr-only">(lien externe)</span></a> de Rennes. La méthode d'audit delta sera publiée en <a href="https://fr.wikipedia.org/wiki/Creative_Commons" target="_blank" rel="noreferrer">Creative Commons <span class="sr-only">(lien externe)</span></a>, tout le monde pourra l'utiliser pour faire des audits très légers.</p>
-
-
-
 
 
 
@@ -507,9 +486,6 @@ contents:
 
 
 
-
-
-
   - kind: block
     template: title
     title: >-
@@ -543,9 +519,6 @@ contents:
       layout: no_background
       text: >-
         <p><a href="https://github.com/osunyorg/theme/releases/" target="_blank" rel="noreferrer">https://github.com/osunyorg/theme/releases/ <span class="sr-only">(lien externe)</span></a></p><p>- Problèmes sur les icônes, plusieurs formats différents. Nous nous sommes demandés comment faire pour les icônes. Conseil d'utiliser <a href="https://remixicon.com" target="_blank" rel="noreferrer">Remixicon <span class="sr-only">(lien externe)</span></a>. Les icônes sont toujours les mêmes maintenant. Ce n'est pas exclu que nous remettions en question ce système, parce qu'à certains endroits cela ne nous plaît pas.</p><p>- Questions de maintenance du thème de plus en plus importantes, car on approche des 100 sites</p><p>- Travail sur le CTA. Beaucoup de personnes ne l'utilisaient pas, parce qu'il était trop gros avec un énorme encadré. Mise en place d'un autre layout beaucoup plus discret</p><p>- Beaucoup de corrections au niveau de l'accessibilité. Globalement, on unifie au fur et à mesure qu'on ajoute des fonctionnalités. Gros travail de rangement, de simplification et de rationalisation</p><p>- Travail sur les revues en open access et publications des chercheur.e.s dans les pages chercheur.e.s.  Nous avons des papers dans des volumes au sein des revues (journals) comme avec le <a href="https://www.degrowthjournal.org/" target="_blank" rel="noreferrer">Degrowth journal <span class="sr-only">(lien externe)</span></a>, et des publications dans d'autres revues qui sont synchronisées avec <a href="https://hal.science/" target="_blank" rel="noreferrer">Hal <span class="sr-only">(lien externe)</span></a>. Nous avons maintenant la possibilité de rajouter d'autres sources à la main</p><p>- Affichage des chiffres clés sur la tablette : ajustements mis en place</p><p>- Patch pour les icônes mis en place</p>
-
-
-
 
 
 
@@ -585,9 +558,6 @@ contents:
 
 
 
-
-
-
   - kind: block
     template: title
     title: >-
@@ -624,9 +594,6 @@ contents:
 
 
 
-
-
-
   - kind: block
     template: title
     title: >-
@@ -660,9 +627,6 @@ contents:
       layout: no_background
       text: >-
         <p>Actuellement, nous utilisons un CDN pour redimensionner automatiquement les images à la volée, avec 13 formats générés. Ces formats offrent un grand avantage en termes d'accessibilité sans compromettre la qualité. De plus, il est très rapide, mais cet outil n'est pas libre.</p><p>Nous étions à 50 euros par mois (ratio trafic et traitement d'images), et maintenant, nous en sommes à 50 euros par semaine. Cela va encore augmenter, car nous prévoyons beaucoup de trafic. Pour donner un exemple, lors des dernières 24 heures, nous avons eu 6 gigas de trafic, 7 000 requêtes et 18 000 images traitées. Pour le mois de juillet : 113 gigas, 1 million de requêtes et 535 000 images.</p><p>Nous subissons une certaine pression sur ce sujet : devons-nous payer plus pour KeyCDN ou mettre en place notre propre service, notamment avec l'équipe de Deux Fleurs ?</p><p>L’idée serait de travailler sur un CDN libre, mais cela demande beaucoup de ressources machines. C’est un projet de grande envergure nécessitant des langages très performants. Il faut créer un système très résilient avec un affichage rapide pour les utilisateurs.</p><p>         </p><p>Nous souhaitons que toute la chaîne soit libre. Nous avions eu des discussions avec les Chatons l’année dernière, mais aucune solution n’en est ressortie.</p>
-
-
-
 
 
 
