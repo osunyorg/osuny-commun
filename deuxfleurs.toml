@@ -183,6 +183,10 @@ from = "/equipe/categories/region/nouvelle-aquitaine/index.html"
 to = "/personnes/categories/regions/nouvelle-aquitaine/"
 
 [[redirects]]
+from = "/personnes/louis-derrac-1/index.html"
+to = "/personnes/louis-derrac/"
+
+[[redirects]]
 from = "/organisations/categories/implication/organisations-contributrices/index.html"
 to = "/organisations/categories/implication/contribs-osuny/"
 
