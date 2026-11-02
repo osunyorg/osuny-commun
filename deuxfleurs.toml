@@ -27,6 +27,10 @@ from = "/equipe/vincent-bachelet/index.html"
 to = "/personnes/vincent-bachelet/"
 
 [[redirects]]
+from = "/actualites/2026-11-02-osuny-est-cite-dans-le-guide-mettre-en-place-une-demarche-decoconception-des-designers-ethiques/index.html"
+to = "/actualites/2026-11-02-guide-mettre-en-place-une-demarche-decoconception/"
+
+[[redirects]]
 from = "/equipe/anne-alombert/index.html"
 to = "/personnes/anne-alombert/"
 
